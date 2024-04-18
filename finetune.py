@@ -15,7 +15,7 @@ from transformers import (
     logging,
     set_seed,
 )
-# from trl import SFTTrainer
+from trl import SFTTrainer
 
 
 def get_args():
@@ -42,51 +42,51 @@ def get_args():
     return parser.parse_args()
 
 
-# def print_trainable_parameters(model):
-#     """
-#     Prints the number of trainable parameters in the model.
-#     """
-#     trainable_params = 0
-#     all_param = 0
-#     for _, param in model.named_parameters():
-#         all_param += param.numel()
-#         if param.requires_grad:
-#             trainable_params += param.numel()
-#     print(
-#         f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}"
-#     )
+def print_trainable_parameters(model):
+    """
+    Prints the number of trainable parameters in the model.
+    """
+    trainable_params = 0
+    all_param = 0
+    for _, param in model.named_parameters():
+        all_param += param.numel()
+        if param.requires_grad:
+            trainable_params += param.numel()
+    print(
+        f"trainable params: {trainable_params} || all params: {all_param} || trainable%: {100 * trainable_params / all_param}"
+    )
 
 
 def main(args):
-    # # config
-    # bnb_config = BitsAndBytesConfig(
-    #     load_in_4bit=True,
-    #     bnb_4bit_quant_type="nf4",
-    #     bnb_4bit_compute_dtype=torch.bfloat16,
-    # )
-    # lora_config = LoraConfig(
-    #     r=8,
-    #     target_modules=[
-    #         "q_proj",
-    #         "o_proj",
-    #         "k_proj",
-    #         "v_proj",
-    #         "gate_proj",
-    #         "up_proj",
-    #         "down_proj",
-    #     ],
-    #     task_type="CAUSAL_LM",
-    # )
+    # config
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.bfloat16,
+    )
+    lora_config = LoraConfig(
+        r=8,
+        target_modules=[
+            "q_proj",
+            "o_proj",
+            "k_proj",
+            "v_proj",
+            "gate_proj",
+            "up_proj",
+            "down_proj",
+        ],
+        task_type="CAUSAL_LM",
+    )
 
     # load model and dataset
     token = os.environ.get("HF_TOKEN", None)
-    # model = AutoModelForCausalLM.from_pretrained(
-    #     args.model_id,
-    #     quantization_config=bnb_config,
-    #     device_map={"": PartialState().process_index},
-    #     attention_dropout=args.attention_dropout,
-    # )
-    # print_trainable_parameters(model)
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model_id,
+        quantization_config=bnb_config,
+        device_map={"": PartialState().process_index},
+        attention_dropout=args.attention_dropout,
+    )
+    print_trainable_parameters(model)
 
     def create_instruction(sample):
         return {
@@ -104,50 +104,50 @@ def main(args):
     })
     print("Sample from the training dataset: ", data['train'][0])
 
-#     # setup the trainer
-#     trainer = SFTTrainer(
-#         model=model,
-#         # train_dataset=data,
-#         train_dataset=data['train'],
-#         eval_dataset=data['validation'],
-#         max_seq_length=args.max_seq_length,
-#         args=transformers.TrainingArguments(
-#             per_device_train_batch_size=args.micro_batch_size,
-#             gradient_accumulation_steps=args.gradient_accumulation_steps,
-#             warmup_steps=args.warmup_steps,
-#             max_steps=args.max_steps,
-#             learning_rate=args.learning_rate,
-#             lr_scheduler_type=args.lr_scheduler_type,
-#             weight_decay=args.weight_decay,
-#             bf16=args.bf16,
-#             logging_strategy="steps",
-#             logging_steps=10,
-#             output_dir=args.output_dir,
-#             optim="paged_adamw_8bit",
-#             seed=args.seed,
-#             run_name=f"train-{args.model_id.split('/')[-1]}",
-#             report_to="wandb",
-#         ),
-#         peft_config=lora_config,
-#         dataset_text_field=args.dataset_text_field,
-#     )
+    # setup the trainer
+    trainer = SFTTrainer(
+        model=model,
+        # train_dataset=data,
+        train_dataset=data['train'],
+        eval_dataset=data['validation'],
+        max_seq_length=args.max_seq_length,
+        args=transformers.TrainingArguments(
+            per_device_train_batch_size=args.micro_batch_size,
+            gradient_accumulation_steps=args.gradient_accumulation_steps,
+            warmup_steps=args.warmup_steps,
+            max_steps=args.max_steps,
+            learning_rate=args.learning_rate,
+            lr_scheduler_type=args.lr_scheduler_type,
+            weight_decay=args.weight_decay,
+            bf16=args.bf16,
+            logging_strategy="steps",
+            logging_steps=10,
+            output_dir=args.output_dir,
+            optim="paged_adamw_8bit",
+            seed=args.seed,
+            run_name=f"train-{args.model_id.split('/')[-1]}",
+            report_to="wandb",
+        ),
+        peft_config=lora_config,
+        dataset_text_field=args.dataset_text_field,
+    )
 
-#     # launch
-#     print("Training...")
-#     trainer.train()
+    # launch
+    print("Training...")
+    trainer.train()
 
-#     print("Saving the last checkpoint of the model")
-#     model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
-#     if args.push_to_hub:
-#         trainer.push_to_hub("Upload model")
-#     print("Training Done! 💥")
+    print("Saving the last checkpoint of the model")
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+    if args.push_to_hub:
+        trainer.push_to_hub("Upload model")
+    print("Training Done! 💥")
 
 
 if __name__ == "__main__":
     args = get_args()
-#     set_seed(args.seed)
-#     os.makedirs(args.output_dir, exist_ok=True)
+    set_seed(args.seed)
+    os.makedirs(args.output_dir, exist_ok=True)
 
-#     logging.set_verbosity_error()
+    logging.set_verbosity_error()
 
     main(args)
