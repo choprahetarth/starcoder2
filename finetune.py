@@ -22,10 +22,11 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
     parser.add_argument("--dataset_name", type=str, default="/u/choprahetarth/all_files/data/train_ftdata-new-small.json")
-    parser.add_argument("--dataset_text_field", type=str, default="content")
+    # parser.add_argument("--dataset_text_field", type=str, default="content")
 
     parser.add_argument("--max_seq_length", type=int, default=1024)
     parser.add_argument("--max_steps", type=int, default=1000)
+    parser.add_argument("--size_valid_set", type=int, default=1525)
     parser.add_argument("--micro_batch_size", type=int, default=1)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
@@ -39,6 +40,7 @@ def get_args():
     parser.add_argument("--output_dir", type=str, default="finetune_starcoder2")
     parser.add_argument("--num_proc", type=int, default=None)
     parser.add_argument("--push_to_hub", type=bool, default=True)
+    parser.add_argument("--save_freq", type=int, default=10)
     return parser.parse_args()
 
 
@@ -97,6 +99,12 @@ def main(args):
     dataset = load_dataset('json', data_files=args.dataset_name, num_proc=multiprocessing.cpu_count())
     columns_to_remove = ['license', 'repo_name', 'path', 'download_link', 'download_count', 'org_name', 'output', 'input']
     dataset = dataset['train'].map(create_instruction, remove_columns=columns_to_remove, batched=False)
+    
+    test_samples = args.size_valid_set  # replace with your desired number of test samples
+    total_samples = len(dataset['train'])
+    test_size = test_samples / total_samples
+
+    train_val_split = dataset.train_test_split(test_size=test_size, seed=args.seed)
     train_val_split = dataset.train_test_split(test_size=0.1, seed=args.seed)  
     data = DatasetDict({
         'train': train_val_split['train'],
@@ -121,7 +129,7 @@ def main(args):
             weight_decay=args.weight_decay,
             bf16=args.bf16,
             logging_strategy="steps",
-            logging_steps=10,
+            logging_steps=args.save_freq,
             output_dir=args.output_dir,
             optim="paged_adamw_8bit",
             seed=args.seed,
@@ -129,7 +137,7 @@ def main(args):
             report_to="wandb",
         ),
         peft_config=lora_config,
-        dataset_text_field=args.dataset_text_field,
+        # dataset_text_field=args.dataset_text_field,
     )
 
     # launch
