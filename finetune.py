@@ -21,9 +21,7 @@ from trl import SFTTrainer
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
-    parser.add_argument("--dataset_name", type=str, default="/u/bzd2/data/train_ftdata-new-small.json")
-    parser.add_argument("--subset", type=str, default="data/rust")
-    parser.add_argument("--split", type=str, default="train")
+    parser.add_argument("--dataset_name", type=str, default="/u/choprahetarth/all_files/data/train_ftdata-new-small.json")
     parser.add_argument("--dataset_text_field", type=str, default="content")
 
     parser.add_argument("--max_seq_length", type=int, default=1024)
@@ -90,23 +88,24 @@ def main(args):
     )
     print_trainable_parameters(model)
 
-    # data = load_dataset(
-    #     args.dataset_name,
-    #     # data_dir=args.subset,
-    #     split=args.split,
-    #     token=token,
-    #     num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
-    # )
+    def create_instruction(sample):
+        return {
+            "prompt": "Given this Ansible Name Field, please generate the ansible task. " + sample["question"],
+            "completion": sample["answer"]
+        }
 
-        # Load JSON file as a dataset with multiprocessing
+    # Load dataset from the hub
     dataset = load_dataset('json', data_files=args.dataset_name, num_proc=multiprocessing.cpu_count())
 
-    # Split the dataset into training and validation sets
-    train_val_split = dataset['train'].train_test_split(test_size=0.1)  # 10% for validation
+    # Convert dataset to instruction
+    dataset = dataset.map(create_instruction, remove_columns=dataset.features,batched=False)
+    # split dataset into 10,000 training samples and 2,500 test samples
+    train_val_split = dataset['train'].train_test_split(test_size=0.1, seed=args.seed)  # 10% for validation
     data = DatasetDict({
         'train': train_val_split['train'],
         'validation': train_val_split['test'],
     })
+    print("Sample from the training dataset: ", data['train'][0])
 
     # setup the trainer
     trainer = SFTTrainer(
