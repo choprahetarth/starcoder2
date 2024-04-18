@@ -6,7 +6,7 @@
 #SBATCH --partition=gpuA40x4-interactive # <- one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
 #SBATCH --account='bbvz-delta-gpu'
 #SBATCH --job-name="finetune/custom_fine_tune.py"
-#SBATCH --time=30:00:00
+#SBATCH --time=1:00:00
 ### GPU options ###
 #SBATCH --gpus-per-node=4
 # SBATCH --gpus-per-task=1
@@ -30,9 +30,9 @@ export HF_API_KEY=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
 
 
 srun --account=bbvz-delta-gpu \
-python3 -m torch.distributed.run \
+python -m torch.distributed.run \
 --nproc_per_node=4 \
-finetune/custom_fine_tune.py \
+finetune.py \
 --model_id="bigcode/starcoder2-3b" \
 --dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
 --max_seq_length 512 \
