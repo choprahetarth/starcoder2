@@ -7,7 +7,7 @@ import os
 import torch
 import transformers
 from accelerate import PartialState
-from datasets import load_dataset
+from datasets import load_dataset, DatasetDict
 from peft import LoraConfig
 from transformers import (
     AutoModelForCausalLM,
@@ -21,7 +21,7 @@ from trl import SFTTrainer
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
-    parser.add_argument("--dataset_name", type=str, default="the-stack-smol")
+    parser.add_argument("--dataset_name", type=str, default="/u/bzd2/data/train_ftdata-new-small.json")
     parser.add_argument("--subset", type=str, default="data/rust")
     parser.add_argument("--split", type=str, default="train")
     parser.add_argument("--dataset_text_field", type=str, default="content")
@@ -90,18 +90,30 @@ def main(args):
     )
     print_trainable_parameters(model)
 
-    data = load_dataset(
-        args.dataset_name,
-        data_dir=args.subset,
-        split=args.split,
-        token=token,
-        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
-    )
+    # data = load_dataset(
+    #     args.dataset_name,
+    #     # data_dir=args.subset,
+    #     split=args.split,
+    #     token=token,
+    #     num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+    # )
+
+        # Load JSON file as a dataset with multiprocessing
+    dataset = load_dataset('json', data_files=args.dataset_name, num_proc=multiprocessing.cpu_count())
+
+    # Split the dataset into training and validation sets
+    train_val_split = dataset['train'].train_test_split(test_size=0.1)  # 10% for validation
+    data = DatasetDict({
+        'train': train_val_split['train'],
+        'validation': train_val_split['test'],
+    })
 
     # setup the trainer
     trainer = SFTTrainer(
         model=model,
-        train_dataset=data,
+        # train_dataset=data,
+        train_dataset=data['train'],
+        eval_dataset=data['validation'],
         max_seq_length=args.max_seq_length,
         args=transformers.TrainingArguments(
             per_device_train_batch_size=args.micro_batch_size,
