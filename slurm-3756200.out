@@ -1,0 +1,457 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}Sample from the training dataset: 
+ {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+tokenizer_config.json:   0%|          | 0.00/677 [00:00<?, ?B/s]tokenizer_config.json: 100%|██████████| 677/677 [00:00<00:00, 3.43MB/s]
+vocab.json:   0%|          | 0.00/777k [00:00<?, ?B/s]vocab.json: 100%|██████████| 777k/777k [00:00<00:00, 10.5MB/s]
+merges.txt:   0%|          | 0.00/442k [00:00<?, ?B/s]merges.txt: 100%|██████████| 442k/442k [00:00<00:00, 91.4MB/s]
+tokenizer.json:   0%|          | 0.00/2.06M [00:00<?, ?B/s]tokenizer.json: 100%|██████████| 2.06M/2.06M [00:00<00:00, 23.4MB/s]
+special_tokens_map.json:   0%|          | 0.00/532 [00:00<?, ?B/s]special_tokens_map.json: 100%|██████████| 532/532 [00:00<00:00, 3.24MB/s]
+Map:   0%|          | 0/13721 [00:00<?, ? examples/s]Map:   7%|▋         | 1000/13721 [00:01<00:21, 580.01 examples/s]Map:  22%|██▏       | 3000/13721 [00:01<00:05, 2034.44 examples/s]Map:  36%|███▋      | 5000/13721 [00:01<00:02, 3725.29 examples/s]Map:  51%|█████     | 7000/13721 [00:02<00:01, 5574.51 examples/s]Map:  66%|██████▌   | 9000/13721 [00:02<00:00, 7514.69 examples/s]Map:  80%|████████  | 11000/13721 [00:02<00:00, 9389.99 examples/s]Map:  95%|█████████▍| 13000/13721 [00:02<00:00, 11020.17 examples/s]Map: 100%|██████████| 13721/13721 [00:02<00:00, 5560.21 examples/s] 
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 6584.93 examples/s]Map: 100%|██████████| 1525/1525 [00:00<00:00, 8138.93 examples/s]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 8170.15 examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 7493.80 examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 7313.57 examples/s]Map: 100%|██████████| 1525/1525 [00:00<00:00, 9456.36 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 8865.95 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 8760.38 examples/s]
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240529_034415-y7oxone0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-starcoderbase-1b
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/y7oxone0
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 148, in main
+    trainer.train()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 148, in main
+    trainer.train()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 148, in main
+    trainer.train()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+    output = super().train(*args, **kwargs)
+      File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 1859, in train
+output = super().train(*args, **kwargs)  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 1859, in train
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 1859, in train
+            return inner_training_loop(return inner_training_loop(return inner_training_loop(
+
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+    tr_loss_step = self.training_step(model, inputs)  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3138, in training_step
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3138, in training_step
+    tr_loss_step = self.training_step(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3138, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    loss = self.compute_loss(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    loss = self.compute_loss(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    outputs = model(**inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    outputs = model(**inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    outputs = model(**inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+            return self._call_impl(*args, **kwargs)return self._call_impl(*args, **kwargs)return self._call_impl(*args, **kwargs)
+
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+        else self._run_ddp_forward(*inputs, **kwargs)else self._run_ddp_forward(*inputs, **kwargs)
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*args, **kwargs)  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)    
+return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 817, in forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 817, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 817, in forward
+    return model_forward(*args, **kwargs)
+      File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 805, in __call__
+return model_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 805, in __call__
+    return model_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 805, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/peft_model.py", line 1304, in forward
+    return func(*args, **kwargs)
+      File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/peft_model.py", line 1304, in forward
+return func(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/peft_model.py", line 1304, in forward
+            return self.base_model(return self.base_model(return self.base_model(
+
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 179, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 179, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 179, in forward
+        return self.model.forward(*args, **kwargs)return self.model.forward(*args, **kwargs)    
+
+return self.model.forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+            output = module._old_forward(*args, **kwargs)output = module._old_forward(*args, **kwargs)output = module._old_forward(*args, **kwargs)
+
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1243, in forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1243, in forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1243, in forward
+    transformer_outputs = self.transformer(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    transformer_outputs = self.transformer(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    transformer_outputs = self.transformer(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*args, **kwargs)  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1096, in forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1096, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    outputs = block(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1096, in forward
+    outputs = block(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    outputs = block(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 748, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 748, in forward
+    feed_forward_hidden_states = self.mlp(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+        feed_forward_hidden_states = self.mlp(hidden_states)output = module._old_forward(*args, **kwargs)
+
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 748, in forward
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    feed_forward_hidden_states = self.mlp(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 658, in forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 660, in forward
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    hidden_states = self.c_fc(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    hidden_states = self.c_proj(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 658, in forward
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    hidden_states = self.c_fc(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/tuners/lora/bnb.py", line 217, in forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 452, in forward
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 452, in forward
+    out = bnb.matmul(x, self.weight, bias=self.bias, state=self.state)
+      File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 562, in matmul
+out = bnb.matmul(x, self.weight, bias=self.bias, state=self.state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 562, in matmul
+    return MatMul8bitLt.apply(A, B, out, bias, state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+    return MatMul8bitLt.apply(A, B, out, bias, state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+    result = self.base_layer(x, *args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 452, in forward
+    out = bnb.matmul(x, self.weight, bias=self.bias, state=self.state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 562, in matmul
+    return MatMul8bitLt.apply(A, B, out, bias, state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+        return super().apply(*args, **kwargs)  # type: ignore[misc]return super().apply(*args, **kwargs)  # type: ignore[misc]
+    
+return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 408, in forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 439, in forward
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 408, in forward
+Traceback (most recent call last):
+    output = output.to(A.dtype).add_(bias)
+    output = output.to(A.dtype).add_(bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 830.00 MiB. GPU 1 has a total capacity of 39.39 GiB of which 7.06 MiB is free. Including non-PyTorch memory, this process has 39.38 GiB memory in use. Of the allocated memory 37.29 GiB is allocated by PyTorch, and 415.62 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+torch.cuda.OutOfMemoryError  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+    main(args)
+: CUDA out of memory. Tried to allocate 568.00 MiB. GPU 2 has a total capacity of 39.39 GiB of which 207.06 MiB is free. Including non-PyTorch memory, this process has 39.18 GiB memory in use. Of the allocated memory 37.08 GiB is allocated by PyTorch, and 429.71 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 148, in main
+    trainer.train()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 361, in train
+    output = super().train(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 1859, in train
+    return inner_training_loop(
+    return clone_func(output.view(output_shape))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 3 has a total capacity of 39.39 GiB of which 253.06 MiB is free. Including non-PyTorch memory, this process has 39.14 GiB memory in use. Of the allocated memory 37.25 GiB is allocated by PyTorch, and 279.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 2203, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3138, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3161, in compute_loss
+    outputs = model(**inputs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1523, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1359, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 817, in forward
+    return model_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/utils/operations.py", line 805, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/peft_model.py", line 1304, in forward
+    return self.base_model(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 179, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1243, in forward
+    transformer_outputs = self.transformer(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 1096, in forward
+    outputs = block(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 748, in forward
+    feed_forward_hidden_states = self.mlp(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/models/gpt_bigcode/modeling_gpt_bigcode.py", line 658, in forward
+    hidden_states = self.c_fc(hidden_states)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/accelerate/hooks.py", line 166, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 452, in forward
+    out = bnb.matmul(x, self.weight, bias=self.bias, state=self.state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 562, in matmul
+    return MatMul8bitLt.apply(A, B, out, bias, state)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py", line 439, in forward
+    return clone_func(output.view(output_shape))
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 608.00 MiB. GPU 0 has a total capacity of 39.39 GiB of which 445.06 MiB is free. Including non-PyTorch memory, this process has 38.95 GiB memory in use. Of the allocated memory 36.90 GiB is allocated by PyTorch, and 446.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+wandb: - 0.008 MB of 0.008 MB uploadedwandb: \ 0.008 MB of 0.008 MB uploadedwandb: | 0.035 MB of 0.058 MB uploadedwandb: 🚀 View run train-starcoderbase-1b at: https://wandb.ai/hetarthvader/huggingface/runs/y7oxone0
+wandb: ️⚡ View job at https://wandb.ai/hetarthvader/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NDA5ODUyNQ==/version_details/v5
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240529_034415-y7oxone0/logs
+[2024-05-29 03:44:54,239] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 102728) of binary: /u/choprahetarth/.conda/envs/scoder_2_py10/bin/python
+Traceback (most recent call last):
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+finetune.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-05-29_03:44:54
+  host      : gpua085.delta.ncsa.illinois.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 102729)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-05-29_03:44:54
+  host      : gpua085.delta.ncsa.illinois.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 102730)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-05-29_03:44:54
+  host      : gpua085.delta.ncsa.illinois.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 102731)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-29_03:44:54
+  host      : gpua085.delta.ncsa.illinois.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 102728)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gpua085: task 0: Exited with exit code 1

@@ -3,7 +3,6 @@
 import argparse
 import multiprocessing
 import os
-
 import torch
 import transformers
 from accelerate import PartialState
@@ -22,8 +21,6 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
     parser.add_argument("--dataset_name", type=str, default="/u/choprahetarth/all_files/data/train_ftdata-new-small.json")
-    # parser.add_argument("--dataset_text_field", type=str, default="content")
-
     parser.add_argument("--max_seq_length", type=int, default=1024)
     parser.add_argument("--max_steps", type=int, default=1000)
     parser.add_argument("--size_valid_set", type=int, default=1525)
@@ -31,8 +28,7 @@ def get_args():
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--bf16", type=bool, default=True)
-
-    parser.add_argument("--attention_dropout", type=float, default=0.1)
+    parser.add_argument("--lora_rank", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
     parser.add_argument("--warmup_steps", type=int, default=100)
@@ -61,22 +57,30 @@ def print_trainable_parameters(model):
 
 def main(args):
     # config
+    # bnb_config = BitsAndBytesConfig(
+    #     load_in_4bit=True,
+    #     bnb_4bit_quant_type="nf4",
+    #     bnb_4bit_compute_dtype=torch.bfloat16,
+    # )
+    # lora_config = LoraConfig(
+    #     r=args.lora_rank,
+    #     target_modules=[
+    #         "q_proj",
+    #         "o_proj",
+    #         "k_proj",
+    #         "v_proj",
+    #         "gate_proj",
+    #         "up_proj",
+    #         "down_proj",
+    #     ],
+    #     task_type="CAUSAL_LM",
+    # )
     bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        load_in_8bit=True,
     )
     lora_config = LoraConfig(
-        r=8,
-        target_modules=[
-            "q_proj",
-            "o_proj",
-            "k_proj",
-            "v_proj",
-            "gate_proj",
-            "up_proj",
-            "down_proj",
-        ],
+        r=args.lora_rank,
+        target_modules = ["c_proj", "c_attn", "q_attn"],
         task_type="CAUSAL_LM",
     )
 
@@ -86,7 +90,7 @@ def main(args):
         args.model_id,
         quantization_config=bnb_config,
         device_map={"": PartialState().process_index},
-        attention_dropout=args.attention_dropout,
+        # attention_dropout=args.attention_dropout,
     )
     print_trainable_parameters(model)
 
@@ -101,11 +105,10 @@ def main(args):
     dataset = dataset['train'].map(create_instruction, remove_columns=columns_to_remove, batched=False)
     
     test_samples = args.size_valid_set  # replace with your desired number of test samples
-    total_samples = len(dataset['train'])
+    total_samples = len(dataset)
     test_size = test_samples / total_samples
 
     train_val_split = dataset.train_test_split(test_size=test_size, seed=args.seed)
-    train_val_split = dataset.train_test_split(test_size=0.1, seed=args.seed)  
     data = DatasetDict({
         'train': train_val_split['train'],
         'validation': train_val_split['test'],
@@ -146,8 +149,8 @@ def main(args):
 
     print("Saving the last checkpoint of the model")
     model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
-    if args.push_to_hub:
-        trainer.push_to_hub("Upload model")
+    # if args.push_to_hub:
+        # trainer.push_to_hub("Upload model")
     print("Training Done! 💥")
 
 

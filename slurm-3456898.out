@@ -1,0 +1,419 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+
+config.json:   0%|          | 0.00/662 [00:00<?, ?B/s]
+config.json: 100%|██████████| 662/662 [00:00<00:00, 5.09MB/s]
+
+model.safetensors:   0%|          | 0.00/3.67G [00:00<?, ?B/s]
+model.safetensors:   1%|          | 21.0M/3.67G [00:00<00:27, 131MB/s]
+model.safetensors:   1%|▏         | 52.4M/3.67G [00:00<00:21, 169MB/s]
+model.safetensors:   3%|▎         | 94.4M/3.67G [00:00<00:15, 237MB/s]
+model.safetensors:   4%|▎         | 136M/3.67G [00:00<00:12, 281MB/s] 
+model.safetensors:   5%|▍         | 178M/3.67G [00:00<00:13, 260MB/s]
+model.safetensors:   6%|▌         | 220M/3.67G [00:00<00:12, 282MB/s]
+model.safetensors:   7%|▋         | 262M/3.67G [00:00<00:11, 299MB/s]
+model.safetensors:   8%|▊         | 294M/3.67G [00:01<00:11, 298MB/s]
+model.safetensors:   9%|▉         | 325M/3.67G [00:01<00:11, 294MB/s]
+model.safetensors:  10%|▉         | 357M/3.67G [00:01<00:11, 278MB/s]
+model.safetensors:  11%|█         | 398M/3.67G [00:01<00:10, 301MB/s]
+model.safetensors:  12%|█▏        | 440M/3.67G [00:01<00:10, 310MB/s]
+model.safetensors:  13%|█▎        | 482M/3.67G [00:01<00:09, 319MB/s]
+model.safetensors:  14%|█▍        | 524M/3.67G [00:01<00:09, 326MB/s]
+model.safetensors:  15%|█▌        | 566M/3.67G [00:02<00:12, 252MB/s]
+model.safetensors:  17%|█▋        | 608M/3.67G [00:02<00:11, 274MB/s]
+model.safetensors:  18%|█▊        | 650M/3.67G [00:02<00:10, 286MB/s]
+model.safetensors:  19%|█▉        | 692M/3.67G [00:02<00:10, 297MB/s]
+model.safetensors:  20%|█▉        | 734M/3.67G [00:02<00:09, 307MB/s]
+model.safetensors:  21%|██        | 776M/3.67G [00:02<00:09, 319MB/s]
+model.safetensors:  22%|██▏       | 818M/3.67G [00:02<00:08, 324MB/s]
+model.safetensors:  23%|██▎       | 860M/3.67G [00:02<00:08, 323MB/s]
+model.safetensors:  25%|██▍       | 902M/3.67G [00:03<00:08, 326MB/s]
+model.safetensors:  26%|██▌       | 944M/3.67G [00:03<00:08, 332MB/s]
+model.safetensors:  27%|██▋       | 986M/3.67G [00:03<00:08, 328MB/s]
+model.safetensors:  28%|██▊       | 1.03G/3.67G [00:03<00:08, 330MB/s]
+model.safetensors:  29%|██▉       | 1.07G/3.67G [00:03<00:07, 336MB/s]
+model.safetensors:  30%|███       | 1.11G/3.67G [00:03<00:07, 337MB/s]
+model.safetensors:  31%|███▏      | 1.15G/3.67G [00:03<00:07, 329MB/s]
+model.safetensors:  33%|███▎      | 1.20G/3.67G [00:03<00:07, 326MB/s]
+model.safetensors:  34%|███▎      | 1.24G/3.67G [00:04<00:07, 319MB/s]
+model.safetensors:  35%|███▍      | 1.28G/3.67G [00:04<00:07, 316MB/s]
+model.safetensors:  36%|███▌      | 1.32G/3.67G [00:04<00:07, 325MB/s]
+model.safetensors:  37%|███▋      | 1.36G/3.67G [00:04<00:07, 326MB/s]
+model.safetensors:  38%|███▊      | 1.41G/3.67G [00:04<00:06, 334MB/s]
+model.safetensors:  39%|███▉      | 1.45G/3.67G [00:04<00:06, 337MB/s]
+model.safetensors:  41%|████      | 1.49G/3.67G [00:04<00:06, 338MB/s]
+model.safetensors:  42%|████▏     | 1.53G/3.67G [00:04<00:06, 341MB/s]
+model.safetensors:  43%|████▎     | 1.57G/3.67G [00:05<00:06, 345MB/s]
+model.safetensors:  44%|████▍     | 1.61G/3.67G [00:05<00:06, 337MB/s]
+model.safetensors:  45%|████▌     | 1.66G/3.67G [00:05<00:06, 334MB/s]
+model.safetensors:  46%|████▌     | 1.70G/3.67G [00:05<00:05, 334MB/s]
+model.safetensors:  47%|████▋     | 1.74G/3.67G [00:05<00:05, 341MB/s]
+model.safetensors:  49%|████▊     | 1.78G/3.67G [00:05<00:05, 333MB/s]
+model.safetensors:  50%|████▉     | 1.82G/3.67G [00:05<00:05, 322MB/s]
+model.safetensors:  51%|█████     | 1.87G/3.67G [00:05<00:05, 326MB/s]
+model.safetensors:  52%|█████▏    | 1.91G/3.67G [00:06<00:05, 313MB/s]
+model.safetensors:  53%|█████▎    | 1.95G/3.67G [00:06<00:05, 315MB/s]
+model.safetensors:  54%|█████▍    | 1.99G/3.67G [00:06<00:05, 317MB/s]
+model.safetensors:  55%|█████▌    | 2.03G/3.67G [00:06<00:05, 322MB/s]
+model.safetensors:  57%|█████▋    | 2.08G/3.67G [00:06<00:04, 323MB/s]
+model.safetensors:  58%|█████▊    | 2.12G/3.67G [00:06<00:04, 315MB/s]
+model.safetensors:  59%|█████▉    | 2.16G/3.67G [00:06<00:04, 322MB/s]
+model.safetensors:  60%|█████▉    | 2.20G/3.67G [00:07<00:04, 324MB/s]
+model.safetensors:  61%|██████    | 2.24G/3.67G [00:07<00:04, 318MB/s]
+model.safetensors:  62%|██████▏   | 2.29G/3.67G [00:07<00:04, 328MB/s]
+model.safetensors:  63%|██████▎   | 2.33G/3.67G [00:07<00:04, 323MB/s]
+model.safetensors:  65%|██████▍   | 2.37G/3.67G [00:07<00:04, 321MB/s]
+model.safetensors:  66%|██████▌   | 2.41G/3.67G [00:07<00:03, 322MB/s]
+model.safetensors:  67%|██████▋   | 2.45G/3.67G [00:07<00:03, 319MB/s]
+model.safetensors:  68%|██████▊   | 2.50G/3.67G [00:07<00:03, 329MB/s]
+model.safetensors:  69%|██████▉   | 2.54G/3.67G [00:08<00:03, 321MB/s]
+model.safetensors:  70%|███████   | 2.58G/3.67G [00:08<00:03, 324MB/s]
+model.safetensors:  71%|███████▏  | 2.62G/3.67G [00:08<00:03, 320MB/s]
+model.safetensors:  72%|███████▏  | 2.66G/3.67G [00:08<00:03, 323MB/s]
+model.safetensors:  74%|███████▎  | 2.71G/3.67G [00:08<00:02, 324MB/s]
+model.safetensors:  75%|███████▍  | 2.75G/3.67G [00:08<00:02, 332MB/s]
+model.safetensors:  76%|███████▌  | 2.79G/3.67G [00:08<00:02, 337MB/s]
+model.safetensors:  77%|███████▋  | 2.83G/3.67G [00:08<00:02, 332MB/s]
+model.safetensors:  78%|███████▊  | 2.87G/3.67G [00:09<00:02, 337MB/s]
+model.safetensors:  79%|███████▉  | 2.92G/3.67G [00:09<00:02, 341MB/s]
+model.safetensors:  80%|████████  | 2.96G/3.67G [00:09<00:02, 341MB/s]
+model.safetensors:  82%|████████▏ | 3.00G/3.67G [00:09<00:02, 331MB/s]
+model.safetensors:  83%|████████▎ | 3.04G/3.67G [00:09<00:01, 333MB/s]
+model.safetensors:  84%|████████▍ | 3.08G/3.67G [00:09<00:01, 330MB/s]
+model.safetensors:  85%|████████▌ | 3.12G/3.67G [00:09<00:01, 331MB/s]
+model.safetensors:  86%|████████▌ | 3.17G/3.67G [00:10<00:02, 187MB/s]
+model.safetensors:  87%|████████▋ | 3.20G/3.67G [00:10<00:03, 124MB/s]
+model.safetensors:  88%|████████▊ | 3.22G/3.67G [00:11<00:03, 115MB/s]
+model.safetensors:  88%|████████▊ | 3.24G/3.67G [00:11<00:03, 109MB/s]
+model.safetensors:  89%|████████▉ | 3.26G/3.67G [00:11<00:04, 95.3MB/s]
+model.safetensors:  89%|████████▉ | 3.28G/3.67G [00:11<00:04, 83.7MB/s]
+model.safetensors:  90%|████████▉ | 3.29G/3.67G [00:12<00:04, 77.9MB/s]
+model.safetensors:  90%|█████████ | 3.31G/3.67G [00:12<00:04, 79.0MB/s]
+model.safetensors:  91%|█████████ | 3.33G/3.67G [00:12<00:04, 76.3MB/s]
+model.safetensors:  91%|█████████ | 3.34G/3.67G [00:12<00:04, 72.3MB/s]
+model.safetensors:  92%|█████████▏| 3.37G/3.67G [00:13<00:04, 73.1MB/s]
+model.safetensors:  92%|█████████▏| 3.38G/3.67G [00:13<00:04, 70.6MB/s]
+model.safetensors:  92%|█████████▏| 3.39G/3.67G [00:13<00:04, 67.8MB/s]
+model.safetensors:  93%|█████████▎| 3.41G/3.67G [00:13<00:03, 72.2MB/s]
+model.safetensors:  93%|█████████▎| 3.42G/3.67G [00:13<00:03, 67.6MB/s]
+model.safetensors:  93%|█████████▎| 3.43G/3.67G [00:14<00:03, 65.8MB/s]
+model.safetensors:  94%|█████████▍| 3.45G/3.67G [00:14<00:02, 80.5MB/s]
+model.safetensors:  94%|█████████▍| 3.46G/3.67G [00:14<00:02, 75.8MB/s]
+model.safetensors:  95%|█████████▍| 3.48G/3.67G [00:14<00:02, 77.7MB/s]
+model.safetensors:  95%|█████████▌| 3.50G/3.67G [00:15<00:02, 71.0MB/s]
+model.safetensors:  96%|█████████▌| 3.52G/3.67G [00:15<00:01, 76.1MB/s]
+model.safetensors:  96%|█████████▌| 3.53G/3.67G [00:15<00:01, 71.2MB/s]
+model.safetensors:  96%|█████████▋| 3.54G/3.67G [00:15<00:01, 76.2MB/s]
+model.safetensors:  97%|█████████▋| 3.55G/3.67G [00:15<00:01, 75.7MB/s]
+model.safetensors:  97%|█████████▋| 3.58G/3.67G [00:15<00:01, 80.5MB/s]
+model.safetensors:  98%|█████████▊| 3.59G/3.67G [00:16<00:01, 75.7MB/s]
+model.safetensors:  98%|█████████▊| 3.61G/3.67G [00:16<00:01, 65.6MB/s]
+model.safetensors:  98%|█████████▊| 3.62G/3.67G [00:16<00:00, 68.3MB/s]
+model.safetensors:  99%|█████████▉| 3.63G/3.67G [00:16<00:00, 63.2MB/s]
+model.safetensors:  99%|█████████▉| 3.65G/3.67G [00:17<00:00, 67.1MB/s]
+model.safetensors: 100%|█████████▉| 3.66G/3.67G [00:17<00:00, 61.5MB/s]
+model.safetensors: 100%|██████████| 3.67G/3.67G [00:17<00:00, 60.6MB/s]
+model.safetensors: 100%|██████████| 3.67G/3.67G [00:17<00:00, 209MB/s] 
+
+generation_config.json:   0%|          | 0.00/138 [00:00<?, ?B/s]
+generation_config.json: 100%|██████████| 138/138 [00:00<00:00, 1.37MB/s]
+trainable params: 622430208 || all params: 1229703168 || trainable%: 50.61629702168906
+trainable params: 622430208 || all params: 1229703168 || trainable%: 50.61629702168906
+trainable params: 622430208 || all params: 1229703168 || trainable%: 50.61629702168906
+trainable params: 622430208 || all params: 1229703168 || trainable%: 50.61629702168906
+Setting num_proc from 64 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 15246 examples [00:00, 22998.86 examples/s]
+Generating train split: 15246 examples [00:00, 22858.08 examples/s]
+
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]
+Map:   8%|▊         | 1219/15246 [00:00<00:01, 12120.60 examples/s]
+Map:   8%|▊         | 1232/15246 [00:00<00:01, 12248.41 examples/s]
+Map:   8%|▊         | 1229/15246 [00:00<00:01, 12211.49 examples/s]
+Map:   8%|▊         | 1176/15246 [00:00<00:01, 11685.93 examples/s]
+Map:  23%|██▎       | 3580/15246 [00:00<00:00, 18835.16 examples/s]
+Map:  23%|██▎       | 3550/15246 [00:00<00:00, 18681.51 examples/s]
+Map:  23%|██▎       | 3537/15246 [00:00<00:00, 18581.55 examples/s]
+Map:  23%|██▎       | 3494/15246 [00:00<00:00, 18422.60 examples/s]
+Map:  39%|███▊      | 5882/15246 [00:00<00:00, 20791.79 examples/s]
+Map:  39%|███▉      | 5935/15246 [00:00<00:00, 20978.95 examples/s]
+Map:  38%|███▊      | 5830/15246 [00:00<00:00, 20558.68 examples/s]
+Map:  38%|███▊      | 5793/15246 [00:00<00:00, 20500.74 examples/s]
+Map:  54%|█████▍    | 8243/15246 [00:00<00:00, 21805.49 examples/s]
+Map:  54%|█████▍    | 8210/15246 [00:00<00:00, 21769.44 examples/s]
+Map:  53%|█████▎    | 8070/15246 [00:00<00:00, 21281.25 examples/s]
+Map:  53%|█████▎    | 8071/15246 [00:00<00:00, 21392.77 examples/s]
+Map:  69%|██████▉   | 10592/15246 [00:00<00:00, 22409.10 examples/s]
+Map:  69%|██████▉   | 10538/15246 [00:00<00:00, 22309.62 examples/s]
+Map:  68%|██████▊   | 10351/15246 [00:00<00:00, 21829.00 examples/s]
+Map:  68%|██████▊   | 10396/15246 [00:00<00:00, 22056.69 examples/s]
+Map:  85%|████████▌ | 12962/15246 [00:00<00:00, 22843.30 examples/s]
+Map:  85%|████████▍ | 12895/15246 [00:00<00:00, 22733.51 examples/s]
+Map:  83%|████████▎ | 12637/15246 [00:00<00:00, 22177.28 examples/s]
+Map:  83%|████████▎ | 12718/15246 [00:00<00:00, 22449.34 examples/s]
+Map: 100%|█████████▉| 15205/15246 [00:00<00:00, 22847.94 examples/s]
+Map:  98%|█████████▊| 14954/15246 [00:00<00:00, 22496.24 examples/s]
+Map:  98%|█████████▊| 15000/15246 [00:00<00:00, 22532.63 examples/s]
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 21312.41 examples/s]
+
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 21304.97 examples/s]
+
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 21243.56 examples/s]
+
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 21197.19 examples/s]
+Sample from the training dataset:  Sample from the training dataset: Sample from the training dataset: {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+
+tokenizer_config.json:   0%|          | 0.00/1.29k [00:00<?, ?B/s]
+tokenizer_config.json: 100%|██████████| 1.29k/1.29k [00:00<00:00, 8.01MB/s]
+
+vocab.json:   0%|          | 0.00/2.78M [00:00<?, ?B/s]
+vocab.json: 100%|██████████| 2.78M/2.78M [00:00<00:00, 18.5MB/s]
+vocab.json: 100%|██████████| 2.78M/2.78M [00:00<00:00, 18.5MB/s]
+
+merges.txt:   0%|          | 0.00/1.67M [00:00<?, ?B/s]
+merges.txt: 100%|██████████| 1.67M/1.67M [00:00<00:00, 14.6MB/s]
+merges.txt: 100%|██████████| 1.67M/1.67M [00:00<00:00, 14.6MB/s]
+
+tokenizer.json:   0%|          | 0.00/7.03M [00:00<?, ?B/s]
+tokenizer.json: 100%|██████████| 7.03M/7.03M [00:00<00:00, 32.5MB/s]
+tokenizer.json: 100%|██████████| 7.03M/7.03M [00:00<00:00, 32.0MB/s]
+
+Map:   0%|          | 0/13721 [00:00<?, ? examples/s]
+Map:   7%|▋         | 1000/13721 [00:00<00:08, 1565.51 examples/s]
+Map:  22%|██▏       | 3000/13721 [00:00<00:02, 4651.64 examples/s]
+Map:  36%|███▋      | 5000/13721 [00:00<00:01, 7229.61 examples/s]
+Map:  51%|█████     | 7000/13721 [00:01<00:00, 9226.52 examples/s]
+Map:  66%|██████▌   | 9000/13721 [00:01<00:00, 10832.23 examples/s]
+Map:  80%|████████  | 11000/13721 [00:01<00:00, 11952.88 examples/s]
+Map:  95%|█████████▍| 13000/13721 [00:01<00:00, 12843.18 examples/s]
+Map: 100%|██████████| 13721/13721 [00:01<00:00, 9067.71 examples/s] 
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 11460.11 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 11158.24 examples/s]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 6547.13 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 6364.49 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 6520.24 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 7628.09 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 7729.11 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 7592.76 examples/s]
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240421_150053-szkoregq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-Qwen1.5-1.8B
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/szkoregq
+[rank3]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank0]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 3.5218, 'grad_norm': 1.390625, 'learning_rate': 2e-05, 'epoch': 0.11627906976744186}
+{'loss': 3.3253, 'grad_norm': 1.5234375, 'learning_rate': 4e-05, 'epoch': 0.23255813953488372}
+{'loss': 2.9005, 'grad_norm': 1.6796875, 'learning_rate': 6e-05, 'epoch': 0.3488372093023256}
+{'loss': 2.2744, 'grad_norm': 0.8515625, 'learning_rate': 8e-05, 'epoch': 0.46511627906976744}
+{'loss': 1.7026, 'grad_norm': 0.5078125, 'learning_rate': 0.0001, 'epoch': 0.5813953488372093}
+{'loss': 1.5268, 'grad_norm': 0.419921875, 'learning_rate': 0.00012, 'epoch': 0.6976744186046512}
+{'loss': 1.4048, 'grad_norm': 0.36328125, 'learning_rate': 0.00014, 'epoch': 0.813953488372093}
+{'loss': 1.3134, 'grad_norm': 0.314453125, 'learning_rate': 0.00016, 'epoch': 0.9302325581395349}
+{'loss': 1.2506, 'grad_norm': 0.35546875, 'learning_rate': 0.00018, 'epoch': 1.0465116279069768}
+{'loss': 1.1739, 'grad_norm': 0.3828125, 'learning_rate': 0.0002, 'epoch': 1.1627906976744187}
+{'loss': 1.142, 'grad_norm': 0.380859375, 'learning_rate': 0.00019916545029310012, 'epoch': 1.2790697674418605}
+{'loss': 1.0973, 'grad_norm': 1.1640625, 'learning_rate': 0.0001966757306366662, 'epoch': 1.3953488372093024}
+{'loss': 1.0579, 'grad_norm': 0.431640625, 'learning_rate': 0.00019257239692688907, 'epoch': 1.5116279069767442}
+{'loss': 1.0309, 'grad_norm': 0.5234375, 'learning_rate': 0.00018692393788266479, 'epoch': 1.627906976744186}
+{'loss': 1.0227, 'grad_norm': 0.375, 'learning_rate': 0.0001798246319007893, 'epoch': 1.744186046511628}
+{'loss': 0.9967, 'grad_norm': 0.380859375, 'learning_rate': 0.00017139297345578994, 'epoch': 1.8604651162790697}
+{'loss': 0.9881, 'grad_norm': 0.474609375, 'learning_rate': 0.00016176969530934572, 'epoch': 1.9767441860465116}
+{'loss': 0.9738, 'grad_norm': 0.396484375, 'learning_rate': 0.00015111541954058734, 'epoch': 2.0930232558139537}
+{'loss': 0.9547, 'grad_norm': 0.396484375, 'learning_rate': 0.0001396079766039157, 'epoch': 2.2093023255813953}
+{'loss': 0.9252, 'grad_norm': 0.390625, 'learning_rate': 0.00012743943716193016, 'epoch': 2.3255813953488373}
+{'loss': 0.9421, 'grad_norm': 0.51953125, 'learning_rate': 0.0001148129062351249, 'epoch': 2.441860465116279}
+{'loss': 0.9324, 'grad_norm': 0.490234375, 'learning_rate': 0.00010193913317718244, 'epoch': 2.558139534883721}
+{'loss': 0.8946, 'grad_norm': 0.5703125, 'learning_rate': 8.903299405874684e-05, 'epoch': 2.6744186046511627}
+{'loss': 0.9014, 'grad_norm': 0.453125, 'learning_rate': 7.630990517218808e-05, 'epoch': 2.7906976744186047}
+{'loss': 0.8828, 'grad_norm': 0.4765625, 'learning_rate': 6.398222751952899e-05, 'epoch': 2.9069767441860463}
+{'loss': 0.9055, 'grad_norm': 0.404296875, 'learning_rate': 5.22557222962051e-05, 'epoch': 3.0232558139534884}
+{'loss': 0.87, 'grad_norm': 0.484375, 'learning_rate': 4.132611653215822e-05, 'epoch': 3.13953488372093}
+{'loss': 0.8894, 'grad_norm': 0.43359375, 'learning_rate': 3.137583621312665e-05, 'epoch': 3.255813953488372}
+{'loss': 0.8705, 'grad_norm': 0.421875, 'learning_rate': 2.2570961409586754e-05, 'epoch': 3.3720930232558137}
+{'loss': 0.8686, 'grad_norm': 0.423828125, 'learning_rate': 1.505845423527027e-05, 'epoch': 3.488372093023256}
+{'loss': 0.8569, 'grad_norm': 0.39453125, 'learning_rate': 8.963705903385345e-06, 'epoch': 3.604651162790698}
+{'loss': 0.8787, 'grad_norm': 0.423828125, 'learning_rate': 4.3884438226120424e-06, 'epoch': 3.7209302325581395}
+{'loss': 0.8729, 'grad_norm': 0.419921875, 'learning_rate': 1.409033665520354e-06, 'epoch': 3.8372093023255816}
+{'loss': 0.8741, 'grad_norm': 0.400390625, 'learning_rate': 7.520474957699586e-08, 'epoch': 3.953488372093023}
+{'train_runtime': 429.7584, 'train_samples_per_second': 127.7, 'train_steps_per_second': 0.798, 'train_loss': 1.262070696138432, 'epoch': 3.988372093023256}
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 160, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 149, in main
+    trainer.push_to_hub("Upload model")
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py", line 385, in push_to_hub
+    return super().push_to_hub(commit_message=commit_message, blocking=blocking, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 4072, in push_to_hub
+    self.init_hf_repo(token=token)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/trainer.py", line 3896, in init_hf_repo
+    repo_url = create_repo(repo_name, token=token, private=self.args.hub_private_repo, exist_ok=True)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 3162, in create_repo
+    headers = self._build_hf_headers(token=token, is_write_action=True)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 8191, in _build_hf_headers
+    return build_hf_headers(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/utils/_headers.py", line 122, in build_hf_headers
+    _validate_token_to_send(token_to_send, is_write_action=is_write_action)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/huggingface_hub/utils/_headers.py", line 172, in _validate_token_to_send
+    raise ValueError(
+ValueError: Token is required (write-access action) but no token found. You need to provide a token or be logged in to Hugging Face with `huggingface-cli login` or `huggingface_hub.login`. See https://huggingface.co/settings/tokens.
+wandb: - 0.009 MB of 0.009 MB uploaded
+wandb: \ 0.009 MB of 0.009 MB uploaded
+wandb: | 0.035 MB of 0.056 MB uploaded (0.002 MB deduped)
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇████
+wandb:   train/global_step ▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇████
+wandb:     train/grad_norm ▇▇█▄▂▂▁▁▁▁▁▅▂▂▁▁▂▁▁▁▂▂▂▂▂▁▂▂▂▂▁▂▂▁
+wandb: train/learning_rate ▂▂▃▄▄▅▆▇▇█████▇▇▇▆▆▅▅▅▄▄▃▃▂▂▂▂▁▁▁▁
+wandb:          train/loss █▇▆▅▃▃▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 8.421285996947046e+16
+wandb:              train/epoch 3.98837
+wandb:        train/global_step 343
+wandb:          train/grad_norm 0.40039
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.8741
+wandb:               train_loss 1.26207
+wandb:            train_runtime 429.7584
+wandb: train_samples_per_second 127.7
+wandb:   train_steps_per_second 0.798
+wandb: 
+wandb: 🚀 View run train-Qwen1.5-1.8B at: https://wandb.ai/hetarthvader/huggingface/runs/szkoregq
+wandb: ️⚡ View job at https://wandb.ai/hetarthvader/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NDA5ODUyNQ==/version_details/v3
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240421_150053-szkoregq/logs
+[2024-04-21 15:08:18,974] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 62240) of binary: /u/choprahetarth/.conda/envs/scoder_2_py10/bin/python
+Traceback (most recent call last):
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+finetune.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-04-21_15:08:18
+  host      : gpua076.delta.ncsa.illinois.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 62240)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gpua076: task 0: Exited with exit code 1
+
+
+#!/bin/bash
+#SBATCH --mem=200g
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=64     # <- match to OMP_NUM_THREADS
+#SBATCH --partition=gpuA100x4 # <- one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
+#SBATCH --account='bbvz-delta-gpu'
+#SBATCH --job-name="finetune/custom_fine_tune.py"
+#SBATCH --time=30:00:00
+### GPU options ###
+#SBATCH --gpus-per-node=4
+# SBATCH --gpus-per-task=1
+#SBATCH --gpu-bind=verbose,per_task:1
+
+module reset # drop modules and explicitly load the ones needed
+             # (good job metadata and reproducibility)
+             # $WORK and $SCRATCH are now set
+# module load python anaconda3_gpu  # ... or any appropriate modules
+# module list  # job documentation and metadata
+# echo "job is starting on `hostname`"
+
+source /sw/external/python/anaconda3/etc/profile.d/conda.sh
+conda activate scoder_2_py10
+
+# Set the HF_HOME environment variable
+export HF_HOME=/scratch/bbvz/choprahetarth
+export WANDB_DIR=/scratch/bbvz/choprahetarth  # replace with your desired path
+export WANDB_API_KEY=e1b18fcb1054536d8c6958c02a175ddff40f4914
+export HF_API_KEY=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
+
+
+srun --account=bbvz-delta-gpu \
+python -m torch.distributed.run \
+--nproc_per_node=4 \
+finetune.py \
+--model_id="Qwen/Qwen1.5-1.8B" \
+--dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
+--max_seq_length 512 \
+--max_steps 343 \
+--size_valid_set 1525 \
+--micro_batch_size 10 \
+--gradient_accumulation_steps 4 \
+--weight_decay 0.01 \
+--bf16 True \
+--attention_dropout 0.1 \
+--learning_rate 2e-4 \
+--lr_scheduler_type="cosine" \
+--warmup_steps 100 \
+--seed 1234 \
+--output_dir="/projects/bbvz/choprahetarth/new_experiments/experiment_5/Qwen1.5-1.8B" \
+--num_proc 4 \
+--push_to_hub False \
+--save_freq 10

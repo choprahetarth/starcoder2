@@ -1,0 +1,732 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+trainable params: 151369728 || all params: 1591200768 || trainable%: 9.5129245186488
+trainable params: 151369728 || all params: 1591200768 || trainable%: 9.5129245186488
+trainable params: 151369728 || all params: 1591200768 || trainable%: 9.5129245186488
+trainable params: 151369728 || all params: 1591200768 || trainable%: 9.5129245186488
+Sample from the training dataset: Sample from the training dataset: Sample from the training dataset:  Sample from the training dataset:    {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+
+
+
+
+Map:   0%|          | 0/13721 [00:00<?, ? examples/s]
+Map:   7%|▋         | 1000/13721 [00:05<01:08, 186.80 examples/s]
+Map:  22%|██▏       | 3000/13721 [00:05<00:15, 696.24 examples/s]
+Map:  36%|███▋      | 5000/13721 [00:05<00:06, 1373.51 examples/s]
+Map:  51%|█████     | 7000/13721 [00:05<00:02, 2249.84 examples/s]
+Map:  66%|██████▌   | 9000/13721 [00:05<00:01, 3347.14 examples/s]
+Map:  80%|████████  | 11000/13721 [00:05<00:00, 4659.61 examples/s]
+Map:  95%|█████████▍| 13000/13721 [00:06<00:00, 5887.87 examples/s]
+Map: 100%|██████████| 13721/13721 [00:06<00:00, 2129.04 examples/s]
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:01<00:00, 976.21 examples/s]
+Map: 100%|██████████| 1525/1525 [00:02<00:00, 638.35 examples/s]
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 2273.81 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 2405.48 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 2328.84 examples/s]
+Map: 100%|██████████| 1525/1525 [00:01<00:00, 1357.93 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:01<00:00, 1372.78 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:01<00:00, 999.67 examples/s] 
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /projects/bbvz/choprahetarth/wandb/run-20240419_061450-3l6707bq
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-starcoder2-3b
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/3l6707bq
+[rank3]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank0]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 4.9933, 'grad_norm': 0.54296875, 'learning_rate': 2e-05, 'epoch': 0.11627906976744186}
+{'loss': 4.8782, 'grad_norm': 0.65625, 'learning_rate': 4e-05, 'epoch': 0.23255813953488372}
+{'loss': 4.7308, 'grad_norm': 1.1796875, 'learning_rate': 6e-05, 'epoch': 0.3488372093023256}
+{'loss': 4.2228, 'grad_norm': 1.2421875, 'learning_rate': 8e-05, 'epoch': 0.46511627906976744}
+{'loss': 3.3067, 'grad_norm': 1.6875, 'learning_rate': 0.0001, 'epoch': 0.5813953488372093}
+{'loss': 2.6629, 'grad_norm': 1.8671875, 'learning_rate': 0.00012, 'epoch': 0.6976744186046512}
+{'loss': 2.2161, 'grad_norm': 1.453125, 'learning_rate': 0.00014, 'epoch': 0.813953488372093}
+{'loss': 1.9297, 'grad_norm': 0.56640625, 'learning_rate': 0.00016, 'epoch': 0.9302325581395349}
+{'loss': 1.7877, 'grad_norm': 0.490234375, 'learning_rate': 0.00018, 'epoch': 1.0465116279069768}
+{'loss': 1.6739, 'grad_norm': 0.49609375, 'learning_rate': 0.0002, 'epoch': 1.1627906976744187}
+{'loss': 1.6002, 'grad_norm': 0.4609375, 'learning_rate': 0.00019916545029310012, 'epoch': 1.2790697674418605}
+{'loss': 1.5291, 'grad_norm': 0.46875, 'learning_rate': 0.0001966757306366662, 'epoch': 1.3953488372093024}
+{'loss': 1.4753, 'grad_norm': 0.4296875, 'learning_rate': 0.00019257239692688907, 'epoch': 1.5116279069767442}
+{'loss': 1.4332, 'grad_norm': 0.4453125, 'learning_rate': 0.00018692393788266479, 'epoch': 1.627906976744186}
+{'loss': 1.4208, 'grad_norm': 0.46875, 'learning_rate': 0.0001798246319007893, 'epoch': 1.744186046511628}
+{'loss': 1.3766, 'grad_norm': 0.4453125, 'learning_rate': 0.00017139297345578994, 'epoch': 1.8604651162790697}
+{'loss': 1.3624, 'grad_norm': 0.4765625, 'learning_rate': 0.00016176969530934572, 'epoch': 1.9767441860465116}
+{'loss': 1.3519, 'grad_norm': 0.447265625, 'learning_rate': 0.00015111541954058734, 'epoch': 2.0930232558139537}
+{'loss': 1.3425, 'grad_norm': 0.455078125, 'learning_rate': 0.0001396079766039157, 'epoch': 2.2093023255813953}
+{'loss': 1.2906, 'grad_norm': 0.455078125, 'learning_rate': 0.00012743943716193016, 'epoch': 2.3255813953488373}
+{'loss': 1.3208, 'grad_norm': 0.490234375, 'learning_rate': 0.0001148129062351249, 'epoch': 2.441860465116279}
+{'loss': 1.3007, 'grad_norm': 0.486328125, 'learning_rate': 0.00010193913317718244, 'epoch': 2.558139534883721}
+{'loss': 1.2623, 'grad_norm': 0.4296875, 'learning_rate': 8.903299405874684e-05, 'epoch': 2.6744186046511627}
+{'loss': 1.264, 'grad_norm': 0.494140625, 'learning_rate': 7.630990517218808e-05, 'epoch': 2.7906976744186047}
+{'loss': 1.2347, 'grad_norm': 0.447265625, 'learning_rate': 6.398222751952899e-05, 'epoch': 2.9069767441860463}
+{'loss': 1.2809, 'grad_norm': 0.443359375, 'learning_rate': 5.22557222962051e-05, 'epoch': 3.0232558139534884}
+{'loss': 1.2431, 'grad_norm': 0.51171875, 'learning_rate': 4.132611653215822e-05, 'epoch': 3.13953488372093}
+{'loss': 1.2519, 'grad_norm': 0.4453125, 'learning_rate': 3.137583621312665e-05, 'epoch': 3.255813953488372}
+{'loss': 1.231, 'grad_norm': 0.44140625, 'learning_rate': 2.2570961409586754e-05, 'epoch': 3.3720930232558137}
+{'loss': 1.2438, 'grad_norm': 0.44921875, 'learning_rate': 1.505845423527027e-05, 'epoch': 3.488372093023256}
+{'loss': 1.2487, 'grad_norm': 0.435546875, 'learning_rate': 8.963705903385345e-06, 'epoch': 3.604651162790698}
+{'loss': 1.2497, 'grad_norm': 0.4453125, 'learning_rate': 4.3884438226120424e-06, 'epoch': 3.7209302325581395}
+{'loss': 1.2408, 'grad_norm': 0.44921875, 'learning_rate': 1.409033665520354e-06, 'epoch': 3.8372093023255816}
+{'loss': 1.2568, 'grad_norm': 0.46875, 'learning_rate': 7.520474957699586e-08, 'epoch': 3.953488372093023}
+{'train_runtime': 508.5917, 'train_samples_per_second': 107.906, 'train_steps_per_second': 0.674, 'train_loss': 1.8830477822973846, 'epoch': 3.988372093023256}
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+--- Logging error ---
+Traceback (most recent call last):
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/wandb/sdk/internal/internal.py", line 279, in _process
+    self._hm.handle(record)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/wandb/sdk/internal/handler.py", line 138, in handle
+    handler(record)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/wandb/sdk/internal/handler.py", line 146, in handle_request
+    logger.debug(f"handle_request: {request_type}")
+Message: 'handle_request: status_report'
+Arguments: ()
+
+Upload 3 LFS files:   0%|          | 0/3 [00:00<?, ?it/s]
+
+training_args.bin:   0%|          | 0.00/5.11k [00:00<?, ?B/s][A
+
+
+adapter_model.safetensors:   0%|          | 0.00/9.12M [00:00<?, ?B/s][A[A
+
+
+
+model.safetensors:   0%|          | 0.00/1.93G [00:00<?, ?B/s][A[A[A
+
+
+adapter_model.safetensors:   0%|          | 16.4k/9.12M [00:00<01:02, 145kB/s][A[A
+
+training_args.bin: 100%|██████████| 5.11k/5.11k [00:00<00:00, 44.3kB/s][A
+
+
+
+model.safetensors:   0%|          | 16.4k/1.93G [00:00<3:47:04, 142kB/s][A[A[A
+training_args.bin: 100%|██████████| 5.11k/5.11k [00:00<00:00, 26.8kB/s]
+
+
+
+adapter_model.safetensors:  11%|█         | 967k/9.12M [00:00<00:01, 5.24MB/s][A[A
+
+
+
+model.safetensors:   0%|          | 786k/1.93G [00:00<07:29, 4.30MB/s]  [A[A[A
+
+
+
+model.safetensors:   0%|          | 3.18M/1.93G [00:00<02:29, 12.9MB/s][A[A[A
+
+
+adapter_model.safetensors:  41%|████      | 3.75M/9.12M [00:00<00:00, 14.9MB/s][A[A
+
+
+
+model.safetensors:   0%|          | 9.39M/1.93G [00:00<01:01, 31.3MB/s][A[A[A
+
+
+
+model.safetensors:   1%|          | 16.0M/1.93G [00:00<00:51, 37.3MB/s][A[A[A
+adapter_model.safetensors: 100%|██████████| 9.12M/9.12M [00:00<00:00, 14.5MB/s]
+
+
+
+
+model.safetensors:   1%|          | 20.1M/1.93G [00:00<00:53, 35.9MB/s][A[A[A
+Upload 3 LFS files:  33%|███▎      | 1/3 [00:00<00:01,  1.26it/s]
+
+
+
+model.safetensors:   1%|▏         | 26.1M/1.93G [00:00<00:46, 40.8MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 32.0M/1.93G [00:01<01:30, 21.1MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 38.4M/1.93G [00:01<01:14, 25.6MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 48.0M/1.93G [00:01<01:06, 28.5MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 58.3M/1.93G [00:01<00:48, 39.0MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 63.3M/1.93G [00:01<00:45, 40.9MB/s][A[A[A
+
+
+
+model.safetensors:   4%|▎         | 68.4M/1.93G [00:02<01:02, 29.7MB/s][A[A[A
+
+
+
+model.safetensors:   4%|▍         | 80.0M/1.93G [00:02<00:52, 35.5MB/s][A[A[A
+
+
+
+model.safetensors:   5%|▍         | 96.0M/1.93G [00:02<00:39, 46.2MB/s][A[A[A
+
+
+
+model.safetensors:   6%|▌         | 109M/1.93G [00:02<00:34, 53.3MB/s] [A[A[A
+
+
+
+model.safetensors:   6%|▌         | 115M/1.93G [00:03<00:44, 40.6MB/s][A[A[A
+
+
+
+model.safetensors:   7%|▋         | 128M/1.93G [00:03<00:40, 44.4MB/s][A[A[A
+
+
+
+model.safetensors:   7%|▋         | 144M/1.93G [00:03<00:35, 49.7MB/s][A[A[A
+
+
+
+model.safetensors:   8%|▊         | 160M/1.93G [00:03<00:31, 57.0MB/s][A[A[A
+
+
+
+model.safetensors:   9%|▉         | 176M/1.93G [00:04<00:29, 58.7MB/s][A[A[A
+
+
+
+model.safetensors:  10%|▉         | 192M/1.93G [00:04<00:28, 60.5MB/s][A[A[A
+
+
+
+model.safetensors:  11%|█         | 208M/1.93G [00:04<00:28, 59.7MB/s][A[A[A
+
+
+
+model.safetensors:  12%|█▏        | 224M/1.93G [00:04<00:27, 62.1MB/s][A[A[A
+
+
+
+model.safetensors:  12%|█▏        | 240M/1.93G [00:05<00:26, 63.1MB/s][A[A[A
+
+
+
+model.safetensors:  13%|█▎        | 256M/1.93G [00:05<00:30, 54.8MB/s][A[A[A
+
+
+
+model.safetensors:  14%|█▍        | 272M/1.93G [00:05<00:31, 52.5MB/s][A[A[A
+
+
+
+model.safetensors:  15%|█▍        | 288M/1.93G [00:06<00:33, 49.4MB/s][A[A[A
+
+
+
+model.safetensors:  16%|█▌        | 304M/1.93G [00:06<00:33, 49.2MB/s][A[A[A
+
+
+
+model.safetensors:  17%|█▋        | 320M/1.93G [00:06<00:30, 52.4MB/s][A[A[A
+
+
+
+model.safetensors:  17%|█▋        | 336M/1.93G [00:07<00:30, 53.1MB/s][A[A[A
+
+
+
+model.safetensors:  18%|█▊        | 352M/1.93G [00:07<00:33, 47.9MB/s][A[A[A
+
+
+
+model.safetensors:  19%|█▉        | 368M/1.93G [00:07<00:30, 50.6MB/s][A[A[A
+
+
+
+model.safetensors:  20%|█▉        | 384M/1.93G [00:08<00:30, 51.2MB/s][A[A[A
+
+
+
+model.safetensors:  21%|██        | 400M/1.93G [00:08<00:30, 51.0MB/s][A[A[A
+
+
+
+model.safetensors:  22%|██▏       | 416M/1.93G [00:08<00:28, 52.8MB/s][A[A[A
+
+
+
+model.safetensors:  22%|██▏       | 432M/1.93G [00:09<00:27, 55.0MB/s][A[A[A
+
+
+
+model.safetensors:  23%|██▎       | 448M/1.93G [00:09<00:26, 57.1MB/s][A[A[A
+
+
+
+model.safetensors:  24%|██▍       | 464M/1.93G [00:09<00:27, 54.0MB/s][A[A[A
+
+
+
+model.safetensors:  25%|██▍       | 480M/1.93G [00:09<00:26, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  26%|██▌       | 496M/1.93G [00:10<00:25, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  26%|██▋       | 512M/1.93G [00:10<00:25, 55.4MB/s][A[A[A
+
+
+
+model.safetensors:  27%|██▋       | 528M/1.93G [00:10<00:25, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  28%|██▊       | 544M/1.93G [00:11<00:26, 52.2MB/s][A[A[A
+
+
+
+model.safetensors:  29%|██▉       | 560M/1.93G [00:11<00:24, 55.4MB/s][A[A[A
+
+
+
+model.safetensors:  30%|██▉       | 576M/1.93G [00:11<00:23, 57.8MB/s][A[A[A
+
+
+
+model.safetensors:  31%|███       | 592M/1.93G [00:11<00:22, 58.9MB/s][A[A[A
+
+
+
+model.safetensors:  31%|███▏      | 608M/1.93G [00:12<00:21, 62.1MB/s][A[A[A
+
+
+
+model.safetensors:  32%|███▏      | 624M/1.93G [00:12<00:21, 61.1MB/s][A[A[A
+
+
+
+model.safetensors:  33%|███▎      | 640M/1.93G [00:12<00:21, 61.3MB/s][A[A[A
+
+
+
+model.safetensors:  34%|███▍      | 656M/1.93G [00:12<00:19, 64.4MB/s][A[A[A
+
+
+
+model.safetensors:  35%|███▍      | 672M/1.93G [00:13<00:23, 54.4MB/s][A[A[A
+
+
+
+model.safetensors:  36%|███▌      | 688M/1.93G [00:13<00:22, 56.5MB/s][A[A[A
+
+
+
+model.safetensors:  36%|███▋      | 704M/1.93G [00:13<00:24, 49.7MB/s][A[A[A
+
+
+
+model.safetensors:  37%|███▋      | 720M/1.93G [00:14<00:22, 53.0MB/s][A[A[A
+
+
+
+model.safetensors:  38%|███▊      | 736M/1.93G [00:14<00:22, 52.6MB/s][A[A[A
+
+
+
+model.safetensors:  39%|███▉      | 752M/1.93G [00:14<00:23, 50.1MB/s][A[A[A
+
+
+
+model.safetensors:  40%|███▉      | 768M/1.93G [00:15<00:20, 55.9MB/s][A[A[A
+
+
+
+model.safetensors:  41%|████      | 784M/1.93G [00:15<00:19, 58.3MB/s][A[A[A
+
+
+
+model.safetensors:  41%|████▏     | 800M/1.93G [00:15<00:20, 55.6MB/s][A[A[A
+
+
+
+model.safetensors:  42%|████▏     | 816M/1.93G [00:15<00:20, 55.9MB/s][A[A[A
+
+
+
+model.safetensors:  43%|████▎     | 832M/1.93G [00:16<00:18, 58.6MB/s][A[A[A
+
+
+
+model.safetensors:  44%|████▍     | 848M/1.93G [00:16<00:17, 63.4MB/s][A[A[A
+
+
+
+model.safetensors:  45%|████▍     | 864M/1.93G [00:16<00:15, 67.1MB/s][A[A[A
+
+
+
+model.safetensors:  45%|████▌     | 880M/1.93G [00:16<00:17, 61.7MB/s][A[A[A
+
+
+
+model.safetensors:  46%|████▋     | 896M/1.93G [00:17<00:15, 66.3MB/s][A[A[A
+
+
+
+model.safetensors:  47%|████▋     | 912M/1.93G [00:17<00:20, 48.9MB/s][A[A[A
+
+
+
+model.safetensors:  48%|████▊     | 928M/1.93G [00:17<00:20, 48.1MB/s][A[A[A
+
+
+
+model.safetensors:  49%|████▉     | 944M/1.93G [00:18<00:20, 49.1MB/s][A[A[A
+
+
+
+model.safetensors:  50%|████▉     | 960M/1.93G [00:18<00:19, 49.5MB/s][A[A[A
+
+
+
+model.safetensors:  50%|█████     | 976M/1.93G [00:18<00:19, 48.7MB/s][A[A[A
+
+
+
+model.safetensors:  51%|█████▏    | 992M/1.93G [00:19<00:19, 49.0MB/s][A[A[A
+
+
+
+model.safetensors:  52%|█████▏    | 1.01G/1.93G [00:19<00:18, 50.1MB/s][A[A[A
+
+
+
+model.safetensors:  53%|█████▎    | 1.02G/1.93G [00:19<00:16, 54.4MB/s][A[A[A
+
+
+
+model.safetensors:  54%|█████▍    | 1.04G/1.93G [00:20<00:15, 57.2MB/s][A[A[A
+
+
+
+model.safetensors:  55%|█████▍    | 1.06G/1.93G [00:20<00:15, 57.2MB/s][A[A[A
+
+
+
+model.safetensors:  55%|█████▌    | 1.07G/1.93G [00:20<00:14, 59.6MB/s][A[A[A
+
+
+
+model.safetensors:  56%|█████▌    | 1.09G/1.93G [00:20<00:15, 55.0MB/s][A[A[A
+
+
+
+model.safetensors:  57%|█████▋    | 1.10G/1.93G [00:21<00:14, 58.9MB/s][A[A[A
+
+
+
+model.safetensors:  58%|█████▊    | 1.12G/1.93G [00:21<00:13, 61.9MB/s][A[A[A
+
+
+
+model.safetensors:  59%|█████▊    | 1.14G/1.93G [00:21<00:14, 55.9MB/s][A[A[A
+
+
+
+model.safetensors:  60%|█████▉    | 1.15G/1.93G [00:21<00:13, 57.9MB/s][A[A[A
+
+
+
+model.safetensors:  60%|██████    | 1.17G/1.93G [00:22<00:13, 55.1MB/s][A[A[A
+
+
+
+model.safetensors:  61%|██████    | 1.18G/1.93G [00:22<00:12, 60.1MB/s][A[A[A
+
+
+
+model.safetensors:  62%|██████▏   | 1.20G/1.93G [00:22<00:11, 61.8MB/s][A[A[A
+
+
+
+model.safetensors:  63%|██████▎   | 1.22G/1.93G [00:22<00:10, 67.8MB/s][A[A[A
+
+
+
+model.safetensors:  64%|██████▎   | 1.23G/1.93G [00:23<00:10, 67.0MB/s][A[A[A
+
+
+
+model.safetensors:  65%|██████▍   | 1.25G/1.93G [00:23<00:09, 69.2MB/s][A[A[A
+
+
+
+model.safetensors:  65%|██████▌   | 1.26G/1.93G [00:23<00:10, 61.7MB/s][A[A[A
+
+
+
+model.safetensors:  66%|██████▌   | 1.28G/1.93G [00:23<00:11, 57.5MB/s][A[A[A
+
+
+
+model.safetensors:  67%|██████▋   | 1.30G/1.93G [00:24<00:10, 58.9MB/s][A[A[A
+
+
+
+model.safetensors:  68%|██████▊   | 1.31G/1.93G [00:24<00:11, 55.0MB/s][A[A[A
+
+
+
+model.safetensors:  69%|██████▊   | 1.33G/1.93G [00:24<00:11, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  69%|██████▉   | 1.34G/1.93G [00:25<00:11, 51.3MB/s][A[A[A
+
+
+
+model.safetensors:  70%|███████   | 1.36G/1.93G [00:25<00:11, 51.8MB/s][A[A[A
+
+
+
+model.safetensors:  71%|███████   | 1.38G/1.93G [00:25<00:10, 52.6MB/s][A[A[A
+
+
+
+model.safetensors:  72%|███████▏  | 1.39G/1.93G [00:26<00:11, 47.8MB/s][A[A[A
+
+
+
+model.safetensors:  73%|███████▎  | 1.41G/1.93G [00:26<00:10, 50.3MB/s][A[A[A
+
+
+
+model.safetensors:  74%|███████▎  | 1.42G/1.93G [00:26<00:09, 53.6MB/s][A[A[A
+
+
+
+model.safetensors:  74%|███████▍  | 1.44G/1.93G [00:27<00:09, 52.4MB/s][A[A[A
+
+
+
+model.safetensors:  75%|███████▌  | 1.46G/1.93G [00:27<00:08, 54.2MB/s][A[A[A
+
+
+
+model.safetensors:  76%|███████▌  | 1.47G/1.93G [00:27<00:08, 56.7MB/s][A[A[A
+
+
+
+model.safetensors:  77%|███████▋  | 1.49G/1.93G [00:27<00:07, 60.7MB/s][A[A[A
+
+
+
+model.safetensors:  78%|███████▊  | 1.50G/1.93G [00:28<00:06, 64.8MB/s][A[A[A
+
+
+
+model.safetensors:  79%|███████▊  | 1.52G/1.93G [00:28<00:06, 66.0MB/s][A[A[A
+
+
+
+model.safetensors:  79%|███████▉  | 1.54G/1.93G [00:28<00:05, 68.4MB/s][A[A[A
+
+
+
+model.safetensors:  80%|████████  | 1.55G/1.93G [00:28<00:05, 69.1MB/s][A[A[A
+
+
+
+model.safetensors:  81%|████████  | 1.57G/1.93G [00:29<00:05, 64.2MB/s][A[A[A
+
+
+
+model.safetensors:  82%|████████▏ | 1.58G/1.93G [00:29<00:05, 63.0MB/s][A[A[A
+
+
+
+model.safetensors:  83%|████████▎ | 1.60G/1.93G [00:29<00:05, 59.8MB/s][A[A[A
+
+
+
+model.safetensors:  84%|████████▎ | 1.62G/1.93G [00:29<00:05, 61.0MB/s][A[A[A
+
+
+
+model.safetensors:  84%|████████▍ | 1.63G/1.93G [00:30<00:05, 58.5MB/s][A[A[A
+
+
+
+model.safetensors:  85%|████████▌ | 1.65G/1.93G [00:30<00:04, 58.6MB/s][A[A[A
+
+
+
+model.safetensors:  86%|████████▌ | 1.66G/1.93G [00:30<00:04, 58.2MB/s][A[A[A
+
+
+
+model.safetensors:  87%|████████▋ | 1.68G/1.93G [00:30<00:04, 57.2MB/s][A[A[A
+
+
+
+model.safetensors:  88%|████████▊ | 1.70G/1.93G [00:31<00:04, 59.5MB/s][A[A[A
+
+
+
+model.safetensors:  89%|████████▊ | 1.71G/1.93G [00:31<00:03, 61.2MB/s][A[A[A
+
+
+
+model.safetensors:  89%|████████▉ | 1.73G/1.93G [00:31<00:03, 60.9MB/s][A[A[A
+
+
+
+model.safetensors:  90%|█████████ | 1.74G/1.93G [00:31<00:03, 61.7MB/s][A[A[A
+
+
+
+model.safetensors:  91%|█████████ | 1.76G/1.93G [00:32<00:02, 64.2MB/s][A[A[A
+
+
+
+model.safetensors:  92%|█████████▏| 1.78G/1.93G [00:32<00:02, 64.9MB/s][A[A[A
+
+
+
+model.safetensors:  93%|█████████▎| 1.79G/1.93G [00:32<00:02, 60.8MB/s][A[A[A
+
+
+
+model.safetensors:  93%|█████████▎| 1.81G/1.93G [00:33<00:02, 58.5MB/s][A[A[A
+
+
+
+model.safetensors:  94%|█████████▍| 1.82G/1.93G [00:33<00:01, 59.3MB/s][A[A[A
+
+
+
+model.safetensors:  95%|█████████▌| 1.84G/1.93G [00:33<00:01, 57.4MB/s][A[A[A
+
+
+
+model.safetensors:  96%|█████████▌| 1.86G/1.93G [00:33<00:01, 58.2MB/s][A[A[A
+
+
+
+model.safetensors:  97%|█████████▋| 1.87G/1.93G [00:34<00:01, 53.1MB/s][A[A[A
+
+
+
+model.safetensors:  98%|█████████▊| 1.89G/1.93G [00:34<00:00, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  98%|█████████▊| 1.90G/1.93G [00:34<00:00, 53.4MB/s][A[A[A
+
+
+
+model.safetensors:  99%|█████████▉| 1.92G/1.93G [00:35<00:00, 32.2MB/s][A[A[A
+model.safetensors: 100%|██████████| 1.93G/1.93G [00:36<00:00, 53.6MB/s]
+
+Upload 3 LFS files:  67%|██████▋   | 2/3 [00:36<00:21, 21.22s/it]
+Upload 3 LFS files: 100%|██████████| 3/3 [00:36<00:00, 12.10s/it]
+Training Done! 💥
+wandb: - 0.009 MB of 0.009 MB uploaded
+wandb: \ 0.009 MB of 0.009 MB uploaded
+wandb: | 0.009 MB of 0.009 MB uploaded
+wandb: / 0.035 MB of 0.053 MB uploaded
+wandb: - 0.054 MB of 0.054 MB uploaded
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇████
+wandb:   train/global_step ▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▇▇▇▇████
+wandb:     train/grad_norm ▂▂▅▅▇█▆▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: train/learning_rate ▂▂▃▄▄▅▆▇▇█████▇▇▇▆▆▅▅▅▄▄▃▃▂▂▂▂▁▁▁▁
+wandb:          train/loss ███▇▅▄▃▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 1.4905544293534925e+17
+wandb:              train/epoch 3.98837
+wandb:        train/global_step 343
+wandb:          train/grad_norm 0.46875
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 1.2568
+wandb:               train_loss 1.88305
+wandb:            train_runtime 508.5917
+wandb: train_samples_per_second 107.906
+wandb:   train_steps_per_second 0.674
+wandb: 
+wandb: 🚀 View run train-starcoder2-3b at: https://wandb.ai/hetarthvader/huggingface/runs/3l6707bq
+wandb: ️⚡ View job at https://wandb.ai/hetarthvader/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NDA5ODUyNQ==/version_details/v1
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /projects/bbvz/choprahetarth/wandb/run-20240419_061450-3l6707bq/logs
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+
+
+
+srun --account=bbvz-delta-gpu \
+python -m torch.distributed.run \
+--nproc_per_node=4 \
+finetune.py \
+--model_id="bigcode/starcoder2-3b" \
+--dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
+--max_seq_length 512 \
+--max_steps 343 \
+--size_valid_set 1525 \
+--micro_batch_size 10 \
+--gradient_accumulation_steps 4 \
+--weight_decay 0.01 \
+--bf16 True \
+--attention_dropout 0.1 \
+--learning_rate 2e-4 \
+--lr_scheduler_type="cosine" \
+--warmup_steps 100 \
+--seed 1234 \
+--output_dir="/projects/bbvz/choprahetarth/new_experiments/experiment_3/starcoder2" \
+--num_proc 4 \
+--push_to_hub False \
+--save_freq 10

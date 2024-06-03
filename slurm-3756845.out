@@ -1,0 +1,263 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+trainable params: 117641216 || all params: 1137207296 || trainable%: 10.344746856073636
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  Sample from the training dataset: {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'} 
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.0 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240529_054242-kd89fm29
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-starcoderbase-1b
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/kd89fm29
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+[rank0]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 3.2657, 'grad_norm': 0.3742304742336273, 'learning_rate': 2e-05, 'epoch': 0.046620046620046623}
+{'loss': 3.1907, 'grad_norm': 0.45978671312332153, 'learning_rate': 4e-05, 'epoch': 0.09324009324009325}
+{'loss': 3.0591, 'grad_norm': 0.6622380018234253, 'learning_rate': 6e-05, 'epoch': 0.13986013986013987}
+{'loss': 2.54, 'grad_norm': 0.8600714802742004, 'learning_rate': 8e-05, 'epoch': 0.1864801864801865}
+{'loss': 1.9205, 'grad_norm': 0.7287900447845459, 'learning_rate': 0.0001, 'epoch': 0.2331002331002331}
+{'loss': 1.5618, 'grad_norm': 0.33828005194664, 'learning_rate': 0.00012, 'epoch': 0.27972027972027974}
+{'loss': 1.4352, 'grad_norm': 0.28196027874946594, 'learning_rate': 0.00014, 'epoch': 0.32634032634032634}
+{'loss': 1.3971, 'grad_norm': 0.33539366722106934, 'learning_rate': 0.00016, 'epoch': 0.372960372960373}
+{'loss': 1.3069, 'grad_norm': 0.27708861231803894, 'learning_rate': 0.00018, 'epoch': 0.4195804195804196}
+{'loss': 1.2663, 'grad_norm': 0.2531699538230896, 'learning_rate': 0.0002, 'epoch': 0.4662004662004662}
+{'loss': 1.2081, 'grad_norm': 0.27128809690475464, 'learning_rate': 0.0001999138975205428, 'epoch': 0.5128205128205128}
+{'loss': 1.2065, 'grad_norm': 0.27802231907844543, 'learning_rate': 0.00019965573835491047, 'epoch': 0.5594405594405595}
+{'loss': 1.2124, 'grad_norm': 0.27741414308547974, 'learning_rate': 0.00019922596706598817, 'epoch': 0.6060606060606061}
+{'loss': 1.1881, 'grad_norm': 0.26399555802345276, 'learning_rate': 0.00019862532374124742, 'epoch': 0.6526806526806527}
+{'loss': 1.1982, 'grad_norm': 0.2843071520328522, 'learning_rate': 0.00019785484271827883, 'epoch': 0.6993006993006993}
+{'loss': 1.1589, 'grad_norm': 0.28000739216804504, 'learning_rate': 0.00019691585080361138, 'epoch': 0.745920745920746}
+{'loss': 1.1423, 'grad_norm': 0.2954622805118561, 'learning_rate': 0.000195809964987886, 'epoch': 0.7925407925407926}
+{'loss': 1.1165, 'grad_norm': 0.31643402576446533, 'learning_rate': 0.0001945390896613173, 'epoch': 0.8391608391608392}
+{'loss': 1.1485, 'grad_norm': 0.2904743552207947, 'learning_rate': 0.0001931054133342392, 'epoch': 0.8857808857808858}
+{'loss': 1.1125, 'grad_norm': 0.325141966342926, 'learning_rate': 0.00019151140486838172, 'epoch': 0.9324009324009324}
+{'loss': 1.1279, 'grad_norm': 0.31568023562431335, 'learning_rate': 0.00018975980922536864, 'epoch': 0.9790209790209791}
+{'loss': 1.0936, 'grad_norm': 0.3371945023536682, 'learning_rate': 0.00018785364273975728, 'epoch': 1.0256410256410255}
+{'loss': 1.0946, 'grad_norm': 0.3295609652996063, 'learning_rate': 0.00018579618792476107, 'epoch': 1.0722610722610724}
+{'loss': 1.0659, 'grad_norm': 0.30958881974220276, 'learning_rate': 0.0001835909878195989, 'epoch': 1.118881118881119}
+{'loss': 1.0813, 'grad_norm': 0.28155094385147095, 'learning_rate': 0.00018124183988820573, 'epoch': 1.1655011655011656}
+{'loss': 1.0794, 'grad_norm': 0.3294146955013275, 'learning_rate': 0.00017875278947981178, 'epoch': 1.2121212121212122}
+{'loss': 1.0982, 'grad_norm': 0.35381680727005005, 'learning_rate': 0.00017612812286265013, 'epoch': 1.2587412587412588}
+{'loss': 1.0604, 'grad_norm': 0.2983275353908539, 'learning_rate': 0.00017337235984279047, 'epoch': 1.3053613053613053}
+{'loss': 1.0475, 'grad_norm': 0.32547205686569214, 'learning_rate': 0.000170490245980809, 'epoch': 1.351981351981352}
+{'loss': 1.0664, 'grad_norm': 0.3180098831653595, 'learning_rate': 0.00016748674441969757, 'epoch': 1.3986013986013985}
+{'loss': 1.0565, 'grad_norm': 0.32304665446281433, 'learning_rate': 0.00016436702733808547, 'epoch': 1.4452214452214451}
+{'loss': 1.0487, 'grad_norm': 0.3487681746482849, 'learning_rate': 0.0001611364670434914, 'epoch': 1.491841491841492}
+{'loss': 1.0308, 'grad_norm': 0.2774263918399811, 'learning_rate': 0.0001578006267209433, 'epoch': 1.5384615384615383}
+{'loss': 1.0143, 'grad_norm': 0.30532264709472656, 'learning_rate': 0.00015436525085289814, 'epoch': 1.5850815850815851}
+{'loss': 1.0447, 'grad_norm': 0.3402746319770813, 'learning_rate': 0.00015083625532695796, 'epoch': 1.6317016317016317}
+{'loss': 1.0177, 'grad_norm': 0.3126961290836334, 'learning_rate': 0.00014721971724841837, 'epoch': 1.6783216783216783}
+{'loss': 1.0508, 'grad_norm': 0.34966886043548584, 'learning_rate': 0.00014352186447519162, 'epoch': 1.724941724941725}
+{'loss': 1.0504, 'grad_norm': 0.3241090774536133, 'learning_rate': 0.00013974906489312656, 'epoch': 1.7715617715617715}
+{'loss': 1.0054, 'grad_norm': 0.32240843772888184, 'learning_rate': 0.0001359078154501934, 'epoch': 1.8181818181818183}
+{'loss': 1.0235, 'grad_norm': 0.3015780448913574, 'learning_rate': 0.00013200473096841713, 'epoch': 1.8648018648018647}
+{'loss': 0.9951, 'grad_norm': 0.3034113347530365, 'learning_rate': 0.00012804653275282605, 'epoch': 1.9114219114219115}
+{'loss': 1.0161, 'grad_norm': 0.29502615332603455, 'learning_rate': 0.00012404003701703103, 'epoch': 1.958041958041958}
+{'loss': 1.0261, 'grad_norm': 0.3184022009372711, 'learning_rate': 0.00011999214314536782, 'epoch': 2.0046620046620047}
+{'loss': 1.0306, 'grad_norm': 0.30829209089279175, 'learning_rate': 0.000115909821811815, 'epoch': 2.051282051282051}
+{'loss': 0.9776, 'grad_norm': 0.32285764813423157, 'learning_rate': 0.00011180010297614778, 'epoch': 2.097902097902098}
+{'loss': 1.0217, 'grad_norm': 0.3018933832645416, 'learning_rate': 0.00010767006377799865, 'epoch': 2.1445221445221447}
+{'loss': 0.9897, 'grad_norm': 0.3131411671638489, 'learning_rate': 0.00010352681634967185, 'epoch': 2.191142191142191}
+{'loss': 0.9691, 'grad_norm': 0.2917257249355316, 'learning_rate': 9.937749556869914e-05, 'epoch': 2.237762237762238}
+{'loss': 0.9717, 'grad_norm': 0.31695660948753357, 'learning_rate': 9.522924677122659e-05, 'epoch': 2.2843822843822843}
+{'loss': 1.0027, 'grad_norm': 0.32298752665519714, 'learning_rate': 9.108921344739155e-05, 'epoch': 2.331002331002331}
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+{'loss': 0.9696, 'grad_norm': 0.3452492356300354, 'learning_rate': 8.696452493987843e-05, 'epoch': 2.3776223776223775}
+{'loss': 0.9724, 'grad_norm': 0.3172198235988617, 'learning_rate': 8.286228416683685e-05, 'epoch': 2.4242424242424243}
+{'loss': 0.998, 'grad_norm': 0.29931846261024475, 'learning_rate': 7.878955539030466e-05, 'epoch': 2.4708624708624707}
+{'loss': 1.0059, 'grad_norm': 0.35944199562072754, 'learning_rate': 7.475335205119815e-05, 'epoch': 2.5174825174825175}
+{'loss': 1.003, 'grad_norm': 0.31986162066459656, 'learning_rate': 7.076062469181917e-05, 'epoch': 2.564102564102564}
+{'loss': 0.971, 'grad_norm': 0.2967155873775482, 'learning_rate': 6.681824898667647e-05, 'epoch': 2.6107226107226107}
+{'loss': 0.9468, 'grad_norm': 0.32716163992881775, 'learning_rate': 6.29330139022334e-05, 'epoch': 2.6573426573426575}
+{'loss': 0.9512, 'grad_norm': 0.3061361014842987, 'learning_rate': 5.911161000597079e-05, 'epoch': 2.703962703962704}
+{'loss': 0.9899, 'grad_norm': 0.3028217554092407, 'learning_rate': 5.5360617944898185e-05, 'epoch': 2.7505827505827507}
+{'loss': 0.964, 'grad_norm': 0.3161705434322357, 'learning_rate': 5.168649711335323e-05, 'epoch': 2.797202797202797}
+{'loss': 0.947, 'grad_norm': 0.3281693160533905, 'learning_rate': 4.809557452960436e-05, 'epoch': 2.843822843822844}
+{'loss': 0.969, 'grad_norm': 0.29919689893722534, 'learning_rate': 4.4594033940411564e-05, 'epoch': 2.8904428904428903}
+{'loss': 0.9541, 'grad_norm': 0.34224188327789307, 'learning_rate': 4.118790517230789e-05, 'epoch': 2.937062937062937}
+{'loss': 1.008, 'grad_norm': 0.33142662048339844, 'learning_rate': 3.788305374793892e-05, 'epoch': 2.983682983682984}
+{'loss': 0.97, 'grad_norm': 0.298409640789032, 'learning_rate': 3.468517078534224e-05, 'epoch': 3.0303030303030303}
+{'loss': 0.9366, 'grad_norm': 0.3101344108581543, 'learning_rate': 3.159976319755971e-05, 'epoch': 3.076923076923077}
+{'loss': 0.9521, 'grad_norm': 0.3386113941669464, 'learning_rate': 2.863214420946021e-05, 'epoch': 3.1235431235431235}
+{'loss': 0.985, 'grad_norm': 0.3380368947982788, 'learning_rate': 2.578742420810294e-05, 'epoch': 3.1701631701631703}
+{'loss': 0.9886, 'grad_norm': 0.30503228306770325, 'learning_rate': 2.307050194239746e-05, 'epoch': 3.2167832167832167}
+{'loss': 0.9514, 'grad_norm': 0.37257206439971924, 'learning_rate': 2.0486056087215178e-05, 'epoch': 3.2634032634032635}
+{'loss': 0.9441, 'grad_norm': 0.3319326341152191, 'learning_rate': 1.8038537186479177e-05, 'epoch': 3.31002331002331}
+{'loss': 0.9715, 'grad_norm': 0.34409475326538086, 'learning_rate': 1.5732159989106887e-05, 'epoch': 3.3566433566433567}
+{'loss': 0.94, 'grad_norm': 0.3177104592323303, 'learning_rate': 1.3570896191003458e-05, 'epoch': 3.403263403263403}
+{'loss': 0.9728, 'grad_norm': 0.3131162226200104, 'learning_rate': 1.1558467595604438e-05, 'epoch': 3.44988344988345}
+{'loss': 0.9671, 'grad_norm': 0.3438993990421295, 'learning_rate': 9.698339704745729e-06, 'epoch': 3.4965034965034967}
+{'loss': 0.948, 'grad_norm': 0.2964986562728882, 'learning_rate': 7.993715750897558e-06, 'epoch': 3.543123543123543}
+{'loss': 0.9484, 'grad_norm': 0.3317098319530487, 'learning_rate': 6.447531181039246e-06, 'epoch': 3.58974358974359}
+{'loss': 0.9683, 'grad_norm': 0.32696348428726196, 'learning_rate': 5.062448601674085e-06, 'epoch': 3.6363636363636362}
+{'loss': 0.9642, 'grad_norm': 0.3567865788936615, 'learning_rate': 3.84085319368881e-06, 'epoch': 3.682983682983683}
+{'loss': 0.951, 'grad_norm': 0.2928641438484192, 'learning_rate': 2.784848604953827e-06, 'epoch': 3.7296037296037294}
+{'loss': 0.9336, 'grad_norm': 0.3126756250858307, 'learning_rate': 1.8962533277373184e-06, 'epoch': 3.7762237762237763}
+{'loss': 0.9694, 'grad_norm': 0.3287297487258911, 'learning_rate': 1.1765975671713336e-06, 'epoch': 3.822843822843823}
+{'loss': 0.9617, 'grad_norm': 0.31371209025382996, 'learning_rate': 6.271206061626567e-07, 'epoch': 3.8694638694638694}
+{'loss': 0.9648, 'grad_norm': 0.3285825550556183, 'learning_rate': 2.4876867128625915e-07, 'epoch': 3.916083916083916}
+{'loss': 0.9821, 'grad_norm': 0.33974969387054443, 'learning_rate': 4.2193303336124365e-08, 'epoch': 3.9627039627039626}
+{'train_runtime': 827.1862, 'train_samples_per_second': 66.307, 'train_steps_per_second': 1.036, 'train_loss': 1.1467137959902038, 'epoch': 3.9953379953379953}
+Saving the last checkpoint of the model
+Saving the last checkpoint of the modelSaving the last checkpoint of the model
+
+Saving the last checkpoint of the model
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 151, in main
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2521, in save_pretrained
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 151, in main
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 151, in main
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2521, in save_pretrained
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2521, in save_pretrained
+    shared_names, disjoint_names = _find_disjoint(shared_ptrs.values(), state_dict)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 609, in _find_disjoint
+    areas.append((tensor.data_ptr(), _end_ptr(tensor), name))
+AttributeError: 'str' object has no attribute 'data_ptr'
+    shared_names, disjoint_names = _find_disjoint(shared_ptrs.values(), state_dict)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 609, in _find_disjoint
+    shared_names, disjoint_names = _find_disjoint(shared_ptrs.values(), state_dict)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 609, in _find_disjoint
+    areas.append((tensor.data_ptr(), _end_ptr(tensor), name))
+AttributeError: 'str' object has no attribute 'data_ptr'Traceback (most recent call last):
+
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 164, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 151, in main
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2521, in save_pretrained
+    shared_names, disjoint_names = _find_disjoint(shared_ptrs.values(), state_dict)
+    areas.append((tensor.data_ptr(), _end_ptr(tensor), name))
+AttributeError: 'str' object has no attribute 'data_ptr'  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/transformers/modeling_utils.py", line 609, in _find_disjoint
+    areas.append((tensor.data_ptr(), _end_ptr(tensor), name))
+
+AttributeError: 'str' object has no attribute 'data_ptr'
+wandb: - 0.009 MB of 0.009 MB uploadedwandb: \ 0.009 MB of 0.009 MB uploadedwandb: | 0.036 MB of 0.063 MB uploaded (0.002 MB deduped)wandb: / 0.063 MB of 0.063 MB uploaded (0.002 MB deduped)wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   train/global_step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     train/grad_norm ▃▇█▁▁▁▁▁▂▂▂▂▂▂▂▁▂▂▂▁▂▁▁▂▂▂▂▁▂▂▁▂▂▂▂▁▂▁▂▂
+wandb: train/learning_rate ▂▃▅▆▇██████▇▇▇▇▇▆▆▆▅▅▅▄▄▄▄▃▃▃▂▂▂▂▂▁▁▁▁▁▁
+wandb:          train/loss █▇▄▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 3.912369280594739e+16
+wandb:              train/epoch 3.99534
+wandb:        train/global_step 857
+wandb:          train/grad_norm 0.33975
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.9821
+wandb:               train_loss 1.14671
+wandb:            train_runtime 827.1862
+wandb: train_samples_per_second 66.307
+wandb:   train_steps_per_second 1.036
+wandb: 
+wandb: 🚀 View run train-starcoderbase-1b at: https://wandb.ai/hetarthvader/huggingface/runs/kd89fm29
+wandb: ️⚡ View job at https://wandb.ai/hetarthvader/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NDA5ODUyNQ==/version_details/v6
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240529_054242-kd89fm29/logs
+[2024-05-29 05:56:41,673] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 4057806) of binary: /u/choprahetarth/.conda/envs/scoder_2_py10/bin/python
+Traceback (most recent call last):
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 816, in <module>
+    main()
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 812, in main
+    run(args)
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/run.py", line 803, in run
+    elastic_launch(
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 135, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+finetune.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-05-29_05:56:41
+  host      : gpua045.delta.ncsa.illinois.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 4057807)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-05-29_05:56:41
+  host      : gpua045.delta.ncsa.illinois.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 4057808)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-05-29_05:56:41
+  host      : gpua045.delta.ncsa.illinois.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 4057809)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-05-29_05:56:41
+  host      : gpua045.delta.ncsa.illinois.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 4057806)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gpua045: task 0: Exited with exit code 1

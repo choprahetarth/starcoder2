@@ -1,0 +1,1455 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:42<33:42, 2022.28s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.55s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.56s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.58s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.62s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.65s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.67s/it]
+Loading checkpoint shards:  50%|█████     | 1/2 [33:43<33:43, 2023.68s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:42<00:00, 1468.36s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:42<00:00, 1551.44s/it]
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.67s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.41s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.68s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.41s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.69s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.69s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.40s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.69s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.41s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.69s/it]
+
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1468.43s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [51:43<00:00, 1551.71s/it]
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+trainable params: 262541312 || all params: 3500544000 || trainable%: 7.500014626298084
+Sample from the training dataset:  Sample from the training dataset:  Sample from the training dataset: Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'} 
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}Sample from the training dataset: Sample from the training dataset: 
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+  Sample from the training dataset: 
+
+ {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2_py10/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:318: UserWarning: You passed a tokenizer with `padding_side` not equal to `right` to the SFTTrainer. This might lead to some unexpected behaviour due to overflow issues when training a model in half-precision. You might consider adding `tokenizer.padding_side = 'right'` to your code.
+  warnings.warn(
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+Training...
+Training...
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.16.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240421_172042-jn0a2m5d
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-CodeLlama-7b-hf
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/jn0a2m5d
+[rank2]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank5]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank7]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank0]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank6]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank4]:[W reducer.cpp:1360] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 3.5107, 'grad_norm': 0.455078125, 'learning_rate': 2e-05, 'epoch': 0.046620046620046623}
+{'loss': 3.435, 'grad_norm': 0.91015625, 'learning_rate': 4e-05, 'epoch': 0.09324009324009325}
+{'loss': 3.1638, 'grad_norm': 1.2421875, 'learning_rate': 6e-05, 'epoch': 0.13986013986013987}
+{'loss': 2.4319, 'grad_norm': 1.2109375, 'learning_rate': 8e-05, 'epoch': 0.1864801864801865}
+{'loss': 1.6321, 'grad_norm': 1.1484375, 'learning_rate': 0.0001, 'epoch': 0.2331002331002331}
+{'loss': 1.3078, 'grad_norm': 0.7265625, 'learning_rate': 0.00012, 'epoch': 0.27972027972027974}
+{'loss': 1.1851, 'grad_norm': 0.35546875, 'learning_rate': 0.00014, 'epoch': 0.32634032634032634}
+{'loss': 1.1225, 'grad_norm': 0.56640625, 'learning_rate': 0.00016, 'epoch': 0.372960372960373}
+{'loss': 0.9545, 'grad_norm': 1.140625, 'learning_rate': 0.00018, 'epoch': 0.4195804195804196}
+{'loss': 0.857, 'grad_norm': 0.4921875, 'learning_rate': 0.0002, 'epoch': 0.4662004662004662}
+{'loss': 0.8083, 'grad_norm': 0.296875, 'learning_rate': 0.0001999138975205428, 'epoch': 0.5128205128205128}
+{'loss': 0.7945, 'grad_norm': 0.275390625, 'learning_rate': 0.00019965573835491047, 'epoch': 0.5594405594405595}
+{'loss': 0.7962, 'grad_norm': 0.322265625, 'learning_rate': 0.00019922596706598817, 'epoch': 0.6060606060606061}
+{'loss': 0.7718, 'grad_norm': 0.263671875, 'learning_rate': 0.00019862532374124742, 'epoch': 0.6526806526806527}
+{'loss': 0.7796, 'grad_norm': 0.25, 'learning_rate': 0.00019785484271827883, 'epoch': 0.6993006993006993}
+{'loss': 0.7447, 'grad_norm': 0.287109375, 'learning_rate': 0.00019691585080361138, 'epoch': 0.745920745920746}
+{'loss': 0.7418, 'grad_norm': 0.2412109375, 'learning_rate': 0.000195809964987886, 'epoch': 0.7925407925407926}
+{'loss': 0.7146, 'grad_norm': 0.26171875, 'learning_rate': 0.0001945390896613173, 'epoch': 0.8391608391608392}
+{'loss': 0.7333, 'grad_norm': 0.2314453125, 'learning_rate': 0.0001931054133342392, 'epoch': 0.8857808857808858}
+{'loss': 0.7254, 'grad_norm': 0.2353515625, 'learning_rate': 0.00019151140486838172, 'epoch': 0.9324009324009324}
+{'loss': 0.7173, 'grad_norm': 0.26171875, 'learning_rate': 0.00018975980922536864, 'epoch': 0.9790209790209791}
+{'loss': 0.6915, 'grad_norm': 0.236328125, 'learning_rate': 0.00018785364273975728, 'epoch': 1.0256410256410255}
+{'loss': 0.681, 'grad_norm': 0.271484375, 'learning_rate': 0.00018579618792476107, 'epoch': 1.0722610722610724}
+{'loss': 0.6531, 'grad_norm': 0.26171875, 'learning_rate': 0.0001835909878195989, 'epoch': 1.118881118881119}
+{'loss': 0.6693, 'grad_norm': 0.30859375, 'learning_rate': 0.00018124183988820573, 'epoch': 1.1655011655011656}
+{'loss': 0.667, 'grad_norm': 0.25390625, 'learning_rate': 0.00017875278947981178, 'epoch': 1.2121212121212122}
+{'loss': 0.6788, 'grad_norm': 0.337890625, 'learning_rate': 0.00017612812286265013, 'epoch': 1.2587412587412588}
+{'loss': 0.6543, 'grad_norm': 0.28515625, 'learning_rate': 0.00017337235984279047, 'epoch': 1.3053613053613053}
+{'loss': 0.6502, 'grad_norm': 0.2734375, 'learning_rate': 0.000170490245980809, 'epoch': 1.351981351981352}
+{'loss': 0.6661, 'grad_norm': 0.251953125, 'learning_rate': 0.00016748674441969757, 'epoch': 1.3986013986013985}
+{'loss': 0.6499, 'grad_norm': 0.302734375, 'learning_rate': 0.00016436702733808547, 'epoch': 1.4452214452214451}
+{'loss': 0.6432, 'grad_norm': 0.294921875, 'learning_rate': 0.0001611364670434914, 'epoch': 1.491841491841492}
+{'loss': 0.6426, 'grad_norm': 0.2890625, 'learning_rate': 0.0001578006267209433, 'epoch': 1.5384615384615383}
+{'loss': 0.6231, 'grad_norm': 0.2890625, 'learning_rate': 0.00015436525085289814, 'epoch': 1.5850815850815851}
+{'loss': 0.6527, 'grad_norm': 0.271484375, 'learning_rate': 0.00015083625532695796, 'epoch': 1.6317016317016317}
+{'loss': 0.6372, 'grad_norm': 0.29296875, 'learning_rate': 0.00014721971724841837, 'epoch': 1.6783216783216783}
+{'loss': 0.6496, 'grad_norm': 0.29296875, 'learning_rate': 0.00014352186447519162, 'epoch': 1.724941724941725}
+{'loss': 0.6401, 'grad_norm': 0.291015625, 'learning_rate': 0.00013974906489312656, 'epoch': 1.7715617715617715}
+{'loss': 0.617, 'grad_norm': 0.29296875, 'learning_rate': 0.0001359078154501934, 'epoch': 1.8181818181818183}
+{'loss': 0.6271, 'grad_norm': 0.29296875, 'learning_rate': 0.00013200473096841713, 'epoch': 1.8648018648018647}
+{'loss': 0.6093, 'grad_norm': 0.306640625, 'learning_rate': 0.00012804653275282605, 'epoch': 1.9114219114219115}
+{'loss': 0.6294, 'grad_norm': 0.28125, 'learning_rate': 0.00012404003701703103, 'epoch': 1.958041958041958}
+{'loss': 0.6311, 'grad_norm': 0.318359375, 'learning_rate': 0.00011999214314536782, 'epoch': 2.0046620046620047}
+{'loss': 0.5948, 'grad_norm': 0.310546875, 'learning_rate': 0.000115909821811815, 'epoch': 2.051282051282051}
+{'loss': 0.5741, 'grad_norm': 0.3359375, 'learning_rate': 0.00011180010297614778, 'epoch': 2.097902097902098}
+{'loss': 0.5926, 'grad_norm': 0.3125, 'learning_rate': 0.00010767006377799865, 'epoch': 2.1445221445221447}
+{'loss': 0.5645, 'grad_norm': 0.318359375, 'learning_rate': 0.00010352681634967185, 'epoch': 2.191142191142191}
+{'loss': 0.5623, 'grad_norm': 0.345703125, 'learning_rate': 9.937749556869914e-05, 'epoch': 2.237762237762238}
+{'loss': 0.5628, 'grad_norm': 0.333984375, 'learning_rate': 9.522924677122659e-05, 'epoch': 2.2843822843822843}
+{'loss': 0.5829, 'grad_norm': 0.361328125, 'learning_rate': 9.108921344739155e-05, 'epoch': 2.331002331002331}
+{'loss': 0.5598, 'grad_norm': 0.35546875, 'learning_rate': 8.696452493987843e-05, 'epoch': 2.3776223776223775}
+{'loss': 0.5538, 'grad_norm': 0.359375, 'learning_rate': 8.286228416683685e-05, 'epoch': 2.4242424242424243}
+{'loss': 0.572, 'grad_norm': 0.322265625, 'learning_rate': 7.878955539030466e-05, 'epoch': 2.4708624708624707}
+{'loss': 0.5806, 'grad_norm': 0.37890625, 'learning_rate': 7.475335205119815e-05, 'epoch': 2.5174825174825175}
+{'loss': 0.5837, 'grad_norm': 0.35546875, 'learning_rate': 7.076062469181917e-05, 'epoch': 2.564102564102564}
+{'loss': 0.5667, 'grad_norm': 0.322265625, 'learning_rate': 6.681824898667647e-05, 'epoch': 2.6107226107226107}
+{'loss': 0.5392, 'grad_norm': 0.34375, 'learning_rate': 6.29330139022334e-05, 'epoch': 2.6573426573426575}
+{'loss': 0.5441, 'grad_norm': 0.36328125, 'learning_rate': 5.911161000597079e-05, 'epoch': 2.703962703962704}
+{'loss': 0.567, 'grad_norm': 0.33984375, 'learning_rate': 5.5360617944898185e-05, 'epoch': 2.7505827505827507}
+{'loss': 0.5529, 'grad_norm': 0.345703125, 'learning_rate': 5.168649711335323e-05, 'epoch': 2.797202797202797}
+{'loss': 0.5442, 'grad_norm': 0.34765625, 'learning_rate': 4.809557452960436e-05, 'epoch': 2.843822843822844}
+{'loss': 0.5642, 'grad_norm': 0.345703125, 'learning_rate': 4.4594033940411564e-05, 'epoch': 2.8904428904428903}
+{'loss': 0.5405, 'grad_norm': 0.390625, 'learning_rate': 4.118790517230789e-05, 'epoch': 2.937062937062937}
+{'loss': 0.5799, 'grad_norm': 0.37109375, 'learning_rate': 3.788305374793892e-05, 'epoch': 2.983682983682984}
+{'loss': 0.5353, 'grad_norm': 0.341796875, 'learning_rate': 3.468517078534224e-05, 'epoch': 3.0303030303030303}
+{'loss': 0.5198, 'grad_norm': 0.37109375, 'learning_rate': 3.159976319755971e-05, 'epoch': 3.076923076923077}
+{'loss': 0.5127, 'grad_norm': 0.41796875, 'learning_rate': 2.863214420946021e-05, 'epoch': 3.1235431235431235}
+{'loss': 0.5384, 'grad_norm': 0.400390625, 'learning_rate': 2.578742420810294e-05, 'epoch': 3.1701631701631703}
+{'loss': 0.5336, 'grad_norm': 0.3828125, 'learning_rate': 2.307050194239746e-05, 'epoch': 3.2167832167832167}
+{'loss': 0.5172, 'grad_norm': 0.3984375, 'learning_rate': 2.0486056087215178e-05, 'epoch': 3.2634032634032635}
+{'loss': 0.5299, 'grad_norm': 0.3671875, 'learning_rate': 1.8038537186479177e-05, 'epoch': 3.31002331002331}
+{'loss': 0.5321, 'grad_norm': 0.38671875, 'learning_rate': 1.5732159989106887e-05, 'epoch': 3.3566433566433567}
+{'loss': 0.5129, 'grad_norm': 0.3515625, 'learning_rate': 1.3570896191003458e-05, 'epoch': 3.403263403263403}
+{'loss': 0.524, 'grad_norm': 0.357421875, 'learning_rate': 1.1558467595604438e-05, 'epoch': 3.44988344988345}
+{'loss': 0.526, 'grad_norm': 0.392578125, 'learning_rate': 9.698339704745729e-06, 'epoch': 3.4965034965034967}
+{'loss': 0.5214, 'grad_norm': 0.33203125, 'learning_rate': 7.993715750897558e-06, 'epoch': 3.543123543123543}
+{'loss': 0.5181, 'grad_norm': 0.333984375, 'learning_rate': 6.447531181039246e-06, 'epoch': 3.58974358974359}
+{'loss': 0.5235, 'grad_norm': 0.412109375, 'learning_rate': 5.062448601674085e-06, 'epoch': 3.6363636363636362}
+{'loss': 0.5209, 'grad_norm': 0.423828125, 'learning_rate': 3.84085319368881e-06, 'epoch': 3.682983682983683}
+{'loss': 0.5288, 'grad_norm': 0.359375, 'learning_rate': 2.784848604953827e-06, 'epoch': 3.7296037296037294}
+{'loss': 0.5133, 'grad_norm': 0.36328125, 'learning_rate': 1.8962533277373184e-06, 'epoch': 3.7762237762237763}
+{'loss': 0.5335, 'grad_norm': 0.40234375, 'learning_rate': 1.1765975671713336e-06, 'epoch': 3.822843822843823}
+{'loss': 0.5224, 'grad_norm': 0.388671875, 'learning_rate': 6.271206061626567e-07, 'epoch': 3.8694638694638694}
+{'loss': 0.5129, 'grad_norm': 0.37890625, 'learning_rate': 2.4876867128625915e-07, 'epoch': 3.916083916083916}
+{'loss': 0.5387, 'grad_norm': 0.375, 'learning_rate': 4.2193303336124365e-08, 'epoch': 3.9627039627039626}
+{'train_runtime': 1121.5966, 'train_samples_per_second': 48.902, 'train_steps_per_second': 0.764, 'train_loss': 0.7639630514098159, 'epoch': 3.9953379953379953}
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Saving the last checkpoint of the model
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+
+Upload 3 LFS files:   0%|          | 0/3 [00:00<?, ?it/s]
+
+adapter_model.safetensors:   0%|          | 0.00/40.0M [00:00<?, ?B/s][A
+
+
+training_args.bin:   0%|          | 0.00/5.18k [00:00<?, ?B/s][A[A
+
+
+
+model.safetensors:   0%|          | 0.00/4.21G [00:00<?, ?B/s][A[A[A
+
+
+training_args.bin: 100%|██████████| 5.18k/5.18k [00:00<00:00, 51.2kB/s][A[A
+
+adapter_model.safetensors:   0%|          | 16.4k/40.0M [00:00<04:12, 158kB/s][A
+
+
+
+model.safetensors:   0%|          | 98.3k/4.21G [00:00<1:13:51, 950kB/s][A[A[A
+training_args.bin: 100%|██████████| 5.18k/5.18k [00:00<00:00, 26.3kB/s]
+
+
+adapter_model.safetensors:   5%|▍         | 1.95M/40.0M [00:00<00:03, 10.9MB/s][A
+
+
+
+model.safetensors:   0%|          | 1.82M/4.21G [00:00<06:50, 10.2MB/s] [A[A[A
+
+adapter_model.safetensors:  23%|██▎       | 9.31M/40.0M [00:00<00:00, 38.9MB/s][A
+
+
+
+model.safetensors:   0%|          | 8.47M/4.21G [00:00<01:59, 35.2MB/s][A[A[A
+
+adapter_model.safetensors:  40%|████      | 16.0M/40.0M [00:00<00:00, 37.6MB/s][A
+
+
+
+model.safetensors:   0%|          | 16.0M/4.21G [00:00<02:00, 34.9MB/s][A[A[A
+
+adapter_model.safetensors:  55%|█████▌    | 22.0M/40.0M [00:00<00:00, 42.6MB/s][A
+
+
+
+model.safetensors:   1%|          | 22.0M/4.21G [00:00<01:40, 41.8MB/s][A[A[A
+
+adapter_model.safetensors:  80%|███████▉  | 32.0M/40.0M [00:00<00:00, 42.2MB/s][A
+
+
+
+model.safetensors:   1%|          | 32.0M/4.21G [00:00<01:46, 39.3MB/s][A[A[A
+
+
+
+model.safetensors:   1%|          | 46.4M/4.21G [00:01<01:10, 59.2MB/s][A[A[A
+adapter_model.safetensors: 100%|██████████| 40.0M/40.0M [00:01<00:00, 31.6MB/s]
+
+
+
+
+model.safetensors:   1%|▏         | 53.1M/4.21G [00:01<01:32, 45.0MB/s][A[A[A
+
+
+
+model.safetensors:   1%|▏         | 60.6M/4.21G [00:01<01:21, 50.7MB/s][A[A[A
+Upload 3 LFS files:  33%|███▎      | 1/3 [00:01<00:02,  1.48s/it]
+
+
+
+model.safetensors:   2%|▏         | 66.7M/4.21G [00:01<01:55, 35.8MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 80.0M/4.21G [00:01<01:39, 41.3MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 90.7M/4.21G [00:02<01:19, 51.7MB/s][A[A[A
+
+
+
+model.safetensors:   2%|▏         | 97.2M/4.21G [00:02<01:56, 35.3MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 107M/4.21G [00:02<01:32, 44.4MB/s] [A[A[A
+
+
+
+model.safetensors:   3%|▎         | 113M/4.21G [00:03<02:20, 29.2MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 123M/4.21G [00:03<01:49, 37.3MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 129M/4.21G [00:03<02:14, 30.2MB/s][A[A[A
+
+
+
+model.safetensors:   3%|▎         | 144M/4.21G [00:03<01:43, 39.3MB/s][A[A[A
+
+
+
+model.safetensors:   4%|▍         | 160M/4.21G [00:03<01:28, 45.9MB/s][A[A[A
+
+
+
+model.safetensors:   4%|▍         | 176M/4.21G [00:04<01:17, 52.0MB/s][A[A[A
+
+
+
+model.safetensors:   4%|▍         | 189M/4.21G [00:04<01:04, 62.3MB/s][A[A[A
+
+
+
+model.safetensors:   5%|▍         | 196M/4.21G [00:04<01:27, 46.1MB/s][A[A[A
+
+
+
+model.safetensors:   5%|▍         | 208M/4.21G [00:04<01:23, 47.7MB/s][A[A[A
+
+
+
+model.safetensors:   5%|▌         | 224M/4.21G [00:04<01:03, 62.4MB/s][A[A[A
+
+
+
+model.safetensors:   6%|▌         | 232M/4.21G [00:05<01:28, 45.2MB/s][A[A[A
+
+
+
+model.safetensors:   6%|▌         | 240M/4.21G [00:05<01:30, 43.7MB/s][A[A[A
+
+
+
+model.safetensors:   6%|▌         | 256M/4.21G [00:05<01:24, 46.5MB/s][A[A[A
+
+
+
+model.safetensors:   6%|▋         | 272M/4.21G [00:06<01:16, 51.4MB/s][A[A[A
+
+
+
+model.safetensors:   7%|▋         | 288M/4.21G [00:06<01:21, 47.9MB/s][A[A[A
+
+
+
+model.safetensors:   7%|▋         | 304M/4.21G [00:06<01:16, 51.1MB/s][A[A[A
+
+
+
+model.safetensors:   8%|▊         | 320M/4.21G [00:07<01:12, 53.4MB/s][A[A[A
+
+
+
+model.safetensors:   8%|▊         | 336M/4.21G [00:07<01:10, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:   8%|▊         | 349M/4.21G [00:07<00:59, 64.3MB/s][A[A[A
+
+
+
+model.safetensors:   8%|▊         | 357M/4.21G [00:07<01:11, 53.9MB/s][A[A[A
+
+
+
+model.safetensors:   9%|▊         | 367M/4.21G [00:07<01:05, 58.9MB/s][A[A[A
+
+
+
+model.safetensors:   9%|▉         | 373M/4.21G [00:08<01:27, 43.9MB/s][A[A[A
+
+
+
+model.safetensors:   9%|▉         | 384M/4.21G [00:08<01:29, 42.8MB/s][A[A[A
+
+
+
+model.safetensors:  10%|▉         | 400M/4.21G [00:08<01:17, 49.4MB/s][A[A[A
+
+
+
+model.safetensors:  10%|▉         | 416M/4.21G [00:08<01:13, 51.7MB/s][A[A[A
+
+
+
+model.safetensors:  10%|█         | 432M/4.21G [00:09<01:33, 40.3MB/s][A[A[A
+
+
+
+model.safetensors:  11%|█         | 448M/4.21G [00:09<01:24, 44.7MB/s][A[A[A
+
+
+
+model.safetensors:  11%|█         | 464M/4.21G [00:10<01:17, 48.3MB/s][A[A[A
+
+
+
+model.safetensors:  11%|█▏        | 480M/4.21G [00:10<01:13, 50.6MB/s][A[A[A
+
+
+
+model.safetensors:  12%|█▏        | 496M/4.21G [00:10<01:08, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  12%|█▏        | 512M/4.21G [00:10<01:03, 58.5MB/s][A[A[A
+
+
+
+model.safetensors:  13%|█▎        | 528M/4.21G [00:11<01:02, 58.8MB/s][A[A[A
+
+
+
+model.safetensors:  13%|█▎        | 544M/4.21G [00:11<01:00, 60.2MB/s][A[A[A
+
+
+
+model.safetensors:  13%|█▎        | 560M/4.21G [00:11<00:59, 61.5MB/s][A[A[A
+
+
+
+model.safetensors:  14%|█▎        | 576M/4.21G [00:11<00:57, 62.8MB/s][A[A[A
+
+
+
+model.safetensors:  14%|█▍        | 592M/4.21G [00:11<00:54, 66.4MB/s][A[A[A
+
+
+
+model.safetensors:  14%|█▍        | 608M/4.21G [00:12<00:56, 63.2MB/s][A[A[A
+
+
+
+model.safetensors:  15%|█▍        | 624M/4.21G [00:12<00:56, 62.9MB/s][A[A[A
+
+
+
+model.safetensors:  15%|█▌        | 636M/4.21G [00:12<00:54, 65.7MB/s][A[A[A
+
+
+
+model.safetensors:  15%|█▌        | 642M/4.21G [00:12<01:13, 48.8MB/s][A[A[A
+
+
+
+model.safetensors:  16%|█▌        | 656M/4.21G [00:13<01:02, 56.4MB/s][A[A[A
+
+
+
+model.safetensors:  16%|█▌        | 672M/4.21G [00:13<01:03, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  16%|█▋        | 688M/4.21G [00:13<01:06, 52.8MB/s][A[A[A
+
+
+
+model.safetensors:  17%|█▋        | 704M/4.21G [00:14<01:02, 56.4MB/s][A[A[A
+
+
+
+model.safetensors:  17%|█▋        | 720M/4.21G [00:14<01:03, 55.3MB/s][A[A[A
+
+
+
+model.safetensors:  17%|█▋        | 734M/4.21G [00:14<00:51, 67.2MB/s][A[A[A
+
+
+
+model.safetensors:  18%|█▊        | 743M/4.21G [00:14<01:04, 53.8MB/s][A[A[A
+
+
+
+model.safetensors:  18%|█▊        | 752M/4.21G [00:14<01:14, 46.5MB/s][A[A[A
+
+
+
+model.safetensors:  18%|█▊        | 768M/4.21G [00:15<01:02, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  19%|█▊        | 784M/4.21G [00:15<01:03, 54.3MB/s][A[A[A
+
+
+
+model.safetensors:  19%|█▉        | 800M/4.21G [00:15<01:02, 54.4MB/s][A[A[A
+
+
+
+model.safetensors:  19%|█▉        | 811M/4.21G [00:15<00:57, 58.7MB/s][A[A[A
+
+
+
+model.safetensors:  19%|█▉        | 818M/4.21G [00:16<01:13, 46.2MB/s][A[A[A
+
+
+
+model.safetensors:  20%|█▉        | 832M/4.21G [00:16<01:05, 51.8MB/s][A[A[A
+
+
+
+model.safetensors:  20%|██        | 848M/4.21G [00:16<01:01, 54.6MB/s][A[A[A
+
+
+
+model.safetensors:  21%|██        | 864M/4.21G [00:16<01:00, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  21%|██        | 880M/4.21G [00:17<00:55, 60.5MB/s][A[A[A
+
+
+
+model.safetensors:  21%|██▏       | 896M/4.21G [00:17<01:00, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  22%|██▏       | 912M/4.21G [00:17<01:00, 54.5MB/s][A[A[A
+
+
+
+model.safetensors:  22%|██▏       | 928M/4.21G [00:18<01:00, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  22%|██▏       | 944M/4.21G [00:18<00:55, 59.1MB/s][A[A[A
+
+
+
+model.safetensors:  23%|██▎       | 960M/4.21G [00:18<00:59, 54.5MB/s][A[A[A
+
+
+
+model.safetensors:  23%|██▎       | 976M/4.21G [00:18<00:55, 58.1MB/s][A[A[A
+
+
+
+model.safetensors:  24%|██▎       | 992M/4.21G [00:19<00:56, 56.9MB/s][A[A[A
+
+
+
+model.safetensors:  24%|██▍       | 1.01G/4.21G [00:19<01:00, 52.5MB/s][A[A[A
+
+
+
+model.safetensors:  24%|██▍       | 1.02G/4.21G [00:19<00:58, 54.4MB/s][A[A[A
+
+
+
+model.safetensors:  25%|██▍       | 1.04G/4.21G [00:20<01:00, 52.7MB/s][A[A[A
+
+
+
+model.safetensors:  25%|██▌       | 1.06G/4.21G [00:20<00:56, 55.9MB/s][A[A[A
+
+
+
+model.safetensors:  25%|██▌       | 1.07G/4.21G [00:20<00:53, 58.6MB/s][A[A[A
+
+
+
+model.safetensors:  26%|██▌       | 1.09G/4.21G [00:20<00:49, 63.7MB/s][A[A[A
+
+
+
+model.safetensors:  26%|██▌       | 1.10G/4.21G [00:21<00:48, 63.4MB/s][A[A[A
+
+
+
+model.safetensors:  27%|██▋       | 1.12G/4.21G [00:21<00:44, 70.0MB/s][A[A[A
+
+
+
+model.safetensors:  27%|██▋       | 1.14G/4.21G [00:21<00:45, 67.4MB/s][A[A[A
+
+
+
+model.safetensors:  27%|██▋       | 1.15G/4.21G [00:21<00:44, 68.1MB/s][A[A[A
+
+
+
+model.safetensors:  28%|██▊       | 1.17G/4.21G [00:22<00:45, 66.5MB/s][A[A[A
+
+
+
+model.safetensors:  28%|██▊       | 1.18G/4.21G [00:22<00:46, 64.5MB/s][A[A[A
+
+
+
+model.safetensors:  29%|██▊       | 1.20G/4.21G [00:22<00:46, 65.4MB/s][A[A[A
+
+
+
+model.safetensors:  29%|██▉       | 1.22G/4.21G [00:22<00:51, 57.6MB/s][A[A[A
+
+
+
+model.safetensors:  29%|██▉       | 1.23G/4.21G [00:23<00:50, 58.4MB/s][A[A[A
+
+
+
+model.safetensors:  30%|██▉       | 1.25G/4.21G [00:23<00:54, 54.6MB/s][A[A[A
+
+
+
+model.safetensors:  30%|███       | 1.26G/4.21G [00:23<00:55, 53.1MB/s][A[A[A
+
+
+
+model.safetensors:  30%|███       | 1.28G/4.21G [00:24<00:53, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  31%|███       | 1.30G/4.21G [00:24<00:47, 60.8MB/s][A[A[A
+
+
+
+model.safetensors:  31%|███       | 1.31G/4.21G [00:24<00:45, 64.3MB/s][A[A[A
+
+
+
+model.safetensors:  32%|███▏      | 1.33G/4.21G [00:24<00:41, 68.6MB/s][A[A[A
+
+
+
+model.safetensors:  32%|███▏      | 1.34G/4.21G [00:24<00:41, 69.8MB/s][A[A[A
+
+
+
+model.safetensors:  32%|███▏      | 1.36G/4.21G [00:25<00:39, 71.7MB/s][A[A[A
+
+
+
+model.safetensors:  33%|███▎      | 1.38G/4.21G [00:25<00:42, 66.0MB/s][A[A[A
+
+
+
+model.safetensors:  33%|███▎      | 1.39G/4.21G [00:25<00:49, 56.9MB/s][A[A[A
+
+
+
+model.safetensors:  33%|███▎      | 1.41G/4.21G [00:26<00:49, 56.8MB/s][A[A[A
+
+
+
+model.safetensors:  34%|███▍      | 1.42G/4.21G [00:26<00:46, 59.9MB/s][A[A[A
+
+
+
+model.safetensors:  34%|███▍      | 1.44G/4.21G [00:26<00:52, 52.4MB/s][A[A[A
+
+
+
+model.safetensors:  35%|███▍      | 1.46G/4.21G [00:26<00:49, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  35%|███▍      | 1.47G/4.21G [00:27<00:46, 58.4MB/s][A[A[A
+
+
+
+model.safetensors:  35%|███▌      | 1.49G/4.21G [00:27<00:49, 55.5MB/s][A[A[A
+
+
+
+model.safetensors:  36%|███▌      | 1.50G/4.21G [00:27<00:44, 60.5MB/s][A[A[A
+
+
+
+model.safetensors:  36%|███▌      | 1.52G/4.21G [00:27<00:43, 62.3MB/s][A[A[A
+
+
+
+model.safetensors:  36%|███▋      | 1.54G/4.21G [00:28<00:41, 65.0MB/s][A[A[A
+
+
+
+model.safetensors:  37%|███▋      | 1.55G/4.21G [00:28<00:40, 65.7MB/s][A[A[A
+
+
+
+model.safetensors:  37%|███▋      | 1.57G/4.21G [00:28<00:40, 65.9MB/s][A[A[A
+
+
+
+model.safetensors:  38%|███▊      | 1.58G/4.21G [00:28<00:43, 59.9MB/s][A[A[A
+
+
+
+model.safetensors:  38%|███▊      | 1.60G/4.21G [00:29<00:40, 63.7MB/s][A[A[A
+
+
+
+model.safetensors:  38%|███▊      | 1.62G/4.21G [00:29<00:40, 63.9MB/s][A[A[A
+
+
+
+model.safetensors:  39%|███▉      | 1.63G/4.21G [00:29<00:46, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  39%|███▉      | 1.65G/4.21G [00:30<00:45, 56.8MB/s][A[A[A
+
+
+
+model.safetensors:  40%|███▉      | 1.66G/4.21G [00:30<00:47, 53.1MB/s][A[A[A
+
+
+
+model.safetensors:  40%|███▉      | 1.68G/4.21G [00:30<00:43, 58.8MB/s][A[A[A
+
+
+
+model.safetensors:  40%|████      | 1.70G/4.21G [00:31<00:49, 50.3MB/s][A[A[A
+
+
+
+model.safetensors:  41%|████      | 1.71G/4.21G [00:31<00:48, 51.4MB/s][A[A[A
+
+
+
+model.safetensors:  41%|████      | 1.73G/4.21G [00:31<00:48, 51.0MB/s][A[A[A
+
+
+
+model.safetensors:  41%|████▏     | 1.74G/4.21G [00:32<00:48, 50.3MB/s][A[A[A
+
+
+
+model.safetensors:  42%|████▏     | 1.76G/4.21G [00:32<00:45, 53.3MB/s][A[A[A
+
+
+
+model.safetensors:  42%|████▏     | 1.78G/4.21G [00:32<00:42, 56.9MB/s][A[A[A
+
+
+
+model.safetensors:  43%|████▎     | 1.79G/4.21G [00:32<00:40, 59.2MB/s][A[A[A
+
+
+
+model.safetensors:  43%|████▎     | 1.81G/4.21G [00:33<00:43, 55.4MB/s][A[A[A
+
+
+
+model.safetensors:  43%|████▎     | 1.82G/4.21G [00:33<00:44, 54.2MB/s][A[A[A
+
+
+
+model.safetensors:  44%|████▎     | 1.84G/4.21G [00:33<00:36, 65.0MB/s][A[A[A
+
+
+
+model.safetensors:  44%|████▍     | 1.85G/4.21G [00:33<00:43, 53.8MB/s][A[A[A
+
+
+
+model.safetensors:  44%|████▍     | 1.86G/4.21G [00:33<00:44, 52.6MB/s][A[A[A
+
+
+
+model.safetensors:  44%|████▍     | 1.87G/4.21G [00:34<00:42, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  45%|████▍     | 1.89G/4.21G [00:34<00:38, 60.3MB/s][A[A[A
+
+
+
+model.safetensors:  45%|████▌     | 1.90G/4.21G [00:34<00:38, 60.6MB/s][A[A[A
+
+
+
+model.safetensors:  46%|████▌     | 1.92G/4.21G [00:35<01:15, 30.4MB/s][A[A[A
+
+
+
+model.safetensors:  46%|████▌     | 1.94G/4.21G [00:36<01:02, 36.1MB/s][A[A[A
+
+
+
+model.safetensors:  46%|████▋     | 1.95G/4.21G [00:36<00:53, 42.4MB/s][A[A[A
+
+
+
+model.safetensors:  47%|████▋     | 1.97G/4.21G [00:36<00:47, 47.0MB/s][A[A[A
+
+
+
+model.safetensors:  47%|████▋     | 1.98G/4.21G [00:36<00:42, 51.9MB/s][A[A[A
+
+
+
+model.safetensors:  48%|████▊     | 2.00G/4.21G [00:36<00:38, 56.9MB/s][A[A[A
+
+
+
+model.safetensors:  48%|████▊     | 2.02G/4.21G [00:37<00:36, 59.5MB/s][A[A[A
+
+
+
+model.safetensors:  48%|████▊     | 2.03G/4.21G [00:37<00:38, 56.1MB/s][A[A[A
+
+
+
+model.safetensors:  49%|████▊     | 2.05G/4.21G [00:37<00:36, 59.5MB/s][A[A[A
+
+
+
+model.safetensors:  49%|████▉     | 2.06G/4.21G [00:38<00:40, 53.0MB/s][A[A[A
+
+
+
+model.safetensors:  49%|████▉     | 2.08G/4.21G [00:38<00:38, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  50%|████▉     | 2.10G/4.21G [00:38<00:37, 56.2MB/s][A[A[A
+
+
+
+model.safetensors:  50%|█████     | 2.11G/4.21G [00:38<00:35, 58.7MB/s][A[A[A
+
+
+
+model.safetensors:  51%|█████     | 2.13G/4.21G [00:39<00:35, 58.2MB/s][A[A[A
+
+
+
+model.safetensors:  51%|█████     | 2.14G/4.21G [00:39<00:38, 53.4MB/s][A[A[A
+
+
+
+model.safetensors:  51%|█████▏    | 2.16G/4.21G [00:39<00:39, 51.8MB/s][A[A[A
+
+
+
+model.safetensors:  52%|█████▏    | 2.18G/4.21G [00:40<00:38, 52.1MB/s][A[A[A
+
+
+
+model.safetensors:  52%|█████▏    | 2.19G/4.21G [00:40<00:38, 52.6MB/s][A[A[A
+
+
+
+model.safetensors:  52%|█████▏    | 2.21G/4.21G [00:40<00:36, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  53%|█████▎    | 2.22G/4.21G [00:41<00:34, 57.2MB/s][A[A[A
+
+
+
+model.safetensors:  53%|█████▎    | 2.24G/4.21G [00:41<00:33, 58.7MB/s][A[A[A
+
+
+
+model.safetensors:  54%|█████▎    | 2.26G/4.21G [00:41<00:33, 59.1MB/s][A[A[A
+
+
+
+model.safetensors:  54%|█████▍    | 2.27G/4.21G [00:41<00:31, 62.2MB/s][A[A[A
+
+
+
+model.safetensors:  54%|█████▍    | 2.29G/4.21G [00:42<00:30, 63.4MB/s][A[A[A
+
+
+
+model.safetensors:  55%|█████▍    | 2.30G/4.21G [00:42<00:32, 59.0MB/s][A[A[A
+
+
+
+model.safetensors:  55%|█████▌    | 2.32G/4.21G [00:42<00:31, 59.2MB/s][A[A[A
+
+
+
+model.safetensors:  55%|█████▌    | 2.33G/4.21G [00:42<00:27, 69.4MB/s][A[A[A
+
+
+
+model.safetensors:  56%|█████▌    | 2.34G/4.21G [00:42<00:34, 54.6MB/s][A[A[A
+
+
+
+model.safetensors:  56%|█████▌    | 2.35G/4.21G [00:43<00:36, 50.3MB/s][A[A[A
+
+
+
+model.safetensors:  56%|█████▋    | 2.37G/4.21G [00:43<00:35, 52.0MB/s][A[A[A
+
+
+
+model.safetensors:  57%|█████▋    | 2.38G/4.21G [00:43<00:39, 46.6MB/s][A[A[A
+
+
+
+model.safetensors:  57%|█████▋    | 2.40G/4.21G [00:44<00:36, 49.2MB/s][A[A[A
+
+
+
+model.safetensors:  57%|█████▋    | 2.42G/4.21G [00:44<00:35, 50.3MB/s][A[A[A
+
+
+
+model.safetensors:  58%|█████▊    | 2.43G/4.21G [00:44<00:33, 53.5MB/s][A[A[A
+
+
+
+model.safetensors:  58%|█████▊    | 2.45G/4.21G [00:45<00:32, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  59%|█████▊    | 2.46G/4.21G [00:45<00:31, 55.7MB/s][A[A[A
+
+
+
+model.safetensors:  59%|█████▉    | 2.48G/4.21G [00:45<00:28, 60.1MB/s][A[A[A
+
+
+
+model.safetensors:  59%|█████▉    | 2.50G/4.21G [00:45<00:27, 61.6MB/s][A[A[A
+
+
+
+model.safetensors:  60%|█████▉    | 2.51G/4.21G [00:46<00:26, 64.4MB/s][A[A[A
+
+
+
+model.safetensors:  60%|██████    | 2.53G/4.21G [00:46<00:25, 66.6MB/s][A[A[A
+
+
+
+model.safetensors:  60%|██████    | 2.54G/4.21G [00:46<00:23, 70.0MB/s][A[A[A
+
+
+
+model.safetensors:  61%|██████    | 2.56G/4.21G [00:47<00:36, 45.7MB/s][A[A[A
+
+
+
+model.safetensors:  61%|██████    | 2.58G/4.21G [00:47<00:31, 51.9MB/s][A[A[A
+
+
+
+model.safetensors:  62%|██████▏   | 2.59G/4.21G [00:47<00:31, 50.8MB/s][A[A[A
+
+
+
+model.safetensors:  62%|██████▏   | 2.61G/4.21G [00:47<00:29, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  62%|██████▏   | 2.62G/4.21G [00:48<00:30, 52.2MB/s][A[A[A
+
+
+
+model.safetensors:  63%|██████▎   | 2.64G/4.21G [00:48<00:28, 54.1MB/s][A[A[A
+
+
+
+model.safetensors:  63%|██████▎   | 2.66G/4.21G [00:48<00:32, 48.1MB/s][A[A[A
+
+
+
+model.safetensors:  63%|██████▎   | 2.67G/4.21G [00:49<00:29, 51.6MB/s][A[A[A
+
+
+
+model.safetensors:  64%|██████▍   | 2.69G/4.21G [00:49<00:27, 54.9MB/s][A[A[A
+
+
+
+model.safetensors:  64%|██████▍   | 2.70G/4.21G [00:49<00:26, 55.7MB/s][A[A[A
+
+
+
+model.safetensors:  65%|██████▍   | 2.72G/4.21G [00:49<00:25, 58.0MB/s][A[A[A
+
+
+
+model.safetensors:  65%|██████▌   | 2.74G/4.21G [00:50<00:24, 59.0MB/s][A[A[A
+
+
+
+model.safetensors:  65%|██████▌   | 2.75G/4.21G [00:50<00:22, 63.7MB/s][A[A[A
+
+
+
+model.safetensors:  66%|██████▌   | 2.77G/4.21G [00:50<00:24, 59.1MB/s][A[A[A
+
+
+
+model.safetensors:  66%|██████▌   | 2.78G/4.21G [00:50<00:22, 62.0MB/s][A[A[A
+
+
+
+model.safetensors:  67%|██████▋   | 2.80G/4.21G [00:51<00:29, 47.6MB/s][A[A[A
+
+
+
+model.safetensors:  67%|██████▋   | 2.82G/4.21G [00:51<00:27, 50.7MB/s][A[A[A
+
+
+
+model.safetensors:  67%|██████▋   | 2.83G/4.21G [00:51<00:24, 56.0MB/s][A[A[A
+
+
+
+model.safetensors:  68%|██████▊   | 2.85G/4.21G [00:52<00:22, 60.1MB/s][A[A[A
+
+
+
+model.safetensors:  68%|██████▊   | 2.86G/4.21G [00:52<00:22, 60.1MB/s][A[A[A
+
+
+
+model.safetensors:  68%|██████▊   | 2.88G/4.21G [00:52<00:21, 61.2MB/s][A[A[A
+
+
+
+model.safetensors:  69%|██████▉   | 2.90G/4.21G [00:52<00:20, 62.7MB/s][A[A[A
+
+
+
+model.safetensors:  69%|██████▉   | 2.91G/4.21G [00:53<00:20, 62.3MB/s][A[A[A
+
+
+
+model.safetensors:  70%|██████▉   | 2.93G/4.21G [00:53<00:20, 62.6MB/s][A[A[A
+
+
+
+model.safetensors:  70%|██████▉   | 2.94G/4.21G [00:53<00:19, 65.0MB/s][A[A[A
+
+
+
+model.safetensors:  70%|███████   | 2.96G/4.21G [00:53<00:19, 62.6MB/s][A[A[A
+
+
+
+model.safetensors:  71%|███████   | 2.98G/4.21G [00:54<00:20, 61.2MB/s][A[A[A
+
+
+
+model.safetensors:  71%|███████   | 2.99G/4.21G [00:54<00:20, 58.8MB/s][A[A[A
+
+
+
+model.safetensors:  71%|███████▏  | 3.01G/4.21G [00:54<00:20, 57.9MB/s][A[A[A
+
+
+
+model.safetensors:  72%|███████▏  | 3.02G/4.21G [00:55<00:20, 57.1MB/s][A[A[A
+
+
+
+model.safetensors:  72%|███████▏  | 3.04G/4.21G [00:55<00:19, 59.0MB/s][A[A[A
+
+
+
+model.safetensors:  73%|███████▎  | 3.06G/4.21G [00:55<00:20, 57.1MB/s][A[A[A
+
+
+
+model.safetensors:  73%|███████▎  | 3.07G/4.21G [00:56<00:21, 51.9MB/s][A[A[A
+
+
+
+model.safetensors:  73%|███████▎  | 3.09G/4.21G [00:56<00:20, 54.3MB/s][A[A[A
+
+
+
+model.safetensors:  74%|███████▍  | 3.10G/4.21G [00:56<00:21, 51.7MB/s][A[A[A
+
+
+
+model.safetensors:  74%|███████▍  | 3.12G/4.21G [00:56<00:19, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  75%|███████▍  | 3.14G/4.21G [00:57<00:20, 51.8MB/s][A[A[A
+
+
+
+model.safetensors:  75%|███████▍  | 3.15G/4.21G [00:57<00:18, 56.4MB/s][A[A[A
+
+
+
+model.safetensors:  75%|███████▌  | 3.17G/4.21G [00:57<00:18, 57.1MB/s][A[A[A
+
+
+
+model.safetensors:  76%|███████▌  | 3.18G/4.21G [00:58<00:19, 52.8MB/s][A[A[A
+
+
+
+model.safetensors:  76%|███████▌  | 3.20G/4.21G [00:58<00:17, 59.2MB/s][A[A[A
+
+
+
+model.safetensors:  76%|███████▋  | 3.22G/4.21G [00:58<00:15, 63.2MB/s][A[A[A
+
+
+
+model.safetensors:  77%|███████▋  | 3.23G/4.21G [00:58<00:14, 68.5MB/s][A[A[A
+
+
+
+model.safetensors:  77%|███████▋  | 3.25G/4.21G [00:58<00:14, 67.9MB/s][A[A[A
+
+
+
+model.safetensors:  78%|███████▊  | 3.26G/4.21G [00:59<00:14, 65.2MB/s][A[A[A
+
+
+
+model.safetensors:  78%|███████▊  | 3.28G/4.21G [00:59<00:13, 67.9MB/s][A[A[A
+
+
+
+model.safetensors:  78%|███████▊  | 3.30G/4.21G [00:59<00:13, 68.0MB/s][A[A[A
+
+
+
+model.safetensors:  79%|███████▊  | 3.31G/4.21G [00:59<00:13, 68.6MB/s][A[A[A
+
+
+
+model.safetensors:  79%|███████▉  | 3.33G/4.21G [01:00<00:12, 70.4MB/s][A[A[A
+
+
+
+model.safetensors:  79%|███████▉  | 3.34G/4.21G [01:00<00:12, 66.7MB/s][A[A[A
+
+
+
+model.safetensors:  80%|███████▉  | 3.36G/4.21G [01:00<00:11, 71.1MB/s][A[A[A
+
+
+
+model.safetensors:  80%|████████  | 3.38G/4.21G [01:00<00:12, 65.4MB/s][A[A[A
+
+
+
+model.safetensors:  81%|████████  | 3.39G/4.21G [01:01<00:13, 62.2MB/s][A[A[A
+
+
+
+model.safetensors:  81%|████████  | 3.41G/4.21G [01:01<00:15, 52.8MB/s][A[A[A
+
+
+
+model.safetensors:  81%|████████▏ | 3.42G/4.21G [01:01<00:13, 56.2MB/s][A[A[A
+
+
+
+model.safetensors:  82%|████████▏ | 3.44G/4.21G [01:02<00:13, 57.5MB/s][A[A[A
+
+
+
+model.safetensors:  82%|████████▏ | 3.46G/4.21G [01:02<00:12, 59.1MB/s][A[A[A
+
+
+
+model.safetensors:  82%|████████▏ | 3.47G/4.21G [01:02<00:12, 58.5MB/s][A[A[A
+
+
+
+model.safetensors:  83%|████████▎ | 3.49G/4.21G [01:02<00:11, 61.8MB/s][A[A[A
+
+
+
+model.safetensors:  83%|████████▎ | 3.50G/4.21G [01:03<00:13, 50.7MB/s][A[A[A
+
+
+
+model.safetensors:  84%|████████▎ | 3.52G/4.21G [01:03<00:12, 55.2MB/s][A[A[A
+
+
+
+model.safetensors:  84%|████████▍ | 3.54G/4.21G [01:03<00:11, 60.2MB/s][A[A[A
+
+
+
+model.safetensors:  84%|████████▍ | 3.55G/4.21G [01:03<00:11, 59.6MB/s][A[A[A
+
+
+
+model.safetensors:  85%|████████▍ | 3.57G/4.21G [01:04<00:10, 63.6MB/s][A[A[A
+
+
+
+model.safetensors:  85%|████████▌ | 3.58G/4.21G [01:04<00:09, 66.0MB/s][A[A[A
+
+
+
+model.safetensors:  86%|████████▌ | 3.60G/4.21G [01:04<00:10, 59.5MB/s][A[A[A
+
+
+
+model.safetensors:  86%|████████▌ | 3.62G/4.21G [01:04<00:09, 61.1MB/s][A[A[A
+
+
+
+model.safetensors:  86%|████████▋ | 3.63G/4.21G [01:05<00:09, 58.1MB/s][A[A[A
+
+
+
+model.safetensors:  87%|████████▋ | 3.65G/4.21G [01:05<00:09, 60.6MB/s][A[A[A
+
+
+
+model.safetensors:  87%|████████▋ | 3.66G/4.21G [01:05<00:09, 57.9MB/s][A[A[A
+
+
+
+model.safetensors:  87%|████████▋ | 3.68G/4.21G [01:06<00:09, 54.8MB/s][A[A[A
+
+
+
+model.safetensors:  88%|████████▊ | 3.70G/4.21G [01:06<00:09, 51.4MB/s][A[A[A
+
+
+
+model.safetensors:  88%|████████▊ | 3.71G/4.21G [01:06<00:08, 55.8MB/s][A[A[A
+
+
+
+model.safetensors:  89%|████████▊ | 3.73G/4.21G [01:06<00:08, 58.4MB/s][A[A[A
+
+
+
+model.safetensors:  89%|████████▉ | 3.74G/4.21G [01:07<00:08, 57.4MB/s][A[A[A
+
+
+
+model.safetensors:  89%|████████▉ | 3.76G/4.21G [01:07<00:07, 57.1MB/s][A[A[A
+
+
+
+model.safetensors:  90%|████████▉ | 3.78G/4.21G [01:07<00:07, 55.3MB/s][A[A[A
+
+
+
+model.safetensors:  90%|█████████ | 3.79G/4.21G [01:08<00:07, 58.0MB/s][A[A[A
+
+
+
+model.safetensors:  90%|█████████ | 3.81G/4.21G [01:08<00:06, 58.4MB/s][A[A[A
+
+
+
+model.safetensors:  91%|█████████ | 3.82G/4.21G [01:08<00:07, 52.0MB/s][A[A[A
+
+
+
+model.safetensors:  91%|█████████ | 3.84G/4.21G [01:09<00:07, 50.7MB/s][A[A[A
+
+
+
+model.safetensors:  92%|█████████▏| 3.85G/4.21G [01:09<00:05, 61.2MB/s][A[A[A
+
+
+
+model.safetensors:  92%|█████████▏| 3.86G/4.21G [01:09<00:07, 48.1MB/s][A[A[A
+
+
+
+model.safetensors:  92%|█████████▏| 3.87G/4.21G [01:09<00:07, 43.6MB/s][A[A[A
+
+
+
+model.safetensors:  92%|█████████▏| 3.89G/4.21G [01:10<00:07, 45.1MB/s][A[A[A
+
+
+
+model.safetensors:  93%|█████████▎| 3.90G/4.21G [01:10<00:05, 52.4MB/s][A[A[A
+
+
+
+model.safetensors:  93%|█████████▎| 3.92G/4.21G [01:10<00:05, 53.5MB/s][A[A[A
+
+
+
+model.safetensors:  94%|█████████▎| 3.94G/4.21G [01:10<00:05, 53.0MB/s][A[A[A
+
+
+
+model.safetensors:  94%|█████████▍| 3.95G/4.21G [01:11<00:04, 53.5MB/s][A[A[A
+
+
+
+model.safetensors:  94%|█████████▍| 3.97G/4.21G [01:11<00:04, 54.7MB/s][A[A[A
+
+
+
+model.safetensors:  95%|█████████▍| 3.98G/4.21G [01:11<00:04, 51.0MB/s][A[A[A
+
+
+
+model.safetensors:  95%|█████████▌| 4.00G/4.21G [01:12<00:03, 55.6MB/s][A[A[A
+
+
+
+model.safetensors:  95%|█████████▌| 4.02G/4.21G [01:12<00:03, 57.4MB/s][A[A[A
+
+
+
+model.safetensors:  96%|█████████▌| 4.03G/4.21G [01:12<00:02, 62.7MB/s][A[A[A
+
+
+
+model.safetensors:  96%|█████████▌| 4.05G/4.21G [01:12<00:02, 65.9MB/s][A[A[A
+
+
+
+model.safetensors:  97%|█████████▋| 4.06G/4.21G [01:12<00:02, 67.9MB/s][A[A[A
+
+
+
+model.safetensors:  97%|█████████▋| 4.08G/4.21G [01:13<00:01, 66.3MB/s][A[A[A
+
+
+
+model.safetensors:  97%|█████████▋| 4.10G/4.21G [01:13<00:01, 68.6MB/s][A[A[A
+
+
+
+model.safetensors:  98%|█████████▊| 4.11G/4.21G [01:13<00:01, 67.9MB/s][A[A[A
+
+
+
+model.safetensors:  98%|█████████▊| 4.13G/4.21G [01:13<00:01, 65.6MB/s][A[A[A
+
+
+
+model.safetensors:  98%|█████████▊| 4.14G/4.21G [01:14<00:00, 74.2MB/s][A[A[A
+
+
+
+model.safetensors:  99%|█████████▊| 4.15G/4.21G [01:14<00:00, 58.5MB/s][A[A[A
+
+
+
+model.safetensors:  99%|█████████▉| 4.16G/4.21G [01:14<00:00, 52.3MB/s][A[A[A
+model.safetensors:  99%|█████████▉| 4.18G/4.21G [01:14<00:00, 57.2MB/s][A[A[A
+model.safetensors: 100%|█████████▉| 4.19G/4.21G [01:15<00:00, 55.0MB/s][A[A[A
+model.safetensors: 100%|█████████▉| 4.21G/4.21G [01:15<00:00, 58.5MB/s][A[A[A
+model.safetensors: 100%|██████████| 4.21G/4.21G [01:15<00:00, 55.7MB/s]
+
+Upload 3 LFS files:  67%|██████▋   | 2/3 [01:15<00:44, 44.32s/it]
+Upload 3 LFS files: 100%|██████████| 3/3 [01:15<00:00, 25.26s/it]
+Training Done! 💥
+wandb: - 0.015 MB of 0.015 MB uploaded
+wandb: \ 0.015 MB of 0.015 MB uploaded
+wandb: | 0.041 MB of 0.066 MB uploaded (0.002 MB deduped)
+wandb: / 0.066 MB of 0.066 MB uploaded (0.002 MB deduped)
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   train/global_step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     train/grad_norm ▃█▇▂▇▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb: train/learning_rate ▂▃▅▆▇██████▇▇▇▇▇▆▆▆▅▅▅▄▄▄▄▃▃▃▂▂▂▂▂▁▁▁▁▁▁
+wandb:          train/loss █▇▄▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 2.451937236615168e+17
+wandb:              train/epoch 3.99534
+wandb:        train/global_step 857
+wandb:          train/grad_norm 0.375
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.5387
+wandb:               train_loss 0.76396
+wandb:            train_runtime 1121.5966
+wandb: train_samples_per_second 48.902
+wandb:   train_steps_per_second 0.764
+wandb: 
+wandb: 🚀 View run train-CodeLlama-7b-hf at: https://wandb.ai/hetarthvader/huggingface/runs/jn0a2m5d
+wandb: ️⚡ View job at https://wandb.ai/hetarthvader/huggingface/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjE2NDA5ODUyNQ==/version_details/v4
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240421_172042-jn0a2m5d/logs
+
+
+
+#!/bin/bash
+#SBATCH --mem=200g
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=64     # <- match to OMP_NUM_THREADS
+#SBATCH --partition=gpuA100x8 # <- one of: gpuA100x4 gpuA40x4 gpuA100x8 gpuMI100x8
+#SBATCH --account='bbvz-delta-gpu'
+#SBATCH --job-name="finetune/custom_fine_tune.py"
+#SBATCH --time=30:00:00
+### GPU options ###
+#SBATCH --gpus-per-node=8
+# SBATCH --gpus-per-task=1
+#SBATCH --gpu-bind=verbose,per_task:1
+
+module reset # drop modules and explicitly load the ones needed
+             # (good job metadata and reproducibility)
+             # $WORK and $SCRATCH are now set
+# module load python anaconda3_gpu  # ... or any appropriate modules
+# module list  # job documentation and metadata
+# echo "job is starting on `hostname`"
+
+source /sw/external/python/anaconda3/etc/profile.d/conda.sh
+conda activate scoder_2_py10
+
+# Set the HF_HOME environment variable
+export HF_HOME=/scratch/bbvz/choprahetarth
+export WANDB_DIR=/scratch/bbvz/choprahetarth  # replace with your desired path
+export WANDB_API_KEY=e1b18fcb1054536d8c6958c02a175ddff40f4914
+export HF_API_KEY=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
+export HF_TOKEN=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
+
+
+srun --account=bbvz-delta-gpu \
+python -m torch.distributed.run \
+--nproc_per_node=8 \
+finetune.py \
+--model_id="meta-llama/CodeLlama-7b-hf" \
+--dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
+--max_seq_length 512 \
+--max_steps 857 \
+--size_valid_set 1525 \
+--micro_batch_size 2 \
+--gradient_accumulation_steps 4 \
+--weight_decay 0.01 \
+--bf16 True \
+--attention_dropout 0.1 \
+--learning_rate 2e-4 \
+--lr_scheduler_type="cosine" \
+--warmup_steps 100 \
+--seed 1234 \
+--output_dir="/projects/bbvz/choprahetarth/new_experiments/experiment_4/codellama-7b" \
+--num_proc 8 \
+--push_to_hub False \
+--save_freq 101
