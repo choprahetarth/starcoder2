@@ -14,20 +14,23 @@ from transformers import (
     logging,
     set_seed,
 )
+from trl import LoRA
 from trl import SFTTrainer
 
-
+print(os.getcwd())
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="bigcode/starcoder2-3b")
+    parser.add_argument("--cache_dir", type=str, default="/scratch/bbvz/choprahetarth/hub")
     parser.add_argument("--dataset_name", type=str, default="/u/choprahetarth/all_files/data/train_ftdata-new-small.json")
     parser.add_argument("--max_seq_length", type=int, default=1024)
-    parser.add_argument("--max_steps", type=int, default=1000)
+    parser.add_argument("--max_steps", type=int, default=100)
     parser.add_argument("--size_valid_set", type=int, default=1525)
     parser.add_argument("--micro_batch_size", type=int, default=1)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
-    parser.add_argument("--bf16", type=bool, default=True)
+    parser.add_argument("--bf16", type=bool, default=False)
+    parser.add_argument("--fp16", type=bool, default=True)
     parser.add_argument("--lora_rank", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
@@ -62,45 +65,52 @@ def main(args):
     #     bnb_4bit_quant_type="nf4",
     #     bnb_4bit_compute_dtype=torch.bfloat16,
     # )
-    # lora_config = LoraConfig(
-    #     r=args.lora_rank,
-    #     target_modules=[
-    #         "q_proj",
-    #         "o_proj",
-    #         "k_proj",
-    #         "v_proj",
-    #         "gate_proj",
-    #         "up_proj",
-    #         "down_proj",
-    #     ],
-    #     task_type="CAUSAL_LM",
-    # )
+    # Uncomment for Starcoder 2 / CodeLLaMa etc.
+    print("I am loading LORA") 
+    lora_config = LoraConfig(
+        r=args.lora_rank,
+        target_modules=[
+            "q_proj",
+            "o_proj",
+            "k_proj",
+            "v_proj",
+            "gate_proj",
+            "up_proj",
+            "down_proj",
+        ],
+        task_type="CAUSAL_LM",
+    )
+    print("Loading BNB")
     bnb_config = BitsAndBytesConfig(
         load_in_8bit=True,
     )
-    lora_config = LoraConfig(
-        r=args.lora_rank,
-        target_modules = ["c_proj", "c_attn", "q_attn"],
-        task_type="CAUSAL_LM",
-    )
+    # Uncomment for starcoder-1
+    # lora_config = LoraConfig(
+    #     r=args.lora_rank,
+    #     target_modules = ["c_proj", "c_attn", "q_attn"],
+    #     task_type="CAUSAL_LM",
+    # )
 
     # load model and dataset
     token = os.environ.get("HF_TOKEN", None)
+    print("Loading Model")
     model = AutoModelForCausalLM.from_pretrained(
         args.model_id,
         quantization_config=bnb_config,
+        low_cpu_mem_usage=True,
         device_map={"": PartialState().process_index},
+        cache_dir=args.cache_dir
         # attention_dropout=args.attention_dropout,
     )
-    print_trainable_parameters(model)
-
+    # print_trainable_parameters(model)
+    print("Model Loaded")
     def create_instruction(sample):
         return {
             "prompt": "Given this Ansible Name Field, please generate the ansible task. " + sample["input"],
             "completion": sample["output"]
         }
 
-    dataset = load_dataset('json', data_files=args.dataset_name, num_proc=multiprocessing.cpu_count())
+    dataset = load_dataset('json', data_files=args.dataset_name, num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count())
     columns_to_remove = ['license', 'repo_name', 'path', 'download_link', 'download_count', 'org_name', 'output', 'input']
     dataset = dataset['train'].map(create_instruction, remove_columns=columns_to_remove, batched=False)
     
@@ -131,6 +141,7 @@ def main(args):
             lr_scheduler_type=args.lr_scheduler_type,
             weight_decay=args.weight_decay,
             bf16=args.bf16,
+            fp16=args.fp16,
             logging_strategy="steps",
             logging_steps=args.save_freq,
             output_dir=args.output_dir,
@@ -146,19 +157,24 @@ def main(args):
     # launch
     print("Training...")
     trainer.train()
-
+    # model.config.return_dict=True
+    print(model)
     print("Saving the last checkpoint of the model")
-    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
-    # if args.push_to_hub:
-        # trainer.push_to_hub("Upload model")
+    torch.save(model.state_dict(), os.path.join(args.output_dir, "final_checkpoint/pytorch_model.bin"))
     print("Training Done! 💥")
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+
+    # if args.push_to_hub:
+    #     trainer.push_to_hub("codellama-ansible-7b-hf-truncated-embeddings")
 
 
 if __name__ == "__main__":
     args = get_args()
+    os.makedirs(os.path.join(args.output_dir, "final_checkpoint"), exist_ok=True)
     set_seed(args.seed)
-    os.makedirs(args.output_dir, exist_ok=True)
+    # os.makedirs(args.output_dir, exist_ok=True)
+    logging.set_verbosity_info()
 
-    logging.set_verbosity_error()
+    # logging.set_verbosity_error()
 
     main(args)
