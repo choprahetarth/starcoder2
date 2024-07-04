@@ -36,13 +36,13 @@ python -m torch.distributed.run \
 finetune.py \
 --model_id="meta-llama/CodeLlama-7b-hf" \
 --dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
---max_seq_length 512 \
---max_steps 858 \
+--max_seq_length 1024 \
+--max_steps 1716 \
 --size_valid_set 1525 \
---micro_batch_size 4 \
+--micro_batch_size 2 \
 --gradient_accumulation_steps 1 \
 --weight_decay 0.01 \
---fp16 True \
+--bf16 True \
 --lora_rank 16 \
 --learning_rate 2e-4 \
 --lr_scheduler_type="cosine" \

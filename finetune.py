@@ -13,8 +13,11 @@ from transformers import (
     BitsAndBytesConfig,
     logging,
     set_seed,
+    AutoTokenizer,
+    AutoModelForCausalLM
 )
-from trl import LoRA
+from peft import PeftModel
+# from trl import LoRA
 from trl import SFTTrainer
 
 print(os.getcwd())
@@ -29,8 +32,8 @@ def get_args():
     parser.add_argument("--micro_batch_size", type=int, default=1)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
-    parser.add_argument("--bf16", type=bool, default=False)
-    parser.add_argument("--fp16", type=bool, default=True)
+    parser.add_argument("--bf16", type=bool, default=True)
+    parser.add_argument("--fp16", type=bool, default=False)
     parser.add_argument("--lora_rank", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
@@ -160,9 +163,29 @@ def main(args):
     # model.config.return_dict=True
     print(model)
     print("Saving the last checkpoint of the model")
-    torch.save(model.state_dict(), os.path.join(args.output_dir, "final_checkpoint/pytorch_model.bin"))
+    print("saving the model peft layer")
+    
+    trainer.model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+    print("Merging the Lora layers back")
+    base_model = AutoModelForCausalLM.from_pretrained(
+        args.model_id,
+        return_dict=True,
+        torch_dtype=torch.float16, # for starcoder7b/starcoder float 16, and others float32
+        device_map='auto',
+    )
+    print("Loading PEFT model...")
+    model = PeftModel.from_pretrained(base_model, os.path.join(args.output_dir, "final_checkpoint/"), device_map='auto')
+    print("Merging and unloading model...")
+    model = model.merge_and_unload()
+    print("Loading tokenizer...")
+    tokenizer = AutoTokenizer.from_pretrained(args.model_id)
+    
+    print("Saving pretrained model and tokenizer...")
+    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint_merged/"))
+    tokenizer.save_pretrained(os.path.join(args.output_dir, "final_checkpoint_merged/"))
+    
+    # torch.save(model.state_dict(), os.path.join(args.output_dir, "final_checkpoint/pytorch_model.bin"))
     print("Training Done! 💥")
-    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
 
     # if args.push_to_hub:
     #     trainer.push_to_hub("codellama-ansible-7b-hf-truncated-embeddings")
