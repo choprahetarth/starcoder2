@@ -1,0 +1,572 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+
+0it [00:00, ?it/s]
+0it [00:00, ?it/s]
+/u/choprahetarth/all_files/starcoder2
+/u/choprahetarth/all_files/starcoder2
+I am loading LORA
+Loading BNB
+Loading Model
+/u/choprahetarth/all_files/starcoder2
+I am loading LORA
+Loading BNB
+Loading Model
+I am loading LORA
+Loading BNB
+Loading Model
+/u/choprahetarth/all_files/starcoder2
+I am loading LORA
+Loading BNB
+Loading Model
+Model Loaded
+Setting num_proc from 64 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+
+Generating train split: 0 examples [00:00, ? examples/s]
+Generating train split: 15246 examples [00:00, 106256.37 examples/s]
+Generating train split: 15246 examples [00:00, 105301.88 examples/s]
+
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]
+Map:  15%|█▍        | 2257/15246 [00:00<00:00, 22440.33 examples/s]
+Map:  30%|███       | 4592/15246 [00:00<00:00, 22970.48 examples/s]
+Map:  45%|████▌     | 6909/15246 [00:00<00:00, 23055.90 examples/s]
+Map:  68%|██████▊   | 10361/15246 [00:00<00:00, 23029.51 examples/s]
+Map:  83%|████████▎ | 12684/15246 [00:00<00:00, 23089.89 examples/s]Model Loaded
+Model Loaded
+Model Loaded
+
+Map:  98%|█████████▊| 15000/15246 [00:00<00:00, 23078.08 examples/s]
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 22840.47 examples/s]
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+
+Map:   0%|          | 0/13721 [00:00<?, ? examples/s]
+Map:   7%|▋         | 1000/13721 [00:00<00:01, 7536.92 examples/s]
+Map:  22%|██▏       | 3000/13721 [00:00<00:00, 12791.82 examples/s]
+Map:  36%|███▋      | 5000/13721 [00:00<00:00, 14928.97 examples/s]
+Map:  51%|█████     | 7000/13721 [00:00<00:00, 15915.00 examples/s]
+Map:  66%|██████▌   | 9000/13721 [00:00<00:00, 16586.17 examples/s]
+Map:  80%|████████  | 11000/13721 [00:00<00:00, 16688.50 examples/s]
+Map:  95%|█████████▍| 13000/13721 [00:00<00:00, 16774.64 examples/s]
+Map: 100%|██████████| 13721/13721 [00:00<00:00, 15722.38 examples/s]
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 14095.10 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 13619.15 examples/s]
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 8110.37 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 7399.11 examples/s]
+Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 7157.25 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 9423.58 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 8784.89 examples/s]
+
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 8634.27 examples/s]
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.2
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240706_150631-ljf8td3f
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-starcoder2-3b
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/ljf8td3f
+[rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 5.1659, 'grad_norm': 0.6798616051673889, 'learning_rate': 3.6e-05, 'epoch': 0.046620046620046623}
+{'loss': 4.7283, 'grad_norm': 1.2419989109039307, 'learning_rate': 7.6e-05, 'epoch': 0.09324009324009325}
+{'loss': 3.3127, 'grad_norm': 1.754568099975586, 'learning_rate': 0.000116, 'epoch': 0.13986013986013987}
+{'loss': 2.2189, 'grad_norm': 1.094506025314331, 'learning_rate': 0.00015600000000000002, 'epoch': 0.1864801864801865}
+{'loss': 1.8531, 'grad_norm': 0.8293578028678894, 'learning_rate': 0.000196, 'epoch': 0.2331002331002331}
+{'loss': 1.6813, 'grad_norm': 0.7466359734535217, 'learning_rate': 0.000198517512351347, 'epoch': 0.27972027972027974}
+{'loss': 1.5924, 'grad_norm': 0.737513542175293, 'learning_rate': 0.0001934492702382411, 'epoch': 0.32634032634032634}
+{'loss': 1.553, 'grad_norm': 0.763220489025116, 'learning_rate': 0.00018496233982968457, 'epoch': 0.372960372960373}
+{'loss': 1.4576, 'grad_norm': 0.8229718804359436, 'learning_rate': 0.00017336720155616185, 'epoch': 0.4195804195804196}
+{'loss': 1.4071, 'grad_norm': 0.6461489200592041, 'learning_rate': 0.00015908804453545607, 'epoch': 0.4662004662004662}
+{'loss': 1.3755, 'grad_norm': 0.8676484823226929, 'learning_rate': 0.000142647248309442, 'epoch': 0.5128205128205128}
+{'loss': 1.353, 'grad_norm': 0.7680816650390625, 'learning_rate': 0.00012464627244524593, 'epoch': 0.5594405594405595}
+{'loss': 1.3662, 'grad_norm': 0.6695438623428345, 'learning_rate': 0.00010574365312337235, 'epoch': 0.6060606060606061}
+{'loss': 1.3458, 'grad_norm': 0.756596028804779, 'learning_rate': 8.663091167153516e-05, 'epoch': 0.6526806526806527}
+{'loss': 1.349, 'grad_norm': 0.7887166738510132, 'learning_rate': 6.800725639097411e-05, 'epoch': 0.6993006993006993}
+{'loss': 1.3259, 'grad_norm': 0.7350281476974487, 'learning_rate': 5.055400316745096e-05, 'epoch': 0.745920745920746}
+{'loss': 1.2868, 'grad_norm': 0.6321435570716858, 'learning_rate': 3.4909650646922896e-05, 'epoch': 0.7925407925407926}
+{'loss': 1.2813, 'grad_norm': 0.7075889706611633, 'learning_rate': 2.164652180971358e-05, 'epoch': 0.8391608391608392}
+{'loss': 1.3109, 'grad_norm': 0.7417185306549072, 'learning_rate': 1.1249826472884572e-05, 'epoch': 0.8857808857808858}
+{'loss': 1.2982, 'grad_norm': 0.6721455454826355, 'learning_rate': 4.099910684818698e-06, 'epoch': 0.9324009324009324}
+{'loss': 1.2876, 'grad_norm': 0.7108369469642639, 'learning_rate': 4.583423888055105e-07, 'epoch': 0.9790209790209791}
+{'train_runtime': 423.1571, 'train_samples_per_second': 32.366, 'train_steps_per_second': 1.011, 'train_loss': 1.871300117991795, 'epoch': 0.9976689976689976}
+Starcoder2ForCausalLM(
+  (model): Starcoder2Model(
+    (embed_tokens): Embedding(49152, 3072)
+    (layers): ModuleList(
+      (0-29): 30 x Starcoder2DecoderLayer(
+        (self_attn): Starcoder2SdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): Starcoder2RotaryEmbedding()
+        )
+        (mlp): Starcoder2MLP(
+          (c_fc): Linear4bit(in_features=3072, out_features=12288, bias=True)
+          (c_proj): Linear4bit(in_features=12288, out_features=3072, bias=True)
+          (act): PytorchGELUTanh()
+        )
+        (input_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+        (post_attention_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (norm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=3072, out_features=49152, bias=False)
+)
+Saving the last checkpoint of the model
+saving the model peft layer
+Starcoder2ForCausalLM(
+  (model): Starcoder2Model(
+    (embed_tokens): Embedding(49152, 3072)
+    (layers): ModuleList(
+      (0-29): 30 x Starcoder2DecoderLayer(
+        (self_attn): Starcoder2SdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): Starcoder2RotaryEmbedding()
+        )
+        (mlp): Starcoder2MLP(
+          (c_fc): Linear4bit(in_features=3072, out_features=12288, bias=True)
+          (c_proj): Linear4bit(in_features=12288, out_features=3072, bias=True)
+          (act): PytorchGELUTanh()
+        )
+        (input_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+        (post_attention_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (norm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=3072, out_features=49152, bias=False)
+)Starcoder2ForCausalLM(
+  (model): Starcoder2Model(
+    (embed_tokens): Embedding(49152, 3072)
+    (layers): ModuleList(
+      (0-29): 30 x Starcoder2DecoderLayer(
+        (self_attn): Starcoder2SdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): Starcoder2RotaryEmbedding()
+        )
+        (mlp): Starcoder2MLP(
+          (c_fc): Linear4bit(in_features=3072, out_features=12288, bias=True)
+          (c_proj): Linear4bit(in_features=12288, out_features=3072, bias=True)
+          (act): PytorchGELUTanh()
+        )
+        (input_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+        (post_attention_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (norm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=3072, out_features=49152, bias=False)
+)
+
+Saving the last checkpoint of the model
+saving the model peft layerStarcoder2ForCausalLM(
+  (model): Starcoder2Model(
+    (embed_tokens): Embedding(49152, 3072)
+    (layers): ModuleList(
+      (0-29): 30 x Starcoder2DecoderLayer(
+        (self_attn): Starcoder2SdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=256, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=256, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=3072, out_features=3072, bias=True)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=3072, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=3072, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): Starcoder2RotaryEmbedding()
+        )
+        (mlp): Starcoder2MLP(
+          (c_fc): Linear4bit(in_features=3072, out_features=12288, bias=True)
+          (c_proj): Linear4bit(in_features=12288, out_features=3072, bias=True)
+          (act): PytorchGELUTanh()
+        )
+        (input_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+        (post_attention_layernorm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (norm): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=3072, out_features=49152, bias=False)
+)
+
+Saving the last checkpoint of the model
+saving the model peft layer
+Saving the last checkpoint of the model
+saving the model peft layer
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Loading PEFT model...
+Loading PEFT model...
+Loading PEFT model...
+Loading PEFT model...
+Merging and unloading model...
+Merging and unloading model...
+Merging and unloading model...
+Merging and unloading model...
+Loading tokenizer...
+Loading tokenizer...
+Loading tokenizer...
+Saving pretrained model and tokenizer...
+Loading tokenizer...
+Saving pretrained model and tokenizer...
+Saving pretrained model and tokenizer...
+Saving pretrained model and tokenizer...
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+Training Done! 💥
+wandb: - 0.008 MB of 0.008 MB uploaded
+wandb: \ 0.008 MB of 0.008 MB uploaded
+wandb: | 0.038 MB of 0.064 MB uploaded (0.003 MB deduped)
+wandb: / 0.064 MB of 0.064 MB uploaded (0.003 MB deduped)
+wandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇███
+wandb:   train/global_step ▁▁▂▂▂▃▃▃▄▄▄▅▅▅▆▆▆▇▇███
+wandb:     train/grad_norm ▁▅█▄▂▂▂▂▂▁▂▂▁▂▂▂▁▁▂▁▁
+wandb: train/learning_rate ▂▄▅▆████▇▇▆▅▅▄▃▃▂▂▁▁▁
+wandb:          train/loss █▇▅▃▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 2.190528581992448e+16
+wandb:              train/epoch 0.99767
+wandb:        train/global_step 428
+wandb:          train/grad_norm 0.71084
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 1.2876
+wandb:               train_loss 1.8713
+wandb:            train_runtime 423.1571
+wandb: train_samples_per_second 32.366
+wandb:   train_steps_per_second 1.011
+wandb: 
+wandb: 🚀 View run train-starcoder2-3b at: https://wandb.ai/hetarthvader/huggingface/runs/ljf8td3f
+wandb: ⭐️ View project at: https://wandb.ai/hetarthvader/huggingface
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240706_150631-ljf8td3f/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+
+srun --unbuffered --account=bbvz-delta-gpu \
+python -m torch.distributed.run \
+--nproc_per_node=4 \
+finetune.py \
+--model_id="bigcode/starcoder2-3b" \
+--dataset_name="/u/choprahetarth/all_files/data/train_ftdata-new-small.json" \
+--max_seq_length 512 \
+--max_steps 428 \
+--size_valid_set 1525 \
+--micro_batch_size 2 \
+--gradient_accumulation_steps 4 \
+--weight_decay 0.01 \
+--fp16 True \
+--lora_rank 16 \
+--learning_rate 2e-4 \
+--lr_scheduler_type="cosine" \
+--warmup_steps 100 \
+--seed 1234 \
+--output_dir="//scratch/bbvz/choprahetarth/starcoder2_script/starcoder2-3b" \
+--push_to_hub False \
+--save_freq 20

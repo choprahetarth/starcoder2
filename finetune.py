@@ -32,8 +32,8 @@ def get_args():
     parser.add_argument("--micro_batch_size", type=int, default=1)
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
-    parser.add_argument("--bf16", type=bool, default=True)
-    parser.add_argument("--fp16", type=bool, default=False)
+    # parser.add_argument("--bf16", type=bool, default=True)
+    parser.add_argument("--fp16", type=bool, default=True)
     parser.add_argument("--lora_rank", type=int, default=8)
     parser.add_argument("--learning_rate", type=float, default=2e-4)
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine")
@@ -68,8 +68,8 @@ def main(args):
     #     bnb_4bit_quant_type="nf4",
     #     bnb_4bit_compute_dtype=torch.bfloat16,
     # )
-    # Uncomment for Starcoder 2 / CodeLLaMa etc.
-    print("I am loading LORA") 
+    # # Uncomment for Starcoder 2 / CodeLLaMa etc.
+    # print("I am loading LORA") 
     lora_config = LoraConfig(
         r=args.lora_rank,
         target_modules=[
@@ -80,6 +80,7 @@ def main(args):
             "gate_proj",
             "up_proj",
             "down_proj",
+            # "c_proj", "c_attn", "q_attn"
         ],
         task_type="CAUSAL_LM",
     )
@@ -144,15 +145,14 @@ def main(args):
             lr_scheduler_type=args.lr_scheduler_type,
             weight_decay=args.weight_decay,
             bf16=args.bf16,
-            fp16=args.fp16,
             logging_strategy="steps",
             logging_steps=args.save_freq,
             output_dir=args.output_dir,
             optim="paged_adamw_8bit",
             seed=args.seed,
             run_name=f"train-{args.model_id.split('/')[-1]}",
-            report_to="wandb",
-        ),
+            report_to="wandb"
+            ),
         peft_config=lora_config,
         # dataset_text_field=args.dataset_text_field,
     )
@@ -166,6 +166,11 @@ def main(args):
     print("saving the model peft layer")
     
     trainer.model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
+    import gc
+    del trainer, model, dataset, data, train_val_split
+    gc.collect()
+    torch.cuda.empty_cache()
+    print("Deleted all GPU Memory")
     print("Merging the Lora layers back")
     base_model = AutoModelForCausalLM.from_pretrained(
         args.model_id,
@@ -196,8 +201,8 @@ if __name__ == "__main__":
     os.makedirs(os.path.join(args.output_dir, "final_checkpoint"), exist_ok=True)
     set_seed(args.seed)
     # os.makedirs(args.output_dir, exist_ok=True)
-    logging.set_verbosity_info()
+    # logging.set_verbosity_info()
 
-    # logging.set_verbosity_error()
+    logging.set_verbosity_error()
 
     main(args)

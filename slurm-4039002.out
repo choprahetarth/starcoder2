@@ -1,0 +1,812 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+WARNING:__main__:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/u/choprahetarth/all_files/starcoder2
+/u/choprahetarth/all_files/starcoder2
+/u/choprahetarth/all_files/starcoder2
+/u/choprahetarth/all_files/starcoder2
+I am loading LORAI am loading LORA
+
+Loading BNB
+Loading BNB
+Loading Model
+Loading Model
+I am loading LORA
+Loading BNB
+Loading Model
+I am loading LORA
+Loading BNB
+Loading Model
+Downloading shards:   0%|          | 0/7 [00:00<?, ?it/s]Downloading shards:   0%|          | 0/7 [00:00<?, ?it/s]Downloading shards:   0%|          | 0/7 [00:00<?, ?it/s]Downloading shards:   0%|          | 0/7 [00:00<?, ?it/s]Downloading shards:  14%|█▍        | 1/7 [00:30<03:05, 30.89s/it]Downloading shards:  14%|█▍        | 1/7 [00:30<03:05, 30.89s/it]Downloading shards:  14%|█▍        | 1/7 [00:30<03:05, 30.87s/it]Downloading shards:  14%|█▍        | 1/7 [00:30<03:05, 31.00s/it]Downloading shards:  29%|██▊       | 2/7 [01:01<02:32, 30.56s/it]Downloading shards:  29%|██▊       | 2/7 [01:01<02:32, 30.53s/it]Downloading shards:  29%|██▊       | 2/7 [01:01<02:32, 30.56s/it]Downloading shards:  29%|██▊       | 2/7 [01:01<02:32, 30.55s/it]Downloading shards:  43%|████▎     | 3/7 [01:30<02:00, 30.14s/it]Downloading shards:  43%|████▎     | 3/7 [01:30<02:00, 30.14s/it]Downloading shards:  43%|████▎     | 3/7 [01:30<02:00, 30.17s/it]Downloading shards:  43%|████▎     | 3/7 [01:30<02:00, 30.19s/it]Downloading shards:  57%|█████▋    | 4/7 [02:01<01:30, 30.20s/it]Downloading shards:  57%|█████▋    | 4/7 [02:01<01:30, 30.18s/it]Downloading shards:  57%|█████▋    | 4/7 [02:01<01:30, 30.20s/it]Downloading shards:  57%|█████▋    | 4/7 [02:01<01:30, 30.21s/it]Downloading shards:  71%|███████▏  | 5/7 [02:31<01:00, 30.09s/it]Downloading shards:  71%|███████▏  | 5/7 [02:31<01:00, 30.08s/it]Downloading shards:  71%|███████▏  | 5/7 [02:31<01:00, 30.09s/it]Downloading shards:  71%|███████▏  | 5/7 [02:31<01:00, 30.11s/it]Downloading shards:  86%|████████▌ | 6/7 [03:01<00:30, 30.13s/it]Downloading shards:  86%|████████▌ | 6/7 [03:01<00:30, 30.12s/it]Downloading shards:  86%|████████▌ | 6/7 [03:01<00:30, 30.15s/it]Downloading shards:  86%|████████▌ | 6/7 [03:01<00:30, 30.18s/it]Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 29.69s/it]Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 29.68s/it]Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 30.02s/it]
+Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 30.01s/it]
+Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 29.70s/it]Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 30.01s/it]
+Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 29.72s/it]Downloading shards: 100%|██████████| 7/7 [03:30<00:00, 30.03s/it]
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:44<04:27, 44.53s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [00:44<04:29, 44.99s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [00:44<04:29, 44.99s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [00:44<04:29, 44.99s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:52<01:56, 23.22s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:53<01:58, 23.61s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:53<01:58, 23.69s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:53<01:58, 23.72s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [01:01<01:05, 16.37s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [01:02<01:06, 16.73s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [01:02<01:06, 16.71s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [01:02<01:06, 16.72s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [01:09<00:39, 13.11s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [01:10<00:40, 13.45s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [01:10<00:40, 13.48s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [01:10<00:40, 13.49s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [01:17<00:22, 11.27s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [01:18<00:23, 11.62s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [01:19<00:23, 11.67s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [01:19<00:23, 11.67s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [01:25<00:10, 10.25s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [01:27<00:10, 10.55s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [01:27<00:10, 10.54s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [01:27<00:10, 10.55s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:33<00:00,  9.50s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:33<00:00, 13.34s/it]
+Model Loaded
+Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00,  9.80s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00, 13.69s/it]
+Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00,  9.85s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00, 13.69s/it]
+Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00,  9.82s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:35<00:00, 13.69s/it]
+Model Loaded
+Model Loaded
+Model Loaded
+Setting num_proc from 64 back to 1 for the train split to disable multiprocessing as it only contains one shard.
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 15246 examples [00:01, 12371.69 examples/s]Generating train split: 15246 examples [00:01, 12332.64 examples/s]
+Map:   0%|          | 0/15246 [00:00<?, ? examples/s]Map:   0%|          | 0/15246 [00:00<?, ? examples/s]Map:   0%|          | 0/15246 [00:00<?, ? examples/s]Map:   0%|          | 0/15246 [00:00<?, ? examples/s]Map:   0%|          | 1/15246 [00:00<29:11,  8.70 examples/s]Map:   0%|          | 1/15246 [00:00<29:14,  8.69 examples/s]Map:   0%|          | 1/15246 [00:00<29:18,  8.67 examples/s]Map:   0%|          | 1/15246 [00:00<29:23,  8.64 examples/s]Map:  15%|█▍        | 2220/15246 [00:00<00:01, 12300.08 examples/s]Map:  15%|█▌        | 2360/15246 [00:00<00:00, 13069.76 examples/s]Map:  15%|█▍        | 2221/15246 [00:00<00:01, 12284.71 examples/s]Map:  15%|█▍        | 2225/15246 [00:00<00:01, 12290.76 examples/s]Map:  30%|██▉       | 4548/15246 [00:00<00:00, 17145.97 examples/s]Map:  31%|███       | 4754/15246 [00:00<00:00, 17867.96 examples/s]Map:  30%|██▉       | 4533/15246 [00:00<00:00, 17064.20 examples/s]Map:  30%|██▉       | 4573/15246 [00:00<00:00, 17222.29 examples/s]Map:  45%|████▌     | 6888/15246 [00:00<00:00, 19563.79 examples/s]Map:  47%|████▋     | 7098/15246 [00:00<00:00, 20021.20 examples/s]Map:  45%|████▍     | 6842/15246 [00:00<00:00, 19393.37 examples/s]Map:  46%|████▌     | 6942/15246 [00:00<00:00, 19721.14 examples/s]Map:  60%|██████    | 9203/15246 [00:00<00:00, 20834.47 examples/s]Map:  62%|██████▏   | 9494/15246 [00:00<00:00, 21420.50 examples/s]Map:  61%|██████    | 9278/15246 [00:00<00:00, 21014.10 examples/s]Map:  60%|██████    | 9156/15246 [00:00<00:00, 20654.41 examples/s]Map:  76%|███████▌  | 11530/15246 [00:00<00:00, 21653.35 examples/s]Map:  78%|███████▊  | 11861/15246 [00:00<00:00, 22176.89 examples/s]Map:  76%|███████▋  | 11646/15246 [00:00<00:00, 21906.80 examples/s]Map:  75%|███████▌  | 11460/15246 [00:00<00:00, 21453.23 examples/s]Map:  91%|█████████ | 13853/15246 [00:00<00:00, 22161.94 examples/s]Map:  93%|█████████▎| 14202/15246 [00:00<00:00, 22576.71 examples/s]Map:  92%|█████████▏| 13989/15246 [00:00<00:00, 22397.58 examples/s]Map:  90%|█████████ | 13779/15246 [00:00<00:00, 22013.47 examples/s]Map: 100%|██████████| 15246/15246 [00:00<00:00, 19719.20 examples/s]
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 19603.76 examples/s]
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 19501.07 examples/s]
+Map: 100%|██████████| 15246/15246 [00:00<00:00, 19379.38 examples/s]
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+Sample from the training dataset:  Sample from the training dataset: {'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'} 
+{'prompt': 'Given this Ansible Name Field, please generate the ansible task. name: Ensure fail2ban service is enabled and started', 'completion': 'service:\n  name: fail2ban\n  state: started\n  enabled: true\nwhen: centos_base_fail2ban_configuration|bool\n'}
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:100: FutureWarning: Deprecated argument(s) used in '__init__': max_seq_length. Will not be supported from version '1.0.0'.
+
+Deprecated positional argument(s) used in SFTTrainer, please use the SFTConfig to set these arguments instead.
+  warnings.warn(message, FutureWarning)
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/training_args.py:1965: FutureWarning: `--push_to_hub_token` is deprecated and will be removed in version 5 of 🤗 Transformers. Use `--hub_token` instead.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:269: UserWarning: You passed a `max_seq_length` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Map:   0%|          | 0/13721 [00:00<?, ? examples/s]Map:   7%|▋         | 1000/13721 [00:00<00:10, 1192.25 examples/s]Map:  15%|█▍        | 2000/13721 [00:00<00:04, 2400.76 examples/s]Map:  22%|██▏       | 3000/13721 [00:01<00:02, 3597.63 examples/s]Map:  29%|██▉       | 4000/13721 [00:01<00:02, 3674.66 examples/s]Map:  36%|███▋      | 5000/13721 [00:01<00:01, 4542.26 examples/s]Map:  44%|████▎     | 6000/13721 [00:01<00:01, 5390.45 examples/s]Map:  51%|█████     | 7000/13721 [00:01<00:01, 6035.09 examples/s]Map:  58%|█████▊    | 8000/13721 [00:01<00:00, 6578.31 examples/s]Map:  66%|██████▌   | 9000/13721 [00:01<00:00, 7124.51 examples/s]Map:  73%|███████▎  | 10000/13721 [00:02<00:00, 7501.61 examples/s]Map:  80%|████████  | 11000/13721 [00:02<00:00, 7704.42 examples/s]Map:  87%|████████▋ | 12000/13721 [00:02<00:00, 7833.75 examples/s]Map:  95%|█████████▍| 13000/13721 [00:02<00:00, 7998.23 examples/s]Map: 100%|██████████| 13721/13721 [00:02<00:00, 5407.28 examples/s]
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 6003.62 examples/s]Map: 100%|██████████| 1525/1525 [00:00<00:00, 6520.23 examples/s]
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/trl/trainer/sft_trainer.py:355: UserWarning: You passed a `dataset_kwargs` argument to the SFTTrainer, the value you passed will override the one in the `SFTConfig`.
+  warnings.warn(
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:   0%|          | 0/1525 [00:00<?, ? examples/s]WARNING:accelerate.utils.other:Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Map:   0%|          | 0/1525 [00:00<?, ? examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 3947.24 examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 3729.24 examples/s]Map:  66%|██████▌   | 1000/1525 [00:00<00:00, 3544.86 examples/s]Map: 100%|██████████| 1525/1525 [00:00<00:00, 4497.92 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 4250.45 examples/s]
+Map: 100%|██████████| 1525/1525 [00:00<00:00, 4165.05 examples/s]
+max_steps is given, it will override any value given in num_train_epochs
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+max_steps is given, it will override any value given in num_train_epochs
+Training...
+Training...
+Training...
+wandb: Currently logged in as: hetarthvader. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.17.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.2
+wandb: Run data is saved locally in /scratch/bbvz/choprahetarth/wandb/run-20240706_191006-b2p3b107
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-Phind-CodeLlama-34B-v1
+wandb: ⭐️ View project at https://wandb.ai/hetarthvader/huggingface
+wandb: 🚀 View run at https://wandb.ai/hetarthvader/huggingface/runs/b2p3b107
+[rank2]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+{'loss': 2.7869, 'grad_norm': 0.3597453236579895, 'learning_rate': 4e-05, 'epoch': 0.023316817254444767}
+{'loss': 1.6164, 'grad_norm': 0.32552221417427063, 'learning_rate': 8e-05, 'epoch': 0.046633634508889535}
+{'loss': 0.3947, 'grad_norm': 0.10860180109739304, 'learning_rate': 0.00012, 'epoch': 0.06995045176333431}
+{'loss': 0.3404, 'grad_norm': 0.0939430370926857, 'learning_rate': 0.00016, 'epoch': 0.09326726901777907}
+{'loss': 0.3152, 'grad_norm': 0.09861727058887482, 'learning_rate': 0.0002, 'epoch': 0.11658408627222384}
+{'loss': 0.3106, 'grad_norm': 0.0848144143819809, 'learning_rate': 0.00019965482753212156, 'epoch': 0.13990090352666862}
+{'loss': 0.2879, 'grad_norm': 0.09274227917194366, 'learning_rate': 0.00019862169300913785, 'epoch': 0.16321772078111338}
+{'loss': 0.2772, 'grad_norm': 0.07778758555650711, 'learning_rate': 0.0001969077286229078, 'epoch': 0.18653453803555814}
+{'loss': 0.2757, 'grad_norm': 0.09641838818788528, 'learning_rate': 0.00019452476663977248, 'epoch': 0.20985135529000293}
+{'loss': 0.2722, 'grad_norm': 0.08166269212961197, 'learning_rate': 0.00019148925771710347, 'epoch': 0.2331681725444477}
+{'loss': 0.2681, 'grad_norm': 0.09565991163253784, 'learning_rate': 0.00018782215733702286, 'epoch': 0.25648498979889245}
+{'loss': 0.2609, 'grad_norm': 0.07474861294031143, 'learning_rate': 0.00018354878114129367, 'epoch': 0.27980180705333724}
+{'loss': 0.2612, 'grad_norm': 0.096858449280262, 'learning_rate': 0.0001786986301660689, 'epoch': 0.30311862430778197}
+{'loss': 0.2572, 'grad_norm': 0.08763951808214188, 'learning_rate': 0.00017330518718298264, 'epoch': 0.32643544156222676}
+{'loss': 0.2636, 'grad_norm': 0.08879375457763672, 'learning_rate': 0.00016740568555253155, 'epoch': 0.34975225881667155}
+{'loss': 0.2606, 'grad_norm': 0.09434880316257477, 'learning_rate': 0.00016104085218545633, 'epoch': 0.3730690760711163}
+{'loss': 0.249, 'grad_norm': 0.07932106405496597, 'learning_rate': 0.00015425462638657595, 'epoch': 0.39638589332556107}
+{'loss': 0.2497, 'grad_norm': 0.08668261021375656, 'learning_rate': 0.00014709385652202203, 'epoch': 0.41970271058000586}
+{'loss': 0.2319, 'grad_norm': 0.07977505028247833, 'learning_rate': 0.0001396079766039157, 'epoch': 0.4430195278344506}
+{'loss': 0.2361, 'grad_norm': 0.07536382228136063, 'learning_rate': 0.00013184866502516845, 'epoch': 0.4663363450888954}
+{'loss': 0.2296, 'grad_norm': 0.1027507483959198, 'learning_rate': 0.0001238694878003138, 'epoch': 0.4896531623433401}
+{'loss': 0.229, 'grad_norm': 0.08553626388311386, 'learning_rate': 0.00011572552877523854, 'epoch': 0.5129699795977849}
+{'loss': 0.2311, 'grad_norm': 0.09620996564626694, 'learning_rate': 0.00010747300935864243, 'epoch': 0.5362867968522297}
+{'loss': 0.2402, 'grad_norm': 0.09343977272510529, 'learning_rate': 9.916890040039031e-05, 'epoch': 0.5596036141066745}
+{'loss': 0.2449, 'grad_norm': 0.09197164326906204, 'learning_rate': 9.087052889613518e-05, 'epoch': 0.5829204313611193}
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+{'loss': 0.2332, 'grad_norm': 0.11681672185659409, 'learning_rate': 8.263518223330697e-05, 'epoch': 0.6062372486155639}
+{'loss': 0.2374, 'grad_norm': 0.10181409865617752, 'learning_rate': 7.451971271053455e-05, 'epoch': 0.6295540658700087}
+{'loss': 0.2371, 'grad_norm': 0.08921853452920914, 'learning_rate': 6.658014506068126e-05, 'epoch': 0.6528708831244535}
+{'loss': 0.2335, 'grad_norm': 0.09332292526960373, 'learning_rate': 5.887128968693887e-05, 'epoch': 0.6761877003788983}
+{'loss': 0.2274, 'grad_norm': 0.11100947111845016, 'learning_rate': 5.1446364281984774e-05, 'epoch': 0.6995045176333431}
+{'loss': 0.2238, 'grad_norm': 0.10381289571523666, 'learning_rate': 4.435662644233594e-05, 'epoch': 0.7228213348877878}
+{'loss': 0.2231, 'grad_norm': 0.09682021290063858, 'learning_rate': 3.7651019814126654e-05, 'epoch': 0.7461381521422326}
+{'loss': 0.2292, 'grad_norm': 0.10537587851285934, 'learning_rate': 3.137583621312665e-05, 'epoch': 0.7694549693966773}
+{'loss': 0.2232, 'grad_norm': 0.10081429034471512, 'learning_rate': 2.5574396051534832e-05, 'epoch': 0.7927717866511221}
+{'loss': 0.218, 'grad_norm': 0.11027930676937103, 'learning_rate': 2.0286749277707782e-05, 'epoch': 0.8160886039055669}
+{'loss': 0.2144, 'grad_norm': 0.1140952780842781, 'learning_rate': 1.5549398893369216e-05, 'epoch': 0.8394054211600117}
+{'loss': 0.2239, 'grad_norm': 0.09285733103752136, 'learning_rate': 1.1395048956986575e-05, 'epoch': 0.8627222384144564}
+{'loss': 0.2245, 'grad_norm': 0.13100576400756836, 'learning_rate': 7.852378812959227e-06, 'epoch': 0.8860390556689012}
+{'loss': 0.2283, 'grad_norm': 0.11290857195854187, 'learning_rate': 4.945845105217117e-06, 'epoch': 0.909355872923346}
+{'loss': 0.2181, 'grad_norm': 0.10282335430383682, 'learning_rate': 2.6955129420176196e-06, 'epoch': 0.9326726901777908}
+{'loss': 0.2178, 'grad_norm': 0.11658157408237457, 'learning_rate': 1.1169173774871478e-06, 'epoch': 0.9559895074322355}
+{'loss': 0.2257, 'grad_norm': 0.1103096455335617, 'learning_rate': 2.2095616616150115e-07, 'epoch': 0.9793063246866802}
+{'train_runtime': 6151.011, 'train_samples_per_second': 2.227, 'train_steps_per_second': 0.139, 'train_loss': 0.34095662303060015, 'epoch': 0.9979597784902361}
+LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 8192)
+    (layers): ModuleList(
+      (0-47): 48 x LlamaDecoderLayer(
+        (self_attn): LlamaSdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): LlamaRotaryEmbedding()
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (up_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (down_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=22016, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=22016, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm()
+        (post_attention_layernorm): LlamaRMSNorm()
+      )
+    )
+    (norm): LlamaRMSNorm()
+  )
+  (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+)LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 8192)
+    (layers): ModuleList(
+      (0-47): 48 x LlamaDecoderLayer(
+        (self_attn): LlamaSdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): LlamaRotaryEmbedding()
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (up_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (down_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=22016, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=22016, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm()
+        (post_attention_layernorm): LlamaRMSNorm()
+      )
+    )
+    (norm): LlamaRMSNorm()
+  )
+  (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+)
+Saving the last checkpoint of the model
+
+saving the model peft layerSaving the last checkpoint of the model
+
+saving the model peft layer
+LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 8192)
+    (layers): ModuleList(
+      (0-47): 48 x LlamaDecoderLayer(
+        (self_attn): LlamaSdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): LlamaRotaryEmbedding()
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (up_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (down_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=22016, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=22016, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm()
+        (post_attention_layernorm): LlamaRMSNorm()
+      )
+    )
+    (norm): LlamaRMSNorm()
+  )
+  (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+)
+Saving the last checkpoint of the model
+saving the model peft layer
+LlamaForCausalLM(
+  (model): LlamaModel(
+    (embed_tokens): Embedding(32000, 8192)
+    (layers): ModuleList(
+      (0-47): 48 x LlamaDecoderLayer(
+        (self_attn): LlamaSdpaAttention(
+          (q_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (k_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (v_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=1024, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=1024, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (o_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (rotary_emb): LlamaRotaryEmbedding()
+        )
+        (mlp): LlamaMLP(
+          (gate_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (up_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=8192, out_features=22016, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=8192, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=22016, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (down_proj): lora.Linear4bit(
+            (base_layer): Linear4bit(in_features=22016, out_features=8192, bias=False)
+            (lora_dropout): ModuleDict(
+              (default): Identity()
+            )
+            (lora_A): ModuleDict(
+              (default): Linear(in_features=22016, out_features=16, bias=False)
+            )
+            (lora_B): ModuleDict(
+              (default): Linear(in_features=16, out_features=8192, bias=False)
+            )
+            (lora_embedding_A): ParameterDict()
+            (lora_embedding_B): ParameterDict()
+          )
+          (act_fn): SiLU()
+        )
+        (input_layernorm): LlamaRMSNorm()
+        (post_attention_layernorm): LlamaRMSNorm()
+      )
+    )
+    (norm): LlamaRMSNorm()
+  )
+  (lm_head): Linear(in_features=8192, out_features=32000, bias=False)
+)
+Saving the last checkpoint of the model
+saving the model peft layer
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Deleted all GPU Memory
+Merging the Lora layers back
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [01:13<07:22, 73.75s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [01:14<07:26, 74.40s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [01:14<07:27, 74.62s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [01:14<07:27, 74.62s/it]Loading checkpoint shards:  14%|█▍        | 1/7 [01:39<09:56, 99.37s/it]
+Loading checkpoint shards:  14%|█▍        | 1/7 [01:39<09:56, 99.42s/it]
+Loading checkpoint shards:  14%|█▍        | 1/7 [01:39<09:56, 99.39s/it]
+Loading checkpoint shards:  14%|█▍        | 1/7 [01:39<09:55, 99.17s/it]
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 208, in <module>
+[rank3]:     main(args)
+[rank3]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 175, in main
+[rank3]:     base_model = AutoModelForCausalLM.from_pretrained(
+[rank3]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+[rank3]:     return model_class.from_pretrained(
+[rank3]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+[rank3]:     ) = cls._load_pretrained_model(
+[rank3]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+[rank3]:     new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+[rank3]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+[rank3]:     set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+[rank3]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 400, in set_module_tensor_to_device
+[rank3]:     new_value = value.to(device)
+[rank3]: torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 MiB. GPU 
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 208, in <module>
+[rank1]:     main(args)
+[rank1]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 175, in main
+[rank1]:     base_model = AutoModelForCausalLM.from_pretrained(
+[rank1]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+[rank1]:     return model_class.from_pretrained(
+[rank1]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+[rank1]:     ) = cls._load_pretrained_model(
+[rank1]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+[rank1]:     new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+[rank1]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+[rank1]:     set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+[rank1]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 400, in set_module_tensor_to_device
+[rank1]:     new_value = value.to(device)
+[rank1]: torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 208, in <module>
+[rank2]:     main(args)
+[rank2]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 175, in main
+[rank2]:     base_model = AutoModelForCausalLM.from_pretrained(
+[rank2]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+[rank2]:     return model_class.from_pretrained(
+[rank2]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+[rank2]:     ) = cls._load_pretrained_model(
+[rank2]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+[rank2]:     new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+[rank2]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+[rank2]:     set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+[rank2]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 400, in set_module_tensor_to_device
+[rank2]:     new_value = value.to(device)
+[rank2]: torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 
+Traceback (most recent call last):
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 208, in <module>
+    main(args)
+  File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 175, in main
+    base_model = AutoModelForCausalLM.from_pretrained(
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+    return model_class.from_pretrained(
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 400, in set_module_tensor_to_device
+    new_value = value.to(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 344.00 MiB. GPU 
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 208, in <module>
+[rank0]:     main(args)
+[rank0]:   File "/u/choprahetarth/all_files/starcoder2/finetune.py", line 175, in main
+[rank0]:     base_model = AutoModelForCausalLM.from_pretrained(
+[rank0]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 563, in from_pretrained
+[rank0]:     return model_class.from_pretrained(
+[rank0]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3754, in from_pretrained
+[rank0]:     ) = cls._load_pretrained_model(
+[rank0]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4214, in _load_pretrained_model
+[rank0]:     new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+[rank0]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/transformers/modeling_utils.py", line 887, in _load_state_dict_into_meta_model
+[rank0]:     set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+[rank0]:   File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 400, in set_module_tensor_to_device
+[rank0]:     new_value = value.to(device)
+[rank0]: torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 344.00 MiB. GPU 
+wandb: - 0.008 MB of 0.008 MB uploadedwandb: \ 0.008 MB of 0.035 MB uploadedwandb: 
+wandb: Run history:
+wandb:         train/epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   train/global_step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:     train/grad_norm █▇▂▁▂▁▁▁▂▁▂▁▂▁▁▁▁▁▁▁▁▂▁▁▂▂▁▁▂▂▂▂▂▂▂▁▂▂▂▂
+wandb: train/learning_rate ▂▄▅▇███████▇▇▇▇▇▆▆▆▆▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▁▁▁▁▁
+wandb:          train/loss █▅▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb:               total_flos 6.040054416508191e+17
+wandb:              train/epoch 0.99796
+wandb:        train/global_step 856
+wandb:          train/grad_norm 0.11031
+wandb:      train/learning_rate 0.0
+wandb:               train/loss 0.2257
+wandb:               train_loss 0.34096
+wandb:            train_runtime 6151.011
+wandb: train_samples_per_second 2.227
+wandb:   train_steps_per_second 0.139
+wandb: 
+wandb: 🚀 View run train-Phind-CodeLlama-34B-v1 at: https://wandb.ai/hetarthvader/huggingface/runs/b2p3b107
+wandb: ⭐️ View project at: https://wandb.ai/hetarthvader/huggingface
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /scratch/bbvz/choprahetarth/wandb/run-20240706_191006-b2p3b107/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+W0706 20:54:23.995000 140531126555648 torch/distributed/elastic/multiprocessing/api.py:851] Sending process 3803108 closing signal SIGTERM
+E0706 20:54:24.209000 140531126555648 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 3803106) of binary: /u/choprahetarth/.conda/envs/scoder_2/bin/python
+Traceback (most recent call last):
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/run.py", line 883, in <module>
+    main()
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/u/choprahetarth/.conda/envs/scoder_2/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+finetune.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-07-06_20:54:23
+  host      : gpub062.delta.ncsa.illinois.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3803107)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-07-06_20:54:23
+  host      : gpub062.delta.ncsa.illinois.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3803109)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-06_20:54:23
+  host      : gpub062.delta.ncsa.illinois.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3803106)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gpub062: task 0: Exited with exit code 1
